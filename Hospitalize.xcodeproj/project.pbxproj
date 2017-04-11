@@ -27,6 +27,9 @@
 		E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDE1E9CB4C60080C02D /* UIView+Extension.m */; };
 		E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9554CE61E9CB52E0080C02D /* tabbar.xcassets */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
+		E9CD59701E9CBE8100B1DCAB /* FCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */; };
+		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
+		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,12 @@
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
 		E9CD59651E9CB8B700B1DCAB /* FCCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCommonUtil.h; sourceTree = "<group>"; };
 		E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCommonUtil.m; sourceTree = "<group>"; };
+		E9CD596A1E9CBE8100B1DCAB /* FCAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertAction.h; sourceTree = "<group>"; };
+		E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertAction.m; sourceTree = "<group>"; };
+		E9CD596C1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+NMAlertAction.h"; sourceTree = "<group>"; };
+		E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+NMAlertAction.m"; sourceTree = "<group>"; };
+		E9CD596E1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NMAlertAction.h"; sourceTree = "<group>"; };
+		E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NMAlertAction.m"; sourceTree = "<group>"; };
 		FCEBFCA8681D4E1C4961AD0A /* Pods-Hospitalize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitalize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospitalize/Pods-Hospitalize.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +179,7 @@
 			children = (
 				E9CD59631E9CB72C00B1DCAB /* common */,
 				E9554CD01E9CB4B20080C02D /* Tabbar */,
+				E9CD59681E9CBE7700B1DCAB /* UIKit */,
 				E9554CA01E9CB3BC0080C02D /* AppDelegate.h */,
 				E9554CA11E9CB3BC0080C02D /* AppDelegate.m */,
 				E9554CA31E9CB3BC0080C02D /* ViewController.h */,
@@ -239,6 +249,27 @@
 				E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E9CD59681E9CBE7700B1DCAB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E9CD59691E9CBE8100B1DCAB /* FCAlertAction */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E9CD59691E9CBE8100B1DCAB /* FCAlertAction */ = {
+			isa = PBXGroup;
+			children = (
+				E9CD596A1E9CBE8100B1DCAB /* FCAlertAction.h */,
+				E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */,
+				E9CD596C1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.h */,
+				E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */,
+				E9CD596E1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.h */,
+				E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */,
+			);
+			path = FCAlertAction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,12 +541,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
+				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
+				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
 				E9554CE01E9CB4C60080C02D /* FirstViewController.m in Sources */,
+				E9CD59701E9CBE8100B1DCAB /* FCAlertAction.m in Sources */,
 				E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
