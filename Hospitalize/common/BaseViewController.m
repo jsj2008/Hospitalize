@@ -1,24 +1,23 @@
 //
-//  FirstViewController.m
-//  Logic
+//  BaseViewController.m
+//  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/7.
-//  Copyright © 2017年 宋明月. All rights reserved.
+//  Created by 宋明月 on 2017/4/12.
+//  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "BaseViewController.h"
+#import "ViewControllerUtil.h"
 
-@interface FirstViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
