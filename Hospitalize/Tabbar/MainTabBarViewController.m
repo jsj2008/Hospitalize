@@ -41,7 +41,7 @@
     [self setChildVC:secondVC title:@"就诊" image:@"person" selectedImage:@"mine"];
     
     ThridViewController *thridVC = [[ThridViewController alloc] init];
-    [self setChildVC:thridVC title:@"" image:@"" selectedImage:@""];
+    [self setChildVC:thridVC title:@"消息" image:@"person" selectedImage:@"mine"];
     
     FourthViewController *fourthVC = [[FourthViewController alloc] init];
     [self setChildVC:fourthVC title:@"病例" image:@"person" selectedImage:@"mine"];
@@ -49,17 +49,17 @@
     FifthViewController *fifthVC = [[FifthViewController alloc] init];
     [self setChildVC:fifthVC title:@"个人" image:@"person" selectedImage:@"mine"];
     
-    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [addBtn setBackgroundImage:[[UIImage imageNamed:@"add"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
-    float height = self.tabBar.frame.size.height;
-    //添加大按钮
-    addBtn.frame = CGRectMake(self.tabBar.width*0.5-(height*0.5), 0-height*0.1, height*1, height*1);
-    [self.tabBar addSubview:addBtn];
-    UIImageView *iv= [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mine"]];
-    //添加大按钮外面的白圈
-    iv.frame = CGRectMake(self.tabBar.width*0.5-(height*0.6), 0-height*0.2, height*1.2, height*1.2);
-    [self.tabBar addSubview:iv];
-    [self.tabBar addSubview:addBtn];
+//    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [addBtn setBackgroundImage:[[UIImage imageNamed:@"add"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+//    float height = self.tabBar.frame.size.height;
+//    //添加大按钮
+//    addBtn.frame = CGRectMake(self.tabBar.width*0.5-(height*0.5), 0-height*0.1, height*1, height*1);
+//    [self.tabBar addSubview:addBtn];
+//    UIImageView *iv= [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mine"]];
+//    //添加大按钮外面的白圈
+//    iv.frame = CGRectMake(self.tabBar.width*0.5-(height*0.6), 0-height*0.2, height*1.2, height*1.2);
+//    [self.tabBar addSubview:iv];
+//    [self.tabBar addSubview:addBtn];
     
 }
 
