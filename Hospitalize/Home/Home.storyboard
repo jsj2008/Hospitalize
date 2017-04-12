@@ -51,9 +51,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="IZO-gP-1Ea"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.29411764705882354" green="0.53725490196078429" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="Title" id="sRb-mh-iOs"/>
+                                    <navigationItem title="预约挂号" id="sRb-mh-iOs"/>
                                 </items>
                             </navigationBar>
                         </subviews>
