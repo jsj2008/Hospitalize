@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "OrderViewController.h"
+#import "ViewControllerUtil.h"
 
 @interface HomeViewController ()
 
@@ -22,6 +24,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonAction:(id)sender {
+    OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
+    [self.navigationController pushViewController:order animated:YES];
 }
 
 /*

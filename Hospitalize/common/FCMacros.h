@@ -20,7 +20,9 @@
 #define COLORFF4800 [FCCommonUtil colorWithHexString:@"FF4800"]
 #define COLOREFF3F6 [FCCommonUtil colorWithHexString:@"EFF3F6"]
 #define COLORD5D5D5 [FCCommonUtil colorWithHexString:@"D5D5D5"]
-
+#define COLOR666666 [FCCommonUtil colorWithHexString:@"666666"]
+#define COLOR333333 [FCCommonUtil colorWithHexString:@"333333"]
+#define COLOR949A9E [FCCommonUtil colorWithHexString:@"949A9E"]
 //屏幕宽度
 #define KmainScreenWidth [UIScreen mainScreen].bounds.size.width
 //屏幕高度
