@@ -7,13 +7,14 @@
 //
 
 #import "MainTabBarViewController.h"
-#import "FirstViewController.h"
+#import "HomeViewController.h"
 #import "SecondViewController.h"
 #import "ThridViewController.h"
 #import "FourthViewController.h"
 #import "FifthViewController.h"
 
 #import "UIView+Extension.h"
+#import "ViewControllerUtil.h"
 
 
 @interface MainTabBarViewController ()
@@ -32,7 +33,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    FirstViewController *firstVC = [[FirstViewController alloc] init];
+    
+    HomeViewController *firstVC = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"HomeViewController"];
     [self setChildVC:firstVC title:@"导诊" image:@"person" selectedImage:@"mine"];
     
     SecondViewController *secondVC = [[SecondViewController alloc] init];

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		05CDD7969CC8C5C30D88A087 /* libPods-HospitalizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */; };
 		61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40664E808119A654F5A6F62F /* libPods-Hospitalize.a */; };
+		89FAF91B1E9DC09C002DE124 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
+		89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF91C1E9DC0AB002DE124 /* Home.storyboard */; };
+		89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */; };
+		89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF9211E9DC247002DE124 /* Home.xcassets */; };
+		89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF9241E9DC271002DE124 /* BaseViewController.m */; };
 		C7F07E480D83C8B2C93A8F6D /* libPods-HospitalizeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */; };
 		E9554C9F1E9CB3BC0080C02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554C9E1E9CB3BC0080C02D /* main.m */; };
 		E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CA11E9CB3BC0080C02D /* AppDelegate.m */; };
@@ -19,7 +24,6 @@
 		E9554CB81E9CB3BC0080C02D /* HospitalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CB71E9CB3BC0080C02D /* HospitalizeTests.m */; };
 		E9554CC31E9CB3BC0080C02D /* HospitalizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CC21E9CB3BC0080C02D /* HospitalizeUITests.m */; };
 		E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD21E9CB4C60080C02D /* FifthViewController.m */; };
-		E9554CE01E9CB4C60080C02D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD41E9CB4C60080C02D /* FirstViewController.m */; };
 		E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD61E9CB4C60080C02D /* FourthViewController.m */; };
 		E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD81E9CB4C60080C02D /* MainTabBarViewController.m */; };
 		E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDA1E9CB4C60080C02D /* SecondViewController.m */; };
@@ -51,6 +55,14 @@
 		1E148A9DF4DC0DF8D7161F13 /* Pods-HospitalizeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeUITests/Pods-HospitalizeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HospitalizeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40664E808119A654F5A6F62F /* libPods-Hospitalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hospitalize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FAF9191E9DC09C002DE124 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		89FAF91A1E9DC09C002DE124 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		89FAF91C1E9DC0AB002DE124 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		89FAF91E1E9DC120002DE124 /* ViewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerUtil.h; sourceTree = "<group>"; };
+		89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerUtil.m; sourceTree = "<group>"; };
+		89FAF9211E9DC247002DE124 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		89FAF9231E9DC271002DE124 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		89FAF9241E9DC271002DE124 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		9808634646CF63F12BBE736B /* Pods-HospitalizeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeTests/Pods-HospitalizeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HospitalizeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A82B1766EDB563F893387 /* Pods-Hospitalize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitalize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospitalize/Pods-Hospitalize.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,8 +85,6 @@
 		E9554CC41E9CB3BC0080C02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9554CD11E9CB4C60080C02D /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		E9554CD21E9CB4C60080C02D /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
-		E9554CD31E9CB4C60080C02D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E9554CD41E9CB4C60080C02D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		E9554CD51E9CB4C60080C02D /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		E9554CD61E9CB4C60080C02D /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		E9554CD71E9CB4C60080C02D /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
@@ -133,6 +143,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		89FAF9181E9DC07F002DE124 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				89FAF9191E9DC09C002DE124 /* HomeViewController.h */,
+				89FAF91A1E9DC09C002DE124 /* HomeViewController.m */,
+				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
+				89FAF9211E9DC247002DE124 /* Home.xcassets */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		A030C648CA3F2A1450FE2B67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +189,7 @@
 		E9554C9C1E9CB3BC0080C02D /* Hospitalize */ = {
 			isa = PBXGroup;
 			children = (
+				89FAF9181E9DC07F002DE124 /* Home */,
 				E9CD59631E9CB72C00B1DCAB /* common */,
 				E9554CD01E9CB4B20080C02D /* Tabbar */,
 				E9554CA01E9CB3BC0080C02D /* AppDelegate.h */,
@@ -215,8 +237,6 @@
 				E9554CE61E9CB52E0080C02D /* tabbar.xcassets */,
 				E9554CD11E9CB4C60080C02D /* FifthViewController.h */,
 				E9554CD21E9CB4C60080C02D /* FifthViewController.m */,
-				E9554CD31E9CB4C60080C02D /* FirstViewController.h */,
-				E9554CD41E9CB4C60080C02D /* FirstViewController.m */,
 				E9554CD51E9CB4C60080C02D /* FourthViewController.h */,
 				E9554CD61E9CB4C60080C02D /* FourthViewController.m */,
 				E9554CD71E9CB4C60080C02D /* MainTabBarViewController.h */,
@@ -237,6 +257,10 @@
 				E9CD59641E9CB74800B1DCAB /* FCMacros.h */,
 				E9CD59651E9CB8B700B1DCAB /* FCCommonUtil.h */,
 				E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */,
+				89FAF91E1E9DC120002DE124 /* ViewControllerUtil.h */,
+				89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */,
+				89FAF9231E9DC271002DE124 /* BaseViewController.h */,
+				89FAF9241E9DC271002DE124 /* BaseViewController.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -359,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9554CAD1E9CB3BC0080C02D /* LaunchScreen.storyboard in Resources */,
+				89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */,
+				89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */,
 				E9554CAA1E9CB3BC0080C02D /* Assets.xcassets in Resources */,
 				E9554CA81E9CB3BC0080C02D /* Main.storyboard in Resources */,
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
@@ -514,12 +540,14 @@
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
+				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
-				E9554CE01E9CB4C60080C02D /* FirstViewController.m in Sources */,
 				E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
+				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
+				89FAF91B1E9DC09C002DE124 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
