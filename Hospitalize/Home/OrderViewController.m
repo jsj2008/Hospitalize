@@ -7,11 +7,13 @@
 //
 
 #import "OrderViewController.h"
-#import "OrderMainTableViewCell.h"
+#import "OrderTableViewCell.h"
 #import "OrderRankView.h"
 #import "OrderScreenView.h"
 #import "ViewControllerUtil.h"
-#import "PayViewController.h"
+#import "PayTableViewController.h"
+#import "OrderMessageViewController.h"
+
 
 @interface OrderViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
@@ -28,38 +30,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.hidden = YES;
+//    self.navigationController.navigationBar.hidden = YES;
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
     
     // 排序
-    self.orderRankView = [[OrderRankView alloc] initWithStartY:(64+42)];
+    self.orderRankView = [[OrderRankView alloc] initWithStartY:42];
     [self.view addSubview:self.orderRankView];
     //筛选
-    self.orderScreenView = [[OrderScreenView alloc] initWithStartY:(64+42)];
+    self.orderScreenView = [[OrderScreenView alloc] initWithStartY:42];
     [self.view addSubview:self.orderScreenView];
     
     [self.rankButton setImage:[UIImage imageNamed:@"order_down"] forState:UIControlStateNormal];
     [self.rankButton setImage:[UIImage imageNamed:@"order_up"] forState:UIControlStateSelected];
-    self.rankButton.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,-90);
-    self.rankButton.titleEdgeInsets = UIEdgeInsetsMake(0, -45, 0, 0);
+    self.rankButton.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,-80);
+    self.rankButton.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
     
     [self.screenButton setImage:[UIImage imageNamed:@"order_down"] forState:UIControlStateNormal];
     [self.screenButton setImage:[UIImage imageNamed:@"order_up"] forState:UIControlStateSelected];
-    self.screenButton.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,-90);
+    self.screenButton.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,-80);
+    self.screenButton.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    OrderMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderMainTableViewCell" forIndexPath:indexPath];
+    OrderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderTableViewCell" forIndexPath:indexPath];
 
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    PayViewController *pay = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PayViewController"];
-    [self.navigationController pushViewController:pay animated:YES];
+//    PayTableViewController *pay = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PayTableViewController"];
+//    [self.navigationController pushViewController:pay animated:YES];
+//    OrderMessageTableViewController *message = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderMessageTableViewController"];
+//    [self.navigationController pushViewController:message animated:YES];
+    OrderMessageViewController *message = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderMessageViewController"];
+    [self.navigationController pushViewController: message animated:YES];
+
 }
 //排序
 - (IBAction)paixuAction:(id)sender {

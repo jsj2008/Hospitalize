@@ -24,6 +24,7 @@
     self.navigationController.navigationBar.barTintColor = [FCCommonUtil colorWithHexString:@"4b89dc"];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     self.navigationController.navigationBar.alpha = 1;
+    self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 
 }

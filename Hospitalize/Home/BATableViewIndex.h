@@ -33,11 +33,8 @@
  *  @param tableViewIndex 触发tableViewIndexTouchesBegan对象
  */
 - (void)tableViewIndexTouchesBegan:(BATableViewIndex *)tableViewIndex;
-/**
- *  触摸索引结束
- *
- *  @param tableViewIndex
- */
+
+// 触摸索引结束
 - (void)tableViewIndexTouchesEnd:(BATableViewIndex *)tableViewIndex;
 
 /**

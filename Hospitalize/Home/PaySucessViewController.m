@@ -1,18 +1,18 @@
 //
-//  PayViewController.m
+//  PaySucessViewController.m
 //  Hospitalize
 //
 //  Created by 周鑫 on 2017/4/13.
 //  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "PayViewController.h"
+#import "PaySucessViewController.h"
 
-@interface PayViewController ()
+@interface PaySucessViewController ()
 
 @end
 
-@implementation PayViewController
+@implementation PaySucessViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
