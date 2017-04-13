@@ -10,6 +10,8 @@
 #import "OrderMainTableViewCell.h"
 #import "OrderRankView.h"
 #import "OrderScreenView.h"
+#import "ViewControllerUtil.h"
+#import "PayViewController.h"
 
 @interface OrderViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
@@ -33,7 +35,6 @@
     [self.view addSubview:self.orderRankView];
     
     self.orderScreenView = [[OrderScreenView alloc] initWithStartY:(64+42)];
-//    self.dropDownConditionView.delegate = self;
     [self.view addSubview:self.orderScreenView];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -44,6 +45,10 @@
     OrderMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderMainTableViewCell" forIndexPath:indexPath];
 
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PayViewController *pay = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PayViewController"];
+    [self.navigationController pushViewController:pay animated:YES];
 }
 //排序
 - (IBAction)paixuAction:(id)sender {
