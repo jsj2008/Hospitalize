@@ -48,14 +48,10 @@
 		E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDE1E9CB4C60080C02D /* UIView+Extension.m */; };
 		E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9554CE61E9CB52E0080C02D /* tabbar.xcassets */; };
 		E9648CE41E9F0E8B00943168 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9648CE31E9F0E8B00943168 /* PayViewController.m */; };
-		E9C581081E9DC63D005BBC08 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581071E9DC63D005BBC08 /* OrderViewController.m */; };
 		E9C5810C1E9DCE87005BBC08 /* OrderMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C5810B1E9DCE87005BBC08 /* OrderMainTableViewCell.m */; };
-		E9C581221E9DD9C7005BBC08 /* OrderRankView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581211E9DD9C7005BBC08 /* OrderRankView.m */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
-		E9C581281E9E112F005BBC08 /* ScreenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581271E9E112F005BBC08 /* ScreenCollectionViewCell.m */; };
 		E9C5812B1E9E1435005BBC08 /* OrderScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C5812A1E9E1435005BBC08 /* OrderScreenView.m */; };
 		E9C5812E1E9E1FA8005BBC08 /* ScreenCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C5812D1E9E1FA8005BBC08 /* ScreenCollectionReusableView.m */; };
-		E9C581311E9E3EE0005BBC08 /* OrderScreenSelectData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581301E9E3EE0005BBC08 /* OrderScreenSelectData.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
 		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
@@ -162,20 +158,11 @@
 		E9648CE31E9F0E8B00943168 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
 		E9C581061E9DC63D005BBC08 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		E9C581071E9DC63D005BBC08 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		E9C5810A1E9DCE87005BBC08 /* OrderMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMainTableViewCell.h; sourceTree = "<group>"; };
 		E9C5810B1E9DCE87005BBC08 /* OrderMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMainTableViewCell.m; sourceTree = "<group>"; };
-		E9C581201E9DD9C7005BBC08 /* OrderRankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderRankView.h; path = ../OrderRankView.h; sourceTree = "<group>"; };
-		E9C581211E9DD9C7005BBC08 /* OrderRankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderRankView.m; path = ../OrderRankView.m; sourceTree = "<group>"; };
 		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
 		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
-		E9C581261E9E112F005BBC08 /* ScreenCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenCollectionViewCell.h; path = ../ScreenCollectionViewCell.h; sourceTree = "<group>"; };
-		E9C581271E9E112F005BBC08 /* ScreenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenCollectionViewCell.m; path = ../ScreenCollectionViewCell.m; sourceTree = "<group>"; };
-		E9C581291E9E1435005BBC08 /* OrderScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderScreenView.h; path = ../OrderScreenView.h; sourceTree = "<group>"; };
 		E9C5812A1E9E1435005BBC08 /* OrderScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderScreenView.m; path = ../OrderScreenView.m; sourceTree = "<group>"; };
-		E9C5812C1E9E1FA8005BBC08 /* ScreenCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenCollectionReusableView.h; path = ../ScreenCollectionReusableView.h; sourceTree = "<group>"; };
 		E9C5812D1E9E1FA8005BBC08 /* ScreenCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenCollectionReusableView.m; path = ../ScreenCollectionReusableView.m; sourceTree = "<group>"; };
-		E9C5812F1E9E3EE0005BBC08 /* OrderScreenSelectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderScreenSelectData.h; path = ../OrderScreenSelectData.h; sourceTree = "<group>"; };
-		E9C581301E9E3EE0005BBC08 /* OrderScreenSelectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderScreenSelectData.m; path = ../OrderScreenSelectData.m; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
 		E9CD59651E9CB8B700B1DCAB /* FCCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCommonUtil.h; sourceTree = "<group>"; };
 		E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCommonUtil.m; sourceTree = "<group>"; };
@@ -391,32 +378,6 @@
 				E9554CDE1E9CB4C60080C02D /* UIView+Extension.m */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		E9C581091E9DCE62005BBC08 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E9C5810A1E9DCE87005BBC08 /* OrderMainTableViewCell.h */,
-				E9C5810B1E9DCE87005BBC08 /* OrderMainTableViewCell.m */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		E9C581321E9E4659005BBC08 /* OrderRankAndScreen */ = {
-			isa = PBXGroup;
-			children = (
-				E9C581201E9DD9C7005BBC08 /* OrderRankView.h */,
-				E9C581211E9DD9C7005BBC08 /* OrderRankView.m */,
-				E9C581261E9E112F005BBC08 /* ScreenCollectionViewCell.h */,
-				E9C581271E9E112F005BBC08 /* ScreenCollectionViewCell.m */,
-				E9C5812C1E9E1FA8005BBC08 /* ScreenCollectionReusableView.h */,
-				E9C5812D1E9E1FA8005BBC08 /* ScreenCollectionReusableView.m */,
-				E9C581291E9E1435005BBC08 /* OrderScreenView.h */,
-				E9C5812A1E9E1435005BBC08 /* OrderScreenView.m */,
-				E9C5812F1E9E3EE0005BBC08 /* OrderScreenSelectData.h */,
-				E9C581301E9E3EE0005BBC08 /* OrderScreenSelectData.m */,
-			);
-			path = OrderRankAndScreen;
 			sourceTree = "<group>";
 		};
 		E9CD59631E9CB72C00B1DCAB /* common */ = {
