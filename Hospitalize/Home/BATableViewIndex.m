@@ -7,6 +7,7 @@
 //
 
 #import "BATableViewIndex.h"
+#import "FCMacros.h"
 
 #define RGB(r,g,b,a)  [UIColor colorWithRed:(double)r/255.0f green:(double)g/255.0f blue:(double)b/255.0f alpha:a]
 
@@ -89,7 +90,7 @@
     [tl setFrame:frame];
     [tl setAlignmentMode:kCAAlignmentCenter];
     [tl setContentsScale:[[UIScreen mainScreen] scale]];
-    [tl setForegroundColor:RGB(168, 168, 168, 1).CGColor];
+    [tl setForegroundColor:RGB(75, 137, 220, 1).CGColor];
     [tl setString:string];
     return tl;
 }

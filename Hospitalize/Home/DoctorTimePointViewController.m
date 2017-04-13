@@ -39,7 +39,7 @@
     self.timePointArray = [NSMutableArray array];
     self.timePointArray = [@[@"1",@"1",@"1",@"1",@"1",@"1",@"1"] mutableCopy];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_itme_rili"] style:UIBarButtonItemStylePlain target:self action:@selector(goNextPersonAction:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_itme_person"] style:UIBarButtonItemStylePlain target:self action:@selector(goNextPersonAction:)];
 
     
     
