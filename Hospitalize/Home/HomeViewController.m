@@ -8,7 +8,6 @@
 
 #import "HomeViewController.h"
 #import "HomeItmeTableViewCell.h"
-#import "HomeHospitalTableViewCell.h"
 #import "OrderViewController.h"
 
 #import "DepartmentsListViewController.h"
@@ -45,10 +44,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//- (IBAction)buttonAction:(id)sender {
-//    OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
-//    [self.navigationController pushViewController:order animated:YES];
-//}
 
 - (void)makeAnAppointmentAction:(id)sender {
     DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
@@ -56,7 +51,8 @@
     
 }
 - (void)onlineConsultingAction:(id)sender {
-    
+    OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
+    [self.navigationController pushViewController:order animated:YES];
 }
 - (void)internetOfficeAction:(id)sender {
     
@@ -74,7 +70,7 @@
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 1;
 }
 
 
@@ -87,8 +83,8 @@
         [cell.myCollectionButton addTarget:self action:@selector(myCollectionAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     } else {
-        HomeHospitalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeHospitalTableViewCell" forIndexPath:indexPath];
-        return cell;
+//        OrderMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OrderMainTableViewCell" forIndexPath:indexPath];
+//        return cell;
     }
     return nil;
 }
