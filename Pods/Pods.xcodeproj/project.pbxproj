@@ -1,1177 +1,537 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0265514C01B087D31817813E43BA6566</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3C634BB372AED72286B9D7C9C7F5984A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>03ABA83B0A834C1C99F594EBF5FD5EF0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>709E4C37702C78CDA4F3A066E3179FB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0FE2C161E5D9BBA5DB603265E450B406</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE675BF56AEF7640D24E441EC25C92CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A3FC35A3F0791EDE7D2D6587E84C553B</string>
-				<string>884A5C1669C533C44DBF67B5C8086793</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Hospitalize</string>
-			<key>productName</key>
-			<string>Pods-Hospitalize</string>
-			<key>productReference</key>
-			<string>40CC8A78E3727FE008060D77F10E5291</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>12439E4E86CF937C0D418FEA280F531B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>35D3006BEAAD77E30A12B2D5B1D186E5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1D2A77075BCB85854892C07B4B4278E0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1EFD9C435A05D5C396EF235C0D1CC2F4</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FB6524E9D52691D27FC8E2B704F9404B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7C0E92F1621D8A8E5ADAD642A27BCD05</string>
-				<string>3A2E466A8B38C8FAA94CDE91A03E3DB2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-HospitalizeTests</string>
-			<key>productName</key>
-			<string>Pods-HospitalizeTests</string>
-			<key>productReference</key>
-			<string>8D1A93F8A209995839C01D1506EC3603</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>2C9898889F80F33CC23195D49AF193D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>73D845169C007274504228832AD8E243</string>
-				<string>5184430A2EB74B2F1AD2C0FC42C7F5E0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2F7CD4D9EBC741B898CCDE2C5FAFD068</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Hospitalize-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35D3006BEAAD77E30A12B2D5B1D186E5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>394E21BBA93A5E3E22B95EE4A464163F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BC1721403750DD262AADDE87AA3F4D2E</string>
-				<string>BC0E7A295894EF0C16E9B0E6C4EE360C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3A2E466A8B38C8FAA94CDE91A03E3DB2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D173FB7EDD90818A9E700625BC74EA2A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3C634BB372AED72286B9D7C9C7F5984A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>94CDA41232CA61B05C4F841FA2964CBA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3EA9F1EF8A6BE515795AAE7245C1B728</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>40CC8A78E3727FE008060D77F10E5291</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-Hospitalize.a</string>
-			<key>path</key>
-			<string>libPods-Hospitalize.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>44EC0F08C6EC6A3FEA348F5538305307</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Hospitalize-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4FC18B022BA52CA10002D9CB627C87B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Hospitalize-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5184430A2EB74B2F1AD2C0FC42C7F5E0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6F04B234D716094DCE068D505913EF6D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C733D6CCDD8B42BC803CD7FDBBC6FCF3</string>
-				<string>718EC7EB5D57644C5B269D3342C71A18</string>
-				<string>8D4FE7366DC035754A10C4667C7454BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>709E4C37702C78CDA4F3A066E3179FB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>718EC7EB5D57644C5B269D3342C71A18</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2C9898889F80F33CC23195D49AF193D9</string>
-				<string>DE082FC82B87868AE41F29261214F442</string>
-				<string>C250E5DA50ABDE92BDB2F045FF1E20D2</string>
-				<string>A433250A977A7EB0ED8392A3D3821F1A</string>
-				<string>3EA9F1EF8A6BE515795AAE7245C1B728</string>
-				<string>FEDF87C7AC21D20F7B0F35B22716908D</string>
-				<string>35D3006BEAAD77E30A12B2D5B1D186E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-HospitalizeTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-HospitalizeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73D845169C007274504228832AD8E243</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>7C0E92F1621D8A8E5ADAD642A27BCD05</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EE9BACF595FB5C5A0DACA62FEB3ED993</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>EA03DE1E27200A27D8754EDC71EE4587</string>
-				<string>6F04B234D716094DCE068D505913EF6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DF3B571F89D1C4FFB4397B7D2E5BCE0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-HospitalizeUITests.a</string>
-			<key>path</key>
-			<string>libPods-HospitalizeUITests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>809D7DED942216BFC54D3E89D98D2CD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>884A5C1669C533C44DBF67B5C8086793</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F6C0BA2C1C031A257B65C260D3D77663</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8B4F372A98EFA4A6F195A1437CF2525D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D1A93F8A209995839C01D1506EC3603</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-HospitalizeTests.a</string>
-			<key>path</key>
-			<string>libPods-HospitalizeTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8D4FE7366DC035754A10C4667C7454BB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6A9F58E000FE981D4614C042CDBDD39</string>
-				<string>8B4F372A98EFA4A6F195A1437CF2525D</string>
-				<string>94CDA41232CA61B05C4F841FA2964CBA</string>
-				<string>EE33725142458EFFAF9FD8FAA66B6F26</string>
-				<string>1D2A77075BCB85854892C07B4B4278E0</string>
-				<string>AAE4DC4C2C9A09CC2D72EDB0A7E87120</string>
-				<string>809D7DED942216BFC54D3E89D98D2CD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-HospitalizeUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-HospitalizeUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>94CDA41232CA61B05C4F841FA2964CBA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>952AE218AFDBA42787E00158DF911802</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FF07F0FAC3C8CD184D58EE1524F0D903</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>99B1021D2B3AB908946D71D7E7120470</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FEDF87C7AC21D20F7B0F35B22716908D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A19C3055222E51AD187C8BFC1EE362DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Hospitalize-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FC35A3F0791EDE7D2D6587E84C553B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C54E413DBF8B6EFF426B2E578A491CDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A433250A977A7EB0ED8392A3D3821F1A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AAE4DC4C2C9A09CC2D72EDB0A7E87120</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B45DAF5FC5B1B0BD56DDCF7B56875A51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Hospitalize-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B477E7395887CCE1EC826169BAC055B3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C38D21FA4D82AB24872CE663DD495FD7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BC0E7A295894EF0C16E9B0E6C4EE360C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>809D7DED942216BFC54D3E89D98D2CD7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BC1721403750DD262AADDE87AA3F4D2E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AAE4DC4C2C9A09CC2D72EDB0A7E87120</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE675BF56AEF7640D24E441EC25C92CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>952AE218AFDBA42787E00158DF911802</string>
-				<string>B477E7395887CCE1EC826169BAC055B3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C250E5DA50ABDE92BDB2F045FF1E20D2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C38D21FA4D82AB24872CE663DD495FD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Hospitalize.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C54E413DBF8B6EFF426B2E578A491CDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2F7CD4D9EBC741B898CCDE2C5FAFD068</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C733D6CCDD8B42BC803CD7FDBBC6FCF3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B45DAF5FC5B1B0BD56DDCF7B56875A51</string>
-				<string>4FC18B022BA52CA10002D9CB627C87B8</string>
-				<string>2F7CD4D9EBC741B898CCDE2C5FAFD068</string>
-				<string>44EC0F08C6EC6A3FEA348F5538305307</string>
-				<string>A19C3055222E51AD187C8BFC1EE362DA</string>
-				<string>FF07F0FAC3C8CD184D58EE1524F0D903</string>
-				<string>C38D21FA4D82AB24872CE663DD495FD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Hospitalize</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Hospitalize</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D173FB7EDD90818A9E700625BC74EA2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>EA03DE1E27200A27D8754EDC71EE4587</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0FE2C161E5D9BBA5DB603265E450B406</string>
-				<string>1EFD9C435A05D5C396EF235C0D1CC2F4</string>
-				<string>F9A9C99D04062C01786CAA452A7D4723</string>
-			</array>
-		</dict>
-		<key>DE082FC82B87868AE41F29261214F442</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6A9F58E000FE981D4614C042CDBDD39</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA03DE1E27200A27D8754EDC71EE4587</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>40CC8A78E3727FE008060D77F10E5291</string>
-				<string>8D1A93F8A209995839C01D1506EC3603</string>
-				<string>7DF3B571F89D1C4FFB4397B7D2E5BCE0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE33725142458EFFAF9FD8FAA66B6F26</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-HospitalizeUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE9BACF595FB5C5A0DACA62FEB3ED993</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C250E5DA50ABDE92BDB2F045FF1E20D2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F6C0BA2C1C031A257B65C260D3D77663</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F9A9C99D04062C01786CAA452A7D4723</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>394E21BBA93A5E3E22B95EE4A464163F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0265514C01B087D31817813E43BA6566</string>
-				<string>03ABA83B0A834C1C99F594EBF5FD5EF0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-HospitalizeUITests</string>
-			<key>productName</key>
-			<string>Pods-HospitalizeUITests</string>
-			<key>productReference</key>
-			<string>7DF3B571F89D1C4FFB4397B7D2E5BCE0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>FB6524E9D52691D27FC8E2B704F9404B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>99B1021D2B3AB908946D71D7E7120470</string>
-				<string>12439E4E86CF937C0D418FEA280F531B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FEDF87C7AC21D20F7B0F35B22716908D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-HospitalizeTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF07F0FAC3C8CD184D58EE1524F0D903</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Hospitalize.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080DCB995382E2B6004E26ECE4DA00DB /* Pods-HospitalizeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CDA41232CA61B05C4F841FA2964CBA /* Pods-HospitalizeUITests-dummy.m */; };
+		1961E18F0B5EFA2840238F7E705855CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		39D38567BAB00145D099DD9EE27A3C53 /* Pods-Hospitalize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7CD4D9EBC741B898CCDE2C5FAFD068 /* Pods-Hospitalize-dummy.m */; };
+		4030628B6A42A668101325107DEF0801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B4EB2D66B8CAF5E03ED8AB9F34889DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DC605FC7DDB756660A52CEEC008779D5 /* Pods-HospitalizeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C250E5DA50ABDE92BDB2F045FF1E20D2 /* Pods-HospitalizeTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D2A77075BCB85854892C07B4B4278E0 /* Pods-HospitalizeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HospitalizeUITests-resources.sh"; sourceTree = "<group>"; };
+		2C9898889F80F33CC23195D49AF193D9 /* Pods-HospitalizeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HospitalizeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2F7CD4D9EBC741B898CCDE2C5FAFD068 /* Pods-Hospitalize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hospitalize-dummy.m"; sourceTree = "<group>"; };
+		35D3006BEAAD77E30A12B2D5B1D186E5 /* Pods-HospitalizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HospitalizeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EA9F1EF8A6BE515795AAE7245C1B728 /* Pods-HospitalizeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HospitalizeTests-resources.sh"; sourceTree = "<group>"; };
+		40CC8A78E3727FE008060D77F10E5291 /* libPods-Hospitalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hospitalize.a"; path = "libPods-Hospitalize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EC0F08C6EC6A3FEA348F5538305307 /* Pods-Hospitalize-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hospitalize-frameworks.sh"; sourceTree = "<group>"; };
+		4FC18B022BA52CA10002D9CB627C87B8 /* Pods-Hospitalize-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hospitalize-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DF3B571F89D1C4FFB4397B7D2E5BCE0 /* libPods-HospitalizeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HospitalizeUITests.a"; path = "libPods-HospitalizeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D7DED942216BFC54D3E89D98D2CD7 /* Pods-HospitalizeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HospitalizeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B4F372A98EFA4A6F195A1437CF2525D /* Pods-HospitalizeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HospitalizeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D1A93F8A209995839C01D1506EC3603 /* libPods-HospitalizeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HospitalizeTests.a"; path = "libPods-HospitalizeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94CDA41232CA61B05C4F841FA2964CBA /* Pods-HospitalizeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HospitalizeUITests-dummy.m"; sourceTree = "<group>"; };
+		A19C3055222E51AD187C8BFC1EE362DA /* Pods-Hospitalize-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hospitalize-resources.sh"; sourceTree = "<group>"; };
+		A433250A977A7EB0ED8392A3D3821F1A /* Pods-HospitalizeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HospitalizeTests-frameworks.sh"; sourceTree = "<group>"; };
+		AAE4DC4C2C9A09CC2D72EDB0A7E87120 /* Pods-HospitalizeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HospitalizeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B45DAF5FC5B1B0BD56DDCF7B56875A51 /* Pods-Hospitalize-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hospitalize-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C250E5DA50ABDE92BDB2F045FF1E20D2 /* Pods-HospitalizeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HospitalizeTests-dummy.m"; sourceTree = "<group>"; };
+		C38D21FA4D82AB24872CE663DD495FD7 /* Pods-Hospitalize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hospitalize.release.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE082FC82B87868AE41F29261214F442 /* Pods-HospitalizeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HospitalizeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6A9F58E000FE981D4614C042CDBDD39 /* Pods-HospitalizeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HospitalizeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE33725142458EFFAF9FD8FAA66B6F26 /* Pods-HospitalizeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HospitalizeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FEDF87C7AC21D20F7B0F35B22716908D /* Pods-HospitalizeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HospitalizeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF07F0FAC3C8CD184D58EE1524F0D903 /* Pods-Hospitalize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hospitalize.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849174DB51AB119B9CBE6670156A2035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1961E18F0B5EFA2840238F7E705855CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18136EB5F0033A0ED5EFA54EDEBA8C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030628B6A42A668101325107DEF0801 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD68FDB91CED80146378AACA93F999F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EB2D66B8CAF5E03ED8AB9F34889DD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F04B234D716094DCE068D505913EF6D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C733D6CCDD8B42BC803CD7FDBBC6FCF3 /* Pods-Hospitalize */,
+				718EC7EB5D57644C5B269D3342C71A18 /* Pods-HospitalizeTests */,
+				8D4FE7366DC035754A10C4667C7454BB /* Pods-HospitalizeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		718EC7EB5D57644C5B269D3342C71A18 /* Pods-HospitalizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9898889F80F33CC23195D49AF193D9 /* Pods-HospitalizeTests-acknowledgements.markdown */,
+				DE082FC82B87868AE41F29261214F442 /* Pods-HospitalizeTests-acknowledgements.plist */,
+				C250E5DA50ABDE92BDB2F045FF1E20D2 /* Pods-HospitalizeTests-dummy.m */,
+				A433250A977A7EB0ED8392A3D3821F1A /* Pods-HospitalizeTests-frameworks.sh */,
+				3EA9F1EF8A6BE515795AAE7245C1B728 /* Pods-HospitalizeTests-resources.sh */,
+				FEDF87C7AC21D20F7B0F35B22716908D /* Pods-HospitalizeTests.debug.xcconfig */,
+				35D3006BEAAD77E30A12B2D5B1D186E5 /* Pods-HospitalizeTests.release.xcconfig */,
+			);
+			name = "Pods-HospitalizeTests";
+			path = "Target Support Files/Pods-HospitalizeTests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EA03DE1E27200A27D8754EDC71EE4587 /* Products */,
+				6F04B234D716094DCE068D505913EF6D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D4FE7366DC035754A10C4667C7454BB /* Pods-HospitalizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9F58E000FE981D4614C042CDBDD39 /* Pods-HospitalizeUITests-acknowledgements.markdown */,
+				8B4F372A98EFA4A6F195A1437CF2525D /* Pods-HospitalizeUITests-acknowledgements.plist */,
+				94CDA41232CA61B05C4F841FA2964CBA /* Pods-HospitalizeUITests-dummy.m */,
+				EE33725142458EFFAF9FD8FAA66B6F26 /* Pods-HospitalizeUITests-frameworks.sh */,
+				1D2A77075BCB85854892C07B4B4278E0 /* Pods-HospitalizeUITests-resources.sh */,
+				AAE4DC4C2C9A09CC2D72EDB0A7E87120 /* Pods-HospitalizeUITests.debug.xcconfig */,
+				809D7DED942216BFC54D3E89D98D2CD7 /* Pods-HospitalizeUITests.release.xcconfig */,
+			);
+			name = "Pods-HospitalizeUITests";
+			path = "Target Support Files/Pods-HospitalizeUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C733D6CCDD8B42BC803CD7FDBBC6FCF3 /* Pods-Hospitalize */ = {
+			isa = PBXGroup;
+			children = (
+				B45DAF5FC5B1B0BD56DDCF7B56875A51 /* Pods-Hospitalize-acknowledgements.markdown */,
+				4FC18B022BA52CA10002D9CB627C87B8 /* Pods-Hospitalize-acknowledgements.plist */,
+				2F7CD4D9EBC741B898CCDE2C5FAFD068 /* Pods-Hospitalize-dummy.m */,
+				44EC0F08C6EC6A3FEA348F5538305307 /* Pods-Hospitalize-frameworks.sh */,
+				A19C3055222E51AD187C8BFC1EE362DA /* Pods-Hospitalize-resources.sh */,
+				FF07F0FAC3C8CD184D58EE1524F0D903 /* Pods-Hospitalize.debug.xcconfig */,
+				C38D21FA4D82AB24872CE663DD495FD7 /* Pods-Hospitalize.release.xcconfig */,
+			);
+			name = "Pods-Hospitalize";
+			path = "Target Support Files/Pods-Hospitalize";
+			sourceTree = "<group>";
+		};
+		EA03DE1E27200A27D8754EDC71EE4587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40CC8A78E3727FE008060D77F10E5291 /* libPods-Hospitalize.a */,
+				8D1A93F8A209995839C01D1506EC3603 /* libPods-HospitalizeTests.a */,
+				7DF3B571F89D1C4FFB4397B7D2E5BCE0 /* libPods-HospitalizeUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0693F76F899C95812DE8A2EBAE5C91E8 /* Pods-HospitalizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9E5011D0425F07C4D12006B92D0492 /* Build configuration list for PBXNativeTarget "Pods-HospitalizeTests" */;
+			buildPhases = (
+				8E1491176A325EA2C38FC5DC39281654 /* Sources */,
+				849174DB51AB119B9CBE6670156A2035 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HospitalizeTests";
+			productName = "Pods-HospitalizeTests";
+			productReference = 8D1A93F8A209995839C01D1506EC3603 /* libPods-HospitalizeTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55156C9D1A8917B5D71B1911114ABD60 /* Pods-HospitalizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577AB406EA46B17431F808806BF6F9D7 /* Build configuration list for PBXNativeTarget "Pods-HospitalizeUITests" */;
+			buildPhases = (
+				4C91754C7234ED6ECFCB87E3FF37D7F9 /* Sources */,
+				B18136EB5F0033A0ED5EFA54EDEBA8C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HospitalizeUITests";
+			productName = "Pods-HospitalizeUITests";
+			productReference = 7DF3B571F89D1C4FFB4397B7D2E5BCE0 /* libPods-HospitalizeUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DF20EAC7B6B04F224B8E90D838151854 /* Pods-Hospitalize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC652EFC5D4499E5BFC4BA9C04BBF8E5 /* Build configuration list for PBXNativeTarget "Pods-Hospitalize" */;
+			buildPhases = (
+				090D0B5FE845B9B508FC46A237ED41A7 /* Sources */,
+				FFD68FDB91CED80146378AACA93F999F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hospitalize";
+			productName = "Pods-Hospitalize";
+			productReference = 40CC8A78E3727FE008060D77F10E5291 /* libPods-Hospitalize.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EA03DE1E27200A27D8754EDC71EE4587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF20EAC7B6B04F224B8E90D838151854 /* Pods-Hospitalize */,
+				0693F76F899C95812DE8A2EBAE5C91E8 /* Pods-HospitalizeTests */,
+				55156C9D1A8917B5D71B1911114ABD60 /* Pods-HospitalizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090D0B5FE845B9B508FC46A237ED41A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D38567BAB00145D099DD9EE27A3C53 /* Pods-Hospitalize-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C91754C7234ED6ECFCB87E3FF37D7F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080DCB995382E2B6004E26ECE4DA00DB /* Pods-HospitalizeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E1491176A325EA2C38FC5DC39281654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC605FC7DDB756660A52CEEC008779D5 /* Pods-HospitalizeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34BDF2EDE51192087234DB2F13D5C416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809D7DED942216BFC54D3E89D98D2CD7 /* Pods-HospitalizeUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3B52FAFB09B7FD11C9147DC148FD309A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF07F0FAC3C8CD184D58EE1524F0D903 /* Pods-Hospitalize.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5D6650E8A639FD1557486A3D8141558F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE4DC4C2C9A09CC2D72EDB0A7E87120 /* Pods-HospitalizeUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B250B824C2EB9E358A4A597EA6833D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D3006BEAAD77E30A12B2D5B1D186E5 /* Pods-HospitalizeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9D0DA4DF6EC4A3676BBC3F4E63244A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDF87C7AC21D20F7B0F35B22716908D /* Pods-HospitalizeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED0823000B8EDB0A8D4CA3591971AFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38D21FA4D82AB24872CE663DD495FD7 /* Pods-Hospitalize.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577AB406EA46B17431F808806BF6F9D7 /* Build configuration list for PBXNativeTarget "Pods-HospitalizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D6650E8A639FD1557486A3D8141558F /* Debug */,
+				34BDF2EDE51192087234DB2F13D5C416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9E5011D0425F07C4D12006B92D0492 /* Build configuration list for PBXNativeTarget "Pods-HospitalizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D0DA4DF6EC4A3676BBC3F4E63244A6 /* Debug */,
+				B250B824C2EB9E358A4A597EA6833D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC652EFC5D4499E5BFC4BA9C04BBF8E5 /* Build configuration list for PBXNativeTarget "Pods-Hospitalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B52FAFB09B7FD11C9147DC148FD309A /* Debug */,
+				ED0823000B8EDB0A8D4CA3591971AFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
