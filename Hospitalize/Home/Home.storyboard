@@ -82,7 +82,7 @@
                                             <action selector="paixuAction:" destination="xuf-gs-JKS" eventType="touchUpInside" id="hkc-Zf-hnZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuD-oG-get">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuD-oG-get">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="筛选">
@@ -174,13 +174,49 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医保" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fji-Ni-7DW">
+                                                    <rect key="frame" x="130" y="43" width="34" height="18"/>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="34" id="7Lv-Zp-1ja"/>
+                                                        <constraint firstAttribute="height" constant="18" id="W9g-qG-mw2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.29411764709999999" green="0.53725490200000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="综合" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhA-tv-DR6">
+                                                    <rect key="frame" x="176" y="43" width="34" height="18"/>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="34" id="6yX-Cx-ICk"/>
+                                                        <constraint firstAttribute="height" constant="18" id="gev-7g-BD1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.29411764709999999" green="0.53725490200000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="fji-Ni-7DW" firstAttribute="leading" secondItem="r4R-3g-Mjz" secondAttribute="trailing" constant="12" id="5mH-o4-X8H"/>
                                                 <constraint firstItem="r4R-3g-Mjz" firstAttribute="leading" secondItem="R1o-sp-zwl" secondAttribute="leading" id="Bz2-ja-Qsv"/>
                                                 <constraint firstItem="R1o-sp-zwl" firstAttribute="top" secondItem="lS5-Pq-4tY" secondAttribute="top" id="KP9-aS-dIi"/>
                                                 <constraint firstItem="lS5-Pq-4tY" firstAttribute="centerY" secondItem="hzQ-ut-pDx" secondAttribute="centerY" id="UDW-5J-Hlf"/>
+                                                <constraint firstItem="fji-Ni-7DW" firstAttribute="centerY" secondItem="r4R-3g-Mjz" secondAttribute="centerY" id="duQ-iK-lGR"/>
+                                                <constraint firstItem="OhA-tv-DR6" firstAttribute="centerY" secondItem="r4R-3g-Mjz" secondAttribute="centerY" id="gqS-2D-edh"/>
                                                 <constraint firstItem="r4R-3g-Mjz" firstAttribute="top" secondItem="R1o-sp-zwl" secondAttribute="bottom" constant="8" id="h8C-zq-tLm"/>
                                                 <constraint firstItem="R1o-sp-zwl" firstAttribute="leading" secondItem="lS5-Pq-4tY" secondAttribute="trailing" constant="16" id="j1o-cI-sPb"/>
+                                                <constraint firstItem="OhA-tv-DR6" firstAttribute="leading" secondItem="fji-Ni-7DW" secondAttribute="trailing" constant="12" id="qh9-SS-mj4"/>
                                                 <constraint firstItem="lS5-Pq-4tY" firstAttribute="leading" secondItem="hzQ-ut-pDx" secondAttribute="leading" constant="15" id="wEX-Oo-0go"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -204,6 +240,8 @@
                     </view>
                     <connections>
                         <outlet property="mainTableView" destination="PzT-Rb-YVg" id="gQE-2M-2Fv"/>
+                        <outlet property="rankButton" destination="I8g-VD-hNR" id="z9q-mr-prz"/>
+                        <outlet property="screenButton" destination="DuD-oG-get" id="Lik-7D-w7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uz4-b3-bIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
