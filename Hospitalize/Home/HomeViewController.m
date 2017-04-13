@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeItmeTableViewCell.h"
 #import "HomeHospitalTableViewCell.h"
+#import "OrderViewController.h"
 
 #import "DepartmentsListViewController.h"
 
@@ -44,6 +45,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//- (IBAction)buttonAction:(id)sender {
+//    OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
+//    [self.navigationController pushViewController:order animated:YES];
+//}
 
 - (void)makeAnAppointmentAction:(id)sender {
     DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];

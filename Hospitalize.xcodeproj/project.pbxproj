@@ -10,6 +10,15 @@
 		05CDD7969CC8C5C30D88A087 /* libPods-HospitalizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */; };
 		61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40664E808119A654F5A6F62F /* libPods-Hospitalize.a */; };
 		89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */; };
+		89002D161E9F12A8005832FB /* OrderRankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D0D1E9F12A8005832FB /* OrderRankView.m */; };
+		89002D171E9F12A8005832FB /* OrderScreenSelectData.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D0F1E9F12A8005832FB /* OrderScreenSelectData.m */; };
+		89002D181E9F12A8005832FB /* OrderScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D111E9F12A8005832FB /* OrderScreenView.m */; };
+		89002D191E9F12A8005832FB /* ScreenCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D131E9F12A8005832FB /* ScreenCollectionReusableView.m */; };
+		89002D1A1E9F12A8005832FB /* ScreenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D151E9F12A8005832FB /* ScreenCollectionViewCell.m */; };
+		89002D1B1E9F12C7005832FB /* OrderScreenView.h in Sources */ = {isa = PBXBuildFile; fileRef = 89002D101E9F12A8005832FB /* OrderScreenView.h */; };
+		89002D1C1E9F12C7005832FB /* ScreenCollectionReusableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 89002D121E9F12A8005832FB /* ScreenCollectionReusableView.h */; };
+		89002D1F1E9F12F4005832FB /* OrderMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D1E1E9F12F4005832FB /* OrderMainTableViewCell.m */; };
+		89002D201E9F1302005832FB /* OrderMainTableViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 89002D1D1E9F12F4005832FB /* OrderMainTableViewCell.h */; };
 		89FAF91B1E9DC09C002DE124 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
 		89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF91C1E9DC0AB002DE124 /* Home.storyboard */; };
 		89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */; };
@@ -47,6 +56,8 @@
 		E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDC1E9CB4C60080C02D /* ThridViewController.m */; };
 		E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDE1E9CB4C60080C02D /* UIView+Extension.m */; };
 		E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9554CE61E9CB52E0080C02D /* tabbar.xcassets */; };
+		E9648CE41E9F0E8B00943168 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9648CE31E9F0E8B00943168 /* PayViewController.m */; };
+		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
 		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
@@ -76,6 +87,18 @@
 		40664E808119A654F5A6F62F /* libPods-Hospitalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hospitalize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89002D211E9F17DE005832FB /* HomeItmeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItmeTableViewCell.h; sourceTree = "<group>"; };
 		89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItmeTableViewCell.m; sourceTree = "<group>"; };
+		89002D0C1E9F12A8005832FB /* OrderRankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderRankView.h; sourceTree = "<group>"; };
+		89002D0D1E9F12A8005832FB /* OrderRankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderRankView.m; sourceTree = "<group>"; };
+		89002D0E1E9F12A8005832FB /* OrderScreenSelectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderScreenSelectData.h; sourceTree = "<group>"; };
+		89002D0F1E9F12A8005832FB /* OrderScreenSelectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderScreenSelectData.m; sourceTree = "<group>"; };
+		89002D101E9F12A8005832FB /* OrderScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderScreenView.h; sourceTree = "<group>"; };
+		89002D111E9F12A8005832FB /* OrderScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderScreenView.m; sourceTree = "<group>"; };
+		89002D121E9F12A8005832FB /* ScreenCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCollectionReusableView.h; sourceTree = "<group>"; };
+		89002D131E9F12A8005832FB /* ScreenCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCollectionReusableView.m; sourceTree = "<group>"; };
+		89002D141E9F12A8005832FB /* ScreenCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCollectionViewCell.h; sourceTree = "<group>"; };
+		89002D151E9F12A8005832FB /* ScreenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCollectionViewCell.m; sourceTree = "<group>"; };
+		89002D1D1E9F12F4005832FB /* OrderMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMainTableViewCell.h; sourceTree = "<group>"; };
+		89002D1E1E9F12F4005832FB /* OrderMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMainTableViewCell.m; sourceTree = "<group>"; };
 		89FAF9191E9DC09C002DE124 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		89FAF91A1E9DC09C002DE124 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		89FAF91C1E9DC0AB002DE124 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -149,6 +172,12 @@
 		E9554CDD1E9CB4C60080C02D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		E9554CDE1E9CB4C60080C02D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		E9554CE61E9CB52E0080C02D /* tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tabbar.xcassets; sourceTree = "<group>"; };
+		E9648CE21E9F0E8B00943168 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		E9648CE31E9F0E8B00943168 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		E9C581061E9DC63D005BBC08 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		E9C581071E9DC63D005BBC08 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
+		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
 		E9CD59651E9CB8B700B1DCAB /* FCCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCommonUtil.h; sourceTree = "<group>"; };
 		E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCommonUtil.m; sourceTree = "<group>"; };
@@ -205,9 +234,23 @@
 		89FAF9181E9DC07F002DE124 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				89002D0C1E9F12A8005832FB /* OrderRankView.h */,
+				89002D0D1E9F12A8005832FB /* OrderRankView.m */,
+				89002D0E1E9F12A8005832FB /* OrderScreenSelectData.h */,
+				89002D0F1E9F12A8005832FB /* OrderScreenSelectData.m */,
+				89002D101E9F12A8005832FB /* OrderScreenView.h */,
+				89002D111E9F12A8005832FB /* OrderScreenView.m */,
+				89002D121E9F12A8005832FB /* ScreenCollectionReusableView.h */,
+				89002D131E9F12A8005832FB /* ScreenCollectionReusableView.m */,
+				89002D141E9F12A8005832FB /* ScreenCollectionViewCell.h */,
+				89002D151E9F12A8005832FB /* ScreenCollectionViewCell.m */,
 				89FAF9291E9DCFEC002DE124 /* Cell */,
 				89FAF9191E9DC09C002DE124 /* HomeViewController.h */,
 				89FAF91A1E9DC09C002DE124 /* HomeViewController.m */,
+				E9C581061E9DC63D005BBC08 /* OrderViewController.h */,
+				E9C581071E9DC63D005BBC08 /* OrderViewController.m */,
+				E9648CE21E9F0E8B00943168 /* PayViewController.h */,
+				E9648CE31E9F0E8B00943168 /* PayViewController.m */,
 				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
 				89FAF9261E9DC6F6002DE124 /* DepartmentsListViewController.h */,
 				89FAF9271E9DC6F6002DE124 /* DepartmentsListViewController.m */,
@@ -228,6 +271,8 @@
 		89FAF9291E9DCFEC002DE124 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				89002D1D1E9F12F4005832FB /* OrderMainTableViewCell.h */,
+				89002D1E1E9F12F4005832FB /* OrderMainTableViewCell.m */,
 				89FAF92A1E9DD18F002DE124 /* DetpartMentsListTableViewCell.h */,
 				89FAF92B1E9DD18F002DE124 /* DetpartMentsListTableViewCell.m */,
 				89FAF9391E9E020D002DE124 /* DepartmentsTableViewCell.h */,
@@ -365,6 +410,8 @@
 		E9CD59631E9CB72C00B1DCAB /* common */ = {
 			isa = PBXGroup;
 			children = (
+				E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */,
+				E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */,
 				E9CD59641E9CB74800B1DCAB /* FCMacros.h */,
 				E9CD59651E9CB8B700B1DCAB /* FCCommonUtil.h */,
 				E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */,
@@ -689,6 +736,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89002D201E9F1302005832FB /* OrderMainTableViewCell.h in Sources */,
+				89002D1B1E9F12C7005832FB /* OrderScreenView.h in Sources */,
+				89002D1C1E9F12C7005832FB /* ScreenCollectionReusableView.h in Sources */,
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				89FAF9321E9DD5A5002DE124 /* pinyin.c in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
@@ -696,16 +746,23 @@
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
 				89FAFA651E9E5325002DE124 /* HomeHospitalTableViewCell.m in Sources */,
 				89FAFA5A1E9E3233002DE124 /* VisitsScheduleView.m in Sources */,
+				89002D171E9F12A8005832FB /* OrderScreenSelectData.m in Sources */,
+				89002D1F1E9F12F4005832FB /* OrderMainTableViewCell.m in Sources */,
 				89FAF9381E9E01EB002DE124 /* DepartmentsViewController.m in Sources */,
+				89002D181E9F12A8005832FB /* OrderScreenView.m in Sources */,
 				89FAFA521E9E317E002DE124 /* DoctorVisitsViewController.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
+				E9648CE41E9F0E8B00943168 /* PayViewController.m in Sources */,
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
+				89002D191E9F12A8005832FB /* ScreenCollectionReusableView.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
 				89FAF92F1E9DD405002DE124 /* ChineseStringUtil.m in Sources */,
 				89FAFA5F1E9E3497002DE124 /* VisitsTitleView.m in Sources */,
+				89002D161E9F12A8005832FB /* OrderRankView.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
+				E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
 				89FAFA5B1E9E3233002DE124 /* VisitsStopScheduleView.m in Sources */,
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
@@ -718,6 +775,7 @@
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
+				89002D1A1E9F12A8005832FB /* ScreenCollectionViewCell.m in Sources */,
 				89FAF91B1E9DC09C002DE124 /* HomeViewController.m in Sources */,
 				89FAFA431E9E1DBE002DE124 /* FCCalender.m in Sources */,
 				89FAF9351E9DD985002DE124 /* BATableViewIndex.m in Sources */,

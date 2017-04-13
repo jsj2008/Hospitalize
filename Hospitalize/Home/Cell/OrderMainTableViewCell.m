@@ -1,14 +1,14 @@
 //
-//  HomeItmeTableViewCell.m
+//  OrderMainTableViewCell.m
 //  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/12.
+//  Created by 周鑫 on 2017/4/12.
 //  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "HomeItmeTableViewCell.h"
+#import "OrderMainTableViewCell.h"
 
-@implementation HomeItmeTableViewCell
+@implementation OrderMainTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
