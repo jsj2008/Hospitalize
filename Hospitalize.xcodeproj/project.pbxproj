@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05CDD7969CC8C5C30D88A087 /* libPods-HospitalizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */; };
 		61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40664E808119A654F5A6F62F /* libPods-Hospitalize.a */; };
+		89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */; };
 		89FAF91B1E9DC09C002DE124 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
 		89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF91C1E9DC0AB002DE124 /* Home.storyboard */; };
 		89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */; };
@@ -29,7 +30,6 @@
 		89FAFA5A1E9E3233002DE124 /* VisitsScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA551E9E3233002DE124 /* VisitsScheduleView.m */; };
 		89FAFA5B1E9E3233002DE124 /* VisitsStopScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA571E9E3233002DE124 /* VisitsStopScheduleView.m */; };
 		89FAFA5F1E9E3497002DE124 /* VisitsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA5E1E9E3497002DE124 /* VisitsTitleView.m */; };
-		89FAFA621E9E468B002DE124 /* HomeItmeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA611E9E468B002DE124 /* HomeItmeTableViewCell.m */; };
 		89FAFA651E9E5325002DE124 /* HomeHospitalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA641E9E5325002DE124 /* HomeHospitalTableViewCell.m */; };
 		C7F07E480D83C8B2C93A8F6D /* libPods-HospitalizeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */; };
 		E9554C9F1E9CB3BC0080C02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554C9E1E9CB3BC0080C02D /* main.m */; };
@@ -74,6 +74,8 @@
 		1E148A9DF4DC0DF8D7161F13 /* Pods-HospitalizeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeUITests/Pods-HospitalizeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HospitalizeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40664E808119A654F5A6F62F /* libPods-Hospitalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hospitalize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89002D211E9F17DE005832FB /* HomeItmeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItmeTableViewCell.h; sourceTree = "<group>"; };
+		89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItmeTableViewCell.m; sourceTree = "<group>"; };
 		89FAF9191E9DC09C002DE124 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		89FAF91A1E9DC09C002DE124 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		89FAF91C1E9DC0AB002DE124 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -112,8 +114,6 @@
 		89FAFA571E9E3233002DE124 /* VisitsStopScheduleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitsStopScheduleView.m; sourceTree = "<group>"; };
 		89FAFA5D1E9E3497002DE124 /* VisitsTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitsTitleView.h; sourceTree = "<group>"; };
 		89FAFA5E1E9E3497002DE124 /* VisitsTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitsTitleView.m; sourceTree = "<group>"; };
-		89FAFA601E9E468B002DE124 /* HomeItmeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItmeTableViewCell.h; sourceTree = "<group>"; };
-		89FAFA611E9E468B002DE124 /* HomeItmeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItmeTableViewCell.m; sourceTree = "<group>"; };
 		89FAFA631E9E5325002DE124 /* HomeHospitalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHospitalTableViewCell.h; sourceTree = "<group>"; };
 		89FAFA641E9E5325002DE124 /* HomeHospitalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHospitalTableViewCell.m; sourceTree = "<group>"; };
 		9808634646CF63F12BBE736B /* Pods-HospitalizeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeTests/Pods-HospitalizeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -234,10 +234,10 @@
 				89FAF93A1E9E020D002DE124 /* DepartmentsTableViewCell.m */,
 				89FAFA4D1E9E2598002DE124 /* DoctorTimePointCell.h */,
 				89FAFA4E1E9E2598002DE124 /* DoctorTimePointCell.m */,
-				89FAFA601E9E468B002DE124 /* HomeItmeTableViewCell.h */,
-				89FAFA611E9E468B002DE124 /* HomeItmeTableViewCell.m */,
 				89FAFA631E9E5325002DE124 /* HomeHospitalTableViewCell.h */,
 				89FAFA641E9E5325002DE124 /* HomeHospitalTableViewCell.m */,
+				89002D211E9F17DE005832FB /* HomeItmeTableViewCell.h */,
+				89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -692,7 +692,6 @@
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				89FAF9321E9DD5A5002DE124 /* pinyin.c in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
-				89FAFA621E9E468B002DE124 /* HomeItmeTableViewCell.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
 				89FAFA651E9E5325002DE124 /* HomeHospitalTableViewCell.m in Sources */,
@@ -703,6 +702,7 @@
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
+				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
 				89FAF92F1E9DD405002DE124 /* ChineseStringUtil.m in Sources */,
 				89FAFA5F1E9E3497002DE124 /* VisitsTitleView.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,

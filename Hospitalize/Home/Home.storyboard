@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jtP-1G-fCf" id="jVy-x8-GeY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOx-Gg-Kuv">
@@ -207,10 +207,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="internetOfficeButton" destination="RGt-fq-elb" id="dLQ-00-2oJ"/>
-                                            <outlet property="makeAnAppointmentButton" destination="XTk-31-HbI" id="FKM-NT-quS"/>
-                                            <outlet property="myCollectionButton" destination="7d7-i5-0mW" id="Nby-gB-fHZ"/>
-                                            <outlet property="onlineConsultingButton" destination="dkH-G9-HLf" id="41F-Mx-nRn"/>
+                                            <outlet property="internetOfficeButton" destination="RGt-fq-elb" id="nfR-A6-k3p"/>
+                                            <outlet property="makeAnAppointmentButton" destination="XTk-31-HbI" id="Mhs-SW-UwP"/>
+                                            <outlet property="myCollectionButton" destination="7d7-i5-0mW" id="Flp-k6-lph"/>
+                                            <outlet property="onlineConsultingButton" destination="dkH-G9-HLf" id="myy-i1-PpU"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeHospitalTableViewCell" id="3Qs-hi-uMO" customClass="HomeHospitalTableViewCell">

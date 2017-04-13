@@ -45,9 +45,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)goNextDepartmentsListAction:(id)sender {
+- (void)makeAnAppointmentAction:(id)sender {
     DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
     [self.navigationController pushViewController:departmentsListViewController animated:YES];
+    
+}
+- (void)onlineConsultingAction:(id)sender {
+    
+}
+- (void)internetOfficeAction:(id)sender {
+    
+}
+- (void)myCollectionAction:(id)sender {
     
 }
 
@@ -67,6 +76,10 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.row == 0){
         HomeItmeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeItmeTableViewCell" forIndexPath:indexPath];
+        [cell.makeAnAppointmentButton addTarget:self action:@selector(makeAnAppointmentAction:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.onlineConsultingButton addTarget:self action:@selector(onlineConsultingAction:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.internetOfficeButton addTarget:self action:@selector(internetOfficeAction:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.myCollectionButton addTarget:self action:@selector(myCollectionAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     } else {
         HomeHospitalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeHospitalTableViewCell" forIndexPath:indexPath];
