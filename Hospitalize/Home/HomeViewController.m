@@ -44,6 +44,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)buttonAction:(id)sender {
+    OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
+    [self.navigationController pushViewController:order animated:YES];
+}
 
 - (IBAction)goNextDepartmentsListAction:(id)sender {
     DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
