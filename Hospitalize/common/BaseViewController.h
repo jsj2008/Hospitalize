@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewControllerUtil.h"
+#import "FCMacros.h"
 #import "FCCommonUtil.h"
 
 @interface BaseViewController : UIViewController

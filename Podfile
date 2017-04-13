@@ -6,6 +6,7 @@ target 'Hospitalize' do
   # use_frameworks!
 
   # Pods for Hospitalize
+  pod 'IQKeyboardManager', '~> 3.3.7'  #兼容IOS7
   
   target 'HospitalizeTests' do
     inherit! :search_paths

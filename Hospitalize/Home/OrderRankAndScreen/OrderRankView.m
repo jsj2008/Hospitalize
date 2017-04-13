@@ -101,6 +101,7 @@
         _mainTableView.dataSource = self;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.backgroundColor = [UIColor whiteColor];
+        _mainTableView.separatorColor = [UIColor colorWithWhite:0 alpha:0.1];
     }
     return _mainTableView;
 }
