@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)registerAction:(id)sender {
+    RegisterViewController *registerViewController = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"RegisterViewController"];
+    [self.navigationController pushViewController:registerViewController animated:YES];
+    
 }
 
 /*

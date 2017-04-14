@@ -27,6 +27,8 @@
 		890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */; };
 		890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */; };
 		890591FE1EA0D369002F161F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FD1EA0D369002F161F /* LoginViewController.m */; };
+		890592011EA0D46C002F161F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890592001EA0D46C002F161F /* RegisterViewController.m */; };
+		890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -153,6 +155,10 @@
 		890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEmptyHistoryTableViewCell.m; sourceTree = "<group>"; };
 		890591FC1EA0D369002F161F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		890591FD1EA0D369002F161F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		890591FF1EA0D46C002F161F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		890592001EA0D46C002F161F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		890592021EA0E212002F161F /* RegisterWithPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterWithPasswordViewController.h; sourceTree = "<group>"; };
+		890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterWithPasswordViewController.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -618,6 +624,10 @@
 				E99143DD1EA0D0C100765903 /* Login.storyboard */,
 				890591FC1EA0D369002F161F /* LoginViewController.h */,
 				890591FD1EA0D369002F161F /* LoginViewController.m */,
+				890591FF1EA0D46C002F161F /* RegisterViewController.h */,
+				890592001EA0D46C002F161F /* RegisterViewController.m */,
+				890592021EA0E212002F161F /* RegisterWithPasswordViewController.h */,
+				890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -994,6 +1004,7 @@
 				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
 				890591F21EA0ADDE002F161F /* PinYinForObjc.m in Sources */,
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
+				890592011EA0D46C002F161F /* RegisterViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
@@ -1026,6 +1037,7 @@
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
 				89EEC2D01E9F281B00678995 /* KNJudgementTool.m in Sources */,
 				89EEC2D11E9F281B00678995 /* NSData+KNCache.m in Sources */,
+				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
 				E9648D151E9F5E7500943168 /* OrderMessageViewController.m in Sources */,
 				E9648CFA1E9F290B00943168 /* ScreenCollectionViewCell.m in Sources */,
