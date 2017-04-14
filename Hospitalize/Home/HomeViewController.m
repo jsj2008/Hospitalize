@@ -16,6 +16,8 @@
 #import "SearchViewController.h"
 #import "CityListViewController.h"
 
+#import "LoginViewController.h"
+
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
@@ -137,6 +139,8 @@
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
+    LoginViewController *login = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"LoginViewController"];
+    [self.navigationController pushViewController:login animated:YES];
    
 }
 

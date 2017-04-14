@@ -19,4 +19,11 @@
  */
 + (id) getViewControllerFromHomeStoryboardWithIdentifier:(NSString *) identifier;
 
+/**
+ *  从Login.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromLoginStoryboardWithIdentifier:(NSString *) identifier;
 @end

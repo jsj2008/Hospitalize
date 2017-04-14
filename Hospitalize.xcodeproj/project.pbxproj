@@ -26,6 +26,7 @@
 		890591F51EA0ADDE002F161F /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591E71EA0ADDE002F161F /* ZYPinYinSearch.m */; };
 		890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */; };
 		890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */; };
+		890591FE1EA0D369002F161F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FD1EA0D369002F161F /* LoginViewController.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -150,6 +151,8 @@
 		890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHistoryTableViewCell.m; sourceTree = "<group>"; };
 		890591F91EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEmptyHistoryTableViewCell.h; sourceTree = "<group>"; };
 		890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEmptyHistoryTableViewCell.m; sourceTree = "<group>"; };
+		890591FC1EA0D369002F161F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		890591FD1EA0D369002F161F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -613,6 +616,8 @@
 			isa = PBXGroup;
 			children = (
 				E99143DD1EA0D0C100765903 /* Login.storyboard */,
+				890591FC1EA0D369002F161F /* LoginViewController.h */,
+				890591FD1EA0D369002F161F /* LoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -986,6 +991,7 @@
 				890591F11EA0ADDE002F161F /* PinyinFormatter.m in Sources */,
 				89FAFA521E9E317E002DE124 /* DoctorVisitsViewController.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
+				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
 				890591F21EA0ADDE002F161F /* PinYinForObjc.m in Sources */,
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
