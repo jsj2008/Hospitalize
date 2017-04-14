@@ -13,10 +13,10 @@
 #import "OrderViewController.h"
 #import "KNBannerView.h"
 #import "FCMacros.h"
-#import "DepartmentsListViewController.h"
 #import "SearchViewController.h"
+#import "CityListViewController.h"
 
-@interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate>
+@interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 // 设置 网络 轮播图
@@ -78,6 +78,8 @@
     
     [self.searchButton addTarget:self action:@selector(goSearchAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.barSearchButton addTarget:self action:@selector(goSearchAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.positioningButton addTarget:self action:@selector(selectAddressAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.barPositioningButton addTarget:self action:@selector(selectAddressAction:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -91,6 +93,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)didClickedWithCityName:(NSString*)cityName{
+    [self.positioningButton setTitle:cityName forState:UIControlStateNormal];
+    [self.barPositioningButton setTitle:cityName forState:UIControlStateNormal];
+}
+
+
+//定位事件
+-(void)selectAddressAction:(id)sender{
+    CityListViewController *cityListView = [[CityListViewController alloc]init];
+    cityListView.delegate = self;
+    //热门城市列表
+    cityListView.arrayHotCity = [NSMutableArray arrayWithObjects:@"广州",@"北京",@"天津",@"厦门",@"重庆",@"福州",@"泉州",@"济南",@"深圳",@"长沙",@"无锡", nil];
+    //历史选择城市列表
+    cityListView.arrayHistoricalCity = [NSMutableArray arrayWithObjects:@"福州",@"厦门",@"泉州", nil];
+    //定位城市列表
+    cityListView.arrayLocatingCity   = [NSMutableArray arrayWithObjects:@"福州", nil];
+    
+    [self.navigationController pushViewController:cityListView animated:YES];
+}
+
 //搜索事件
 -(void)goSearchAction:(id)sender{
     SearchViewController *search = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"SearchViewController"];
@@ -115,8 +137,7 @@
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
-    DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
-    [self.navigationController pushViewController:departmentsListViewController animated:YES];
+   
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

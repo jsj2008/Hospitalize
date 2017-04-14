@@ -10,6 +10,23 @@
 		05CDD7969CC8C5C30D88A087 /* libPods-HospitalizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */; };
 		61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40664E808119A654F5A6F62F /* libPods-Hospitalize.a */; };
 		89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */; };
+		890591C21EA0ABD1002F161F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890591C11EA0ABD1002F161F /* CoreLocation.framework */; };
+		890591E81EA0ADDE002F161F /* ButtonGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591CE1EA0ADDE002F161F /* ButtonGroupView.m */; };
+		890591E91EA0ADDE002F161F /* CityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591D01EA0ADDE002F161F /* CityButton.m */; };
+		890591EA1EA0ADDE002F161F /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 890591D11EA0ADDE002F161F /* citydict.plist */; };
+		890591EB1EA0ADDE002F161F /* CityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591D31EA0ADDE002F161F /* CityItem.m */; };
+		890591EC1EA0ADDE002F161F /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591D51EA0ADDE002F161F /* CityListViewController.m */; };
+		890591ED1EA0ADDE002F161F /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591D81EA0ADDE002F161F /* ChineseInclude.m */; };
+		890591EE1EA0ADDE002F161F /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591DA1EA0ADDE002F161F /* ChineseToPinyinResource.m */; };
+		890591EF1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591DC1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m */; };
+		890591F01EA0ADDE002F161F /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591DE1EA0ADDE002F161F /* NSString+PinYin4Cocoa.m */; };
+		890591F11EA0ADDE002F161F /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591E01EA0ADDE002F161F /* PinyinFormatter.m */; };
+		890591F21EA0ADDE002F161F /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591E21EA0ADDE002F161F /* PinYinForObjc.m */; };
+		890591F31EA0ADDE002F161F /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591E41EA0ADDE002F161F /* PinyinHelper.m */; };
+		890591F41EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 890591E51EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt */; };
+		890591F51EA0ADDE002F161F /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591E71EA0ADDE002F161F /* ZYPinYinSearch.m */; };
+		890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */; };
+		890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -101,6 +118,38 @@
 		40664E808119A654F5A6F62F /* libPods-Hospitalize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hospitalize.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89002D211E9F17DE005832FB /* HomeItmeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItmeTableViewCell.h; sourceTree = "<group>"; };
 		89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItmeTableViewCell.m; sourceTree = "<group>"; };
+		890591721EA07FCF002F161F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		890591C11EA0ABD1002F161F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLocation.framework; sourceTree = "<group>"; };
+		890591CD1EA0ADDE002F161F /* ButtonGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGroupView.h; sourceTree = "<group>"; };
+		890591CE1EA0ADDE002F161F /* ButtonGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGroupView.m; sourceTree = "<group>"; };
+		890591CF1EA0ADDE002F161F /* CityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityButton.h; sourceTree = "<group>"; };
+		890591D01EA0ADDE002F161F /* CityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityButton.m; sourceTree = "<group>"; };
+		890591D11EA0ADDE002F161F /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		890591D21EA0ADDE002F161F /* CityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityItem.h; sourceTree = "<group>"; };
+		890591D31EA0ADDE002F161F /* CityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityItem.m; sourceTree = "<group>"; };
+		890591D41EA0ADDE002F161F /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
+		890591D51EA0ADDE002F161F /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
+		890591D71EA0ADDE002F161F /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		890591D81EA0ADDE002F161F /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		890591D91EA0ADDE002F161F /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		890591DA1EA0ADDE002F161F /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		890591DB1EA0ADDE002F161F /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		890591DC1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		890591DD1EA0ADDE002F161F /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		890591DE1EA0ADDE002F161F /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		890591DF1EA0ADDE002F161F /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		890591E01EA0ADDE002F161F /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		890591E11EA0ADDE002F161F /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		890591E21EA0ADDE002F161F /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		890591E31EA0ADDE002F161F /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		890591E41EA0ADDE002F161F /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		890591E51EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		890591E61EA0ADDE002F161F /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
+		890591E71EA0ADDE002F161F /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
+		890591F61EA0C45B002F161F /* SearchHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHistoryTableViewCell.h; sourceTree = "<group>"; };
+		890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHistoryTableViewCell.m; sourceTree = "<group>"; };
+		890591F91EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEmptyHistoryTableViewCell.h; sourceTree = "<group>"; };
+		890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEmptyHistoryTableViewCell.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -237,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890591C21EA0ABD1002F161F /* CoreLocation.framework in Frameworks */,
 				61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +321,47 @@
 				10D590092A99A8741C4CF57C /* Pods-HospitalizeUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		890591CC1EA0ADDE002F161F /* ChinaCityList */ = {
+			isa = PBXGroup;
+			children = (
+				890591CD1EA0ADDE002F161F /* ButtonGroupView.h */,
+				890591CE1EA0ADDE002F161F /* ButtonGroupView.m */,
+				890591CF1EA0ADDE002F161F /* CityButton.h */,
+				890591D01EA0ADDE002F161F /* CityButton.m */,
+				890591D11EA0ADDE002F161F /* citydict.plist */,
+				890591D21EA0ADDE002F161F /* CityItem.h */,
+				890591D31EA0ADDE002F161F /* CityItem.m */,
+				890591D41EA0ADDE002F161F /* CityListViewController.h */,
+				890591D51EA0ADDE002F161F /* CityListViewController.m */,
+				890591D61EA0ADDE002F161F /* ZYPinYinSearchLib */,
+			);
+			path = ChinaCityList;
+			sourceTree = "<group>";
+		};
+		890591D61EA0ADDE002F161F /* ZYPinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				890591D71EA0ADDE002F161F /* ChineseInclude.h */,
+				890591D81EA0ADDE002F161F /* ChineseInclude.m */,
+				890591D91EA0ADDE002F161F /* ChineseToPinyinResource.h */,
+				890591DA1EA0ADDE002F161F /* ChineseToPinyinResource.m */,
+				890591DB1EA0ADDE002F161F /* HanyuPinyinOutputFormat.h */,
+				890591DC1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m */,
+				890591DD1EA0ADDE002F161F /* NSString+PinYin4Cocoa.h */,
+				890591DE1EA0ADDE002F161F /* NSString+PinYin4Cocoa.m */,
+				890591DF1EA0ADDE002F161F /* PinyinFormatter.h */,
+				890591E01EA0ADDE002F161F /* PinyinFormatter.m */,
+				890591E11EA0ADDE002F161F /* PinYinForObjc.h */,
+				890591E21EA0ADDE002F161F /* PinYinForObjc.m */,
+				890591E31EA0ADDE002F161F /* PinyinHelper.h */,
+				890591E41EA0ADDE002F161F /* PinyinHelper.m */,
+				890591E51EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt */,
+				890591E61EA0ADDE002F161F /* ZYPinYinSearch.h */,
+				890591E71EA0ADDE002F161F /* ZYPinYinSearch.m */,
+			);
+			path = ZYPinYinSearchLib;
 			sourceTree = "<group>";
 		};
 		89EEC2BE1E9F281B00678995 /* KNBannerView */ = {
@@ -336,6 +427,7 @@
 				89FAFA511E9E317E002DE124 /* DoctorVisitsViewController.m */,
 				89EEC2F41E9F620000678995 /* SearchViewController.h */,
 				89EEC2F51E9F620000678995 /* SearchViewController.m */,
+				890591CC1EA0ADDE002F161F /* ChinaCityList */,
 				89FAFA531E9E3233002DE124 /* View */,
 				89FAF9211E9DC247002DE124 /* Home.xcassets */,
 			);
@@ -359,6 +451,10 @@
 				89EEC2D51E9F2A8000678995 /* HomeBannerTableViewCell.m */,
 				89EEC2D71E9F39B600678995 /* HomeHospitalizeTableViewCell.h */,
 				89EEC2D81E9F39B600678995 /* HomeHospitalizeTableViewCell.m */,
+				890591F61EA0C45B002F161F /* SearchHistoryTableViewCell.h */,
+				890591F71EA0C45B002F161F /* SearchHistoryTableViewCell.m */,
+				890591F91EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.h */,
+				890591FA1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -388,6 +484,7 @@
 		A030C648CA3F2A1450FE2B67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				890591721EA07FCF002F161F /* CoreLocation.framework */,
 				40664E808119A654F5A6F62F /* libPods-Hospitalize.a */,
 				B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */,
 				1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */,
@@ -398,6 +495,7 @@
 		E9554C911E9CB3BC0080C02D = {
 			isa = PBXGroup;
 			children = (
+				890591C11EA0ABD1002F161F /* CoreLocation.framework */,
 				E9554C9C1E9CB3BC0080C02D /* Hospitalize */,
 				E9554CB61E9CB3BC0080C02D /* HospitalizeTests */,
 				E9554CC11E9CB3BC0080C02D /* HospitalizeUITests */,
@@ -663,8 +761,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9554CAD1E9CB3BC0080C02D /* LaunchScreen.storyboard in Resources */,
+				890591EA1EA0ADDE002F161F /* citydict.plist in Resources */,
 				89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */,
 				89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */,
+				890591F41EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt in Resources */,
 				E9554CAA1E9CB3BC0080C02D /* Assets.xcassets in Resources */,
 				E9554CA81E9CB3BC0080C02D /* Main.storyboard in Resources */,
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
@@ -832,6 +932,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890591F31EA0ADDE002F161F /* PinyinHelper.m in Sources */,
+				890591EE1EA0ADDE002F161F /* ChineseToPinyinResource.m in Sources */,
 				E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */,
 				E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
@@ -840,17 +942,24 @@
 				E9648CF51E9F290B00943168 /* OrderRankView.m in Sources */,
 				89EEC2D91E9F39B600678995 /* HomeHospitalizeTableViewCell.m in Sources */,
 				89FAF9321E9DD5A5002DE124 /* pinyin.c in Sources */,
+				890591E81EA0ADDE002F161F /* ButtonGroupView.m in Sources */,
+				890591E91EA0ADDE002F161F /* CityButton.m in Sources */,
 				E9648D091E9F468100943168 /* PaySucessViewController.m in Sources */,
 				E9648D0C1E9F46DA00943168 /* PayfaildViewController.m in Sources */,
 				89EEC2ED1E9F411C00678995 /* PayViewController.m in Sources */,
+				890591EB1EA0ADDE002F161F /* CityItem.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
 				E9648D061E9F40D600943168 /* PayTableViewController.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
+				890591ED1EA0ADDE002F161F /* ChineseInclude.m in Sources */,
 				89FAFA5A1E9E3233002DE124 /* VisitsScheduleView.m in Sources */,
+				890591EC1EA0ADDE002F161F /* CityListViewController.m in Sources */,
 				89FAF9381E9E01EB002DE124 /* DepartmentsViewController.m in Sources */,
+				890591F11EA0ADDE002F161F /* PinyinFormatter.m in Sources */,
 				89FAFA521E9E317E002DE124 /* DoctorVisitsViewController.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
+				890591F21EA0ADDE002F161F /* PinYinForObjc.m in Sources */,
 				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
@@ -858,17 +967,21 @@
 				89EEC2F61E9F620000678995 /* SearchViewController.m in Sources */,
 				89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */,
 				89FAF92F1E9DD405002DE124 /* ChineseStringUtil.m in Sources */,
+				890591EF1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m in Sources */,
 				89EEC2D31E9F281B00678995 /* UIView+Extension.m in Sources */,
 				89FAFA5F1E9E3497002DE124 /* VisitsTitleView.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
 				E9648CF91E9F290B00943168 /* ScreenCollectionReusableView.m in Sources */,
 				E9648CF71E9F290B00943168 /* OrderScreenView.m in Sources */,
 				E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */,
+				890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */,
+				890591F01EA0ADDE002F161F /* NSString+PinYin4Cocoa.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
 				E9648CF61E9F290B00943168 /* OrderScreenSelectData.m in Sources */,
 				89FAFA5B1E9E3233002DE124 /* VisitsStopScheduleView.m in Sources */,
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
 				E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */,
+				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				89FAF92C1E9DD18F002DE124 /* DetpartMentsListTableViewCell.m in Sources */,
 				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
@@ -883,6 +996,7 @@
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
 				E9648D151E9F5E7500943168 /* OrderMessageViewController.m in Sources */,
 				E9648CFA1E9F290B00943168 /* ScreenCollectionViewCell.m in Sources */,
+				890591F51EA0ADDE002F161F /* ZYPinYinSearch.m in Sources */,
 				89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */,
 				89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */,
 				89FAFA431E9E1DBE002DE124 /* FCCalender.m in Sources */,
@@ -1038,9 +1152,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Hospitalize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1063,9 +1179,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Hospitalize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

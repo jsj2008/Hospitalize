@@ -106,6 +106,22 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DepartmentsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DepartmentsTableViewCell" forIndexPath:indexPath];
+    
+    [cell.portraitImageView setImage:[UIImage imageNamed:@"home_itme_person"]];
+    cell.departmentsName.text = @"耳鼻喉科";
+    cell.professionalTitleName.text = @"主任医师";
+    cell.acceptsTheAmount.text = @"接诊量：2222";
+    
+//    @property (weak, nonatomic) IBOutlet UIImageView *portraitImageView;//头像
+//    @property (weak, nonatomic) IBOutlet UILabel *departmentsName;//科室名称
+//    @property (weak, nonatomic) IBOutlet UILabel *professionalTitleName;//职称
+//    @property (weak, nonatomic) IBOutlet UILabel *acceptsTheAmount;//接诊量
+//    @property (weak, nonatomic) IBOutlet UIImageView *starImageView1;//星星1
+//    @property (weak, nonatomic) IBOutlet UIImageView *starImageView2;//星星2
+//    @property (weak, nonatomic) IBOutlet UIImageView *starImageView3;//星星3
+//    @property (weak, nonatomic) IBOutlet UIImageView *starImageView4;//星星4
+//    @property (weak, nonatomic) IBOutlet UIImageView *starImageView5;//星星5
+    
     return cell;
 }
 

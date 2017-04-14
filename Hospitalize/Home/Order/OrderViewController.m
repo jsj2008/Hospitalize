@@ -12,7 +12,7 @@
 #import "OrderScreenView.h"
 #import "ViewControllerUtil.h"
 #import "PayTableViewController.h"
-#import "OrderMessageViewController.h"
+#import "DepartmentsListViewController.h"
 
 
 @interface OrderViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -61,12 +61,10 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    PayTableViewController *pay = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PayTableViewController"];
-//    [self.navigationController pushViewController:pay animated:YES];
-//    OrderMessageTableViewController *message = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderMessageTableViewController"];
-//    [self.navigationController pushViewController:message animated:YES];
-    OrderMessageViewController *message = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderMessageViewController"];
-    [self.navigationController pushViewController: message animated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
+    [self.navigationController pushViewController:departmentsListViewController animated:YES];
 
 }
 //排序
