@@ -10,7 +10,6 @@
 		05CDD7969CC8C5C30D88A087 /* libPods-HospitalizeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1DAF5BF3E5B03AA9CD2EC9 /* libPods-HospitalizeUITests.a */; };
 		61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40664E808119A654F5A6F62F /* libPods-Hospitalize.a */; };
 		89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */; };
-		890591C21EA0ABD1002F161F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890591C11EA0ABD1002F161F /* CoreLocation.framework */; };
 		890591E81EA0ADDE002F161F /* ButtonGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591CE1EA0ADDE002F161F /* ButtonGroupView.m */; };
 		890591E91EA0ADDE002F161F /* CityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591D01EA0ADDE002F161F /* CityButton.m */; };
 		890591EA1EA0ADDE002F161F /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 890591D11EA0ADDE002F161F /* citydict.plist */; };
@@ -121,7 +120,6 @@
 		89002D211E9F17DE005832FB /* HomeItmeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItmeTableViewCell.h; sourceTree = "<group>"; };
 		89002D221E9F17DE005832FB /* HomeItmeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItmeTableViewCell.m; sourceTree = "<group>"; };
 		890591721EA07FCF002F161F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		890591C11EA0ABD1002F161F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLocation.framework; sourceTree = "<group>"; };
 		890591CD1EA0ADDE002F161F /* ButtonGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGroupView.h; sourceTree = "<group>"; };
 		890591CE1EA0ADDE002F161F /* ButtonGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGroupView.m; sourceTree = "<group>"; };
 		890591CF1EA0ADDE002F161F /* CityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityButton.h; sourceTree = "<group>"; };
@@ -291,7 +289,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890591C21EA0ABD1002F161F /* CoreLocation.framework in Frameworks */,
 				61C773C6D85A9115F4E65781 /* libPods-Hospitalize.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,7 +497,6 @@
 		E9554C911E9CB3BC0080C02D = {
 			isa = PBXGroup;
 			children = (
-				890591C11EA0ABD1002F161F /* CoreLocation.framework */,
 				E9554C9C1E9CB3BC0080C02D /* Hospitalize */,
 				E9554CB61E9CB3BC0080C02D /* HospitalizeTests */,
 				E9554CC11E9CB3BC0080C02D /* HospitalizeUITests */,

@@ -13,6 +13,9 @@
 #import "ViewControllerUtil.h"
 #import "PayTableViewController.h"
 #import "DepartmentsListViewController.h"
+#import "OrderMessageViewController.h"
+#import "MPLocationManager.h"
+#import "SearchViewController.h"
 
 
 @interface OrderViewController () <UITableViewDelegate,UITableViewDataSource>
