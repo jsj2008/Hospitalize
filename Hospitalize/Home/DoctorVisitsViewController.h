@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface DoctorVisitsViewController : UIViewController
+@interface DoctorVisitsViewController : BaseViewController
 
 @end

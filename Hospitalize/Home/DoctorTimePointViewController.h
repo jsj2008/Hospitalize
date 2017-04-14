@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface DoctorTimePointViewController : UIViewController
+@interface DoctorTimePointViewController : BaseViewController
 
 @property (nonatomic, strong)  NSDate *selectDate;  //日历选择的日期
 

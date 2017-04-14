@@ -53,7 +53,7 @@
 
 - (void)createCalendar {
     [_calendar removeFromSuperview];//移除之前创建的
-    _calendar = [[FCCalender alloc]initWithFrame:CGRectMake(0, 64, KmainScreenWidth, 70) dataArr:_dateArr];
+    _calendar = [[FCCalender alloc]initWithFrame:CGRectMake(0, 0, KmainScreenWidth, 76) dataArr:_dateArr];
     
     if (self.selectDate) {
         _selectDateStr = [DateLogic getStringWithDate:self.selectDate];
