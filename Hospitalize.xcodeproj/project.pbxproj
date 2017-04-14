@@ -88,6 +88,8 @@
 		E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */; };
 		E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
+		E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143D81EA06D6900765903 /* MPLocationManager.m */; };
+		E99143DE1EA0D0C100765903 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99143DD1EA0D0C100765903 /* Login.storyboard */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
@@ -267,6 +269,9 @@
 		E9648D0B1E9F46DA00943168 /* PayfaildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayfaildViewController.m; sourceTree = "<group>"; };
 		E9648D131E9F5E7500943168 /* OrderMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMessageViewController.h; sourceTree = "<group>"; };
 		E9648D141E9F5E7500943168 /* OrderMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMessageViewController.m; sourceTree = "<group>"; };
+		E99143D71EA06D6900765903 /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
+		E99143D81EA06D6900765903 /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
+		E99143DD1EA0D0C100765903 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
 		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
@@ -519,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				89FAF9181E9DC07F002DE124 /* Home */,
+				E99143DC1EA0D0B300765903 /* Login */,
 				E9CD59631E9CB72C00B1DCAB /* common */,
 				E9554CD01E9CB4B20080C02D /* Tabbar */,
 				E9CD59681E9CBE7700B1DCAB /* UIKit */,
@@ -598,6 +604,23 @@
 			path = OrderRankAndScreen;
 			sourceTree = "<group>";
 		};
+		E99143D61EA06D5B00765903 /* MPLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				E99143D71EA06D6900765903 /* MPLocationManager.h */,
+				E99143D81EA06D6900765903 /* MPLocationManager.m */,
+			);
+			path = MPLocationManager;
+			sourceTree = "<group>";
+		};
+		E99143DC1EA0D0B300765903 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E99143DD1EA0D0C100765903 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E9CD59631E9CB72C00B1DCAB /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +648,7 @@
 		E9CD59681E9CBE7700B1DCAB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E99143D61EA06D5B00765903 /* MPLocationManager */,
 				E9CD59691E9CBE8100B1DCAB /* FCAlertAction */,
 			);
 			path = UIKit;
@@ -720,6 +744,11 @@
 					E9554C991E9CB3BC0080C02D = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E9554CB21E9CB3BC0080C02D = {
 						CreatedOnToolsVersion = 8.3;
@@ -770,6 +799,7 @@
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
 				89EEC2F31E9F45A400678995 /* 2.jpg in Resources */,
 				89EEC2F11E9F43E800678995 /* 1.jpg in Resources */,
+				E99143DE1EA0D0C100765903 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +971,7 @@
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				E9648CF51E9F290B00943168 /* OrderRankView.m in Sources */,
 				89EEC2D91E9F39B600678995 /* HomeHospitalizeTableViewCell.m in Sources */,
+				E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */,
 				89FAF9321E9DD5A5002DE124 /* pinyin.c in Sources */,
 				890591E81EA0ADDE002F161F /* ButtonGroupView.m in Sources */,
 				890591E91EA0ADDE002F161F /* CityButton.m in Sources */,
