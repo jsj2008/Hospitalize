@@ -19,6 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+//忘记密码
+- (IBAction)forgetAction:(id)sender {
+    ForgetPassWordViewController *forget = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"ForgetPassWordViewController"];
+    [self.navigationController pushViewController:forget animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
