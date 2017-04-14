@@ -29,6 +29,7 @@
 		890591FE1EA0D369002F161F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890591FD1EA0D369002F161F /* LoginViewController.m */; };
 		890592011EA0D46C002F161F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890592001EA0D46C002F161F /* RegisterViewController.m */; };
 		890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */; };
+		890592061EA0E723002F161F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890592051EA0E723002F161F /* Login.storyboard */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -91,7 +92,6 @@
 		E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
 		E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143D81EA06D6900765903 /* MPLocationManager.m */; };
-		E99143DE1EA0D0C100765903 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99143DD1EA0D0C100765903 /* Login.storyboard */; };
 		E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */; };
 		E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E31EA0DB8200765903 /* ChangePwdViewController.m */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
@@ -161,6 +161,7 @@
 		890592001EA0D46C002F161F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		890592021EA0E212002F161F /* RegisterWithPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterWithPasswordViewController.h; sourceTree = "<group>"; };
 		890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterWithPasswordViewController.m; sourceTree = "<group>"; };
+		890592051EA0E723002F161F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -280,7 +281,6 @@
 		E9648D141E9F5E7500943168 /* OrderMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMessageViewController.m; sourceTree = "<group>"; };
 		E99143D71EA06D6900765903 /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
 		E99143D81EA06D6900765903 /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
-		E99143DD1EA0D0C100765903 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		E99143DF1EA0D86F00765903 /* ForgetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassWordViewController.h; sourceTree = "<group>"; };
 		E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassWordViewController.m; sourceTree = "<group>"; };
 		E99143E21EA0DB8200765903 /* ChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewController.h; sourceTree = "<group>"; };
@@ -627,9 +627,13 @@
 		E99143DC1EA0D0B300765903 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E99143DD1EA0D0C100765903 /* Login.storyboard */,
+				890592051EA0E723002F161F /* Login.storyboard */,
 				890591FC1EA0D369002F161F /* LoginViewController.h */,
 				890591FD1EA0D369002F161F /* LoginViewController.m */,
+				E99143DF1EA0D86F00765903 /* ForgetPassWordViewController.h */,
+				E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */,
+				E99143E21EA0DB8200765903 /* ChangePwdViewController.h */,
+				E99143E31EA0DB8200765903 /* ChangePwdViewController.m */,
 				890591FF1EA0D46C002F161F /* RegisterViewController.h */,
 				890592001EA0D46C002F161F /* RegisterViewController.m */,
 				890592021EA0E212002F161F /* RegisterWithPasswordViewController.h */,
@@ -816,7 +820,7 @@
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
 				89EEC2F31E9F45A400678995 /* 2.jpg in Resources */,
 				89EEC2F11E9F43E800678995 /* 1.jpg in Resources */,
-				E99143DE1EA0D0C100765903 /* Login.storyboard in Resources */,
+				890592061EA0E723002F161F /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

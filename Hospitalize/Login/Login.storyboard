@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eH-lc-dFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.60000000000002" y="93.103448275862078"/>
+            <point key="canvasLocation" x="-271" y="472"/>
         </scene>
         <!--Register With Password View Controller-->
         <scene sceneID="Lqh-Rm-c2A">
@@ -379,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBH-Ct-N0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1464.8" y="92.203898050974516"/>
+            <point key="canvasLocation" x="489" y="472"/>
         </scene>
         <!--登录-->
         <scene sceneID="Pso-1R-3h3">
@@ -474,6 +474,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="注册"/>
+                                                <connections>
+                                                    <action selector="registerAction:" destination="ztO-F3-Eo1" eventType="touchUpInside" id="ufW-iJ-hNB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -513,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8v0-4Z-f5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="144.80000000000001" y="167.76611694152925"/>
+            <point key="canvasLocation" x="-271" y="-246"/>
         </scene>
         <!--忘记密码-->
         <scene sceneID="ZAd-p8-Cuj">
@@ -579,7 +582,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feR-wS-CWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="175.86206896551727"/>
+            <point key="canvasLocation" x="521" y="-246"/>
         </scene>
         <!--修改密码-->
         <scene sceneID="WdV-kR-ucb">
@@ -702,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJi-Y0-tL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1501.5999999999999" y="167.76611694152925"/>
+            <point key="canvasLocation" x="1258" y="-285"/>
         </scene>
         <!--用户协议-->
         <scene sceneID="XZC-Kb-oEf">
@@ -924,7 +927,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqt-Qg-jvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188" y="189.3553223388306"/>
+            <point key="canvasLocation" x="1962" y="-305"/>
         </scene>
     </scenes>
 </document>
