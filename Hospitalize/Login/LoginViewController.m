@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ForgetPassWordViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
 //忘记密码
 - (IBAction)forgetAction:(id)sender {
     ForgetPassWordViewController *forget = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"ForgetPassWordViewController"];
@@ -28,6 +30,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)registerAction:(id)sender {
+    RegisterViewController *registerViewController = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"RegisterViewController"];
+    [self.navigationController pushViewController:registerViewController animated:YES];
+    
 }
 
 /*
