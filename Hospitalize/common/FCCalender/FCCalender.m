@@ -109,7 +109,7 @@
         
         self.leftArrowImageView = [[UIImageView alloc]init];
         self.leftArrowImageView.frame = CGRectMake(7, 43, 8, 14);
-        self.leftArrowImageView.image = [UIImage imageNamed:@"beforeDay"];
+        self.leftArrowImageView.image = [UIImage imageNamed:@"home_icon_beforeDay"];
         self.leftArrowImageView.hidden = YES;
         self.leftArrowImageView.userInteractionEnabled = YES;
         [self addSubview:self.leftArrowImageView];
@@ -118,7 +118,7 @@
         
         self.rightArrowImageView = [[UIImageView alloc]init];
         self.rightArrowImageView.frame = CGRectMake(ScreenWidth-15, 43, 8, 14);
-        self.rightArrowImageView.image = [UIImage imageNamed:@"RightArrow"];
+        self.rightArrowImageView.image = [UIImage imageNamed:@"home_icon_RightArrow"];
         self.rightArrowImageView.hidden = YES;
         self.rightArrowImageView.userInteractionEnabled = YES;
         [self addSubview:self.rightArrowImageView];
@@ -153,7 +153,7 @@
                 button.clipsToBounds = YES;
                 button.tag = 100+dateCount;
                 button.titleLabel.textAlignment = NSTextAlignmentCenter;
-                [button setBackgroundImage:[UIImage imageNamed:@"calender-Selected"] forState:UIControlStateSelected];
+                [button setBackgroundImage:[UIImage imageNamed:@"home_icon_daySelect"] forState:UIControlStateSelected];
                 [button setBackgroundImage:nil forState:UIControlStateNormal];
                 //                NSString *buttonTitle = [self getdayWith:[definiteArr objectAtIndex:dateCount]];
                 NSDate *temDate = nil;

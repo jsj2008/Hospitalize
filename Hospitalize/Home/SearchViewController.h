@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
+#define SEARCH_HISTORY_KEY @"SearchHistoryKey"
+
+
 @interface SearchViewController : BaseViewController
 
 @end

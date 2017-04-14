@@ -11,6 +11,7 @@
 #import "FCMacros.h"
 #import "DateLogic.h"
 #import "DoctorTimePointCell.h"
+#import "OrderMessageViewController.h"
 
 
 @interface DoctorTimePointViewController ()<UITableViewDelegate, UITableViewDataSource, FCCalenderDelegate>{
@@ -39,9 +40,8 @@
     self.timePointArray = [NSMutableArray array];
     self.timePointArray = [@[@"1",@"1",@"1",@"1",@"1",@"1",@"1"] mutableCopy];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_itme_person"] style:UIBarButtonItemStylePlain target:self action:@selector(goNextPersonAction:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_icon_por"] style:UIBarButtonItemStylePlain target:self action:@selector(goNextPersonAction:)];
 
-    
     
     self.mainTableView.dataSource = self;
     self.mainTableView.delegate = self;
@@ -108,15 +108,15 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     //无箭头
 //    cell.accessoryType = UITableViewCellAccessoryNone;
-
-    
-    cell.timeLabel.text = @"cccc";
-    cell.detailLabel.text = [NSString stringWithFormat:@"%@\n￥%@",@"dddddd",@"fffff"];
+    cell.timeLabel.text = @"14号 ( 15:00 )";
+    cell.detailLabel.text = [NSString stringWithFormat:@"%@\n￥%@",@"专家门诊",@"20.00"];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    OrderMessageViewController *message = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderMessageViewController"];
+    [self.navigationController pushViewController: message animated:YES];
 }
 
 -(void)setExtraCellLineHidden: (UITableView *)tableView {
