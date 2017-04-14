@@ -90,6 +90,8 @@
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
 		E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143D81EA06D6900765903 /* MPLocationManager.m */; };
 		E99143DE1EA0D0C100765903 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99143DD1EA0D0C100765903 /* Login.storyboard */; };
+		E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */; };
+		E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E31EA0DB8200765903 /* ChangePwdViewController.m */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
@@ -273,6 +275,10 @@
 		E99143D71EA06D6900765903 /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
 		E99143D81EA06D6900765903 /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
 		E99143DD1EA0D0C100765903 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E99143DF1EA0D86F00765903 /* ForgetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassWordViewController.h; sourceTree = "<group>"; };
+		E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassWordViewController.m; sourceTree = "<group>"; };
+		E99143E21EA0DB8200765903 /* ChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewController.h; sourceTree = "<group>"; };
+		E99143E31EA0DB8200765903 /* ChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdViewController.m; sourceTree = "<group>"; };
 		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
 		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
@@ -618,6 +624,10 @@
 				E99143DD1EA0D0C100765903 /* Login.storyboard */,
 				890591FC1EA0D369002F161F /* LoginViewController.h */,
 				890591FD1EA0D369002F161F /* LoginViewController.m */,
+				E99143DF1EA0D86F00765903 /* ForgetPassWordViewController.h */,
+				E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */,
+				E99143E21EA0DB8200765903 /* ChangePwdViewController.h */,
+				E99143E31EA0DB8200765903 /* ChangePwdViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -997,10 +1007,12 @@
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
+				E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */,
 				89EEC2F61E9F620000678995 /* SearchViewController.m in Sources */,
 				89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */,
 				89FAF92F1E9DD405002DE124 /* ChineseStringUtil.m in Sources */,
 				890591EF1EA0ADDE002F161F /* HanyuPinyinOutputFormat.m in Sources */,
+				E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */,
 				89EEC2D31E9F281B00678995 /* UIView+Extension.m in Sources */,
 				89FAFA5F1E9E3497002DE124 /* VisitsTitleView.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,

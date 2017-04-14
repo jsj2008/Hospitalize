@@ -1,28 +1,28 @@
 //
-//  LoginViewController.m
+//  ForgetPassWordViewController.m
 //  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/14.
+//  Created by 周鑫 on 2017/4/14.
 //  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "LoginViewController.h"
 #import "ForgetPassWordViewController.h"
+#import "ChangePwdViewController.h"
 
-@interface LoginViewController ()
+@interface ForgetPassWordViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation ForgetPassWordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-//忘记密码
-- (IBAction)forgetAction:(id)sender {
-    ForgetPassWordViewController *forget = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"ForgetPassWordViewController"];
-    [self.navigationController pushViewController:forget animated:YES];
+- (IBAction)confirmAction:(id)sender {
+    [self.view endEditing:YES];
+    ChangePwdViewController *change = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"ChangePwdViewController"];
+    [self.navigationController pushViewController:change animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
