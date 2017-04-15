@@ -12,6 +12,7 @@
 #import "ScreenCollectionViewCell.h"
 #import "ScreenCollectionReusableView.h"
 #import "OrderScreenSelectData.h"
+#import "UIView+Extension.h"
 
 #define CollectViewMargin 18
 #define CollectViewCellMargin 12
@@ -409,13 +410,13 @@
             headerView.sectionTitleLabel.text = nil;
             headerView.moreButton.selected = self.isShowAllCities;
             
-//            headerView.selectedMsgLabel.text = @"";
-            
             //重新定位
 //            [headerView.locationButton addTarget:self action:@selector(relocationButtonAction) forControlEvents:UIControlEventTouchUpInside];
             
             if (self.selectData.cityName) {
                 headerView.cityNameLabel.text = self.selectData.cityName;
+               CGSize citynameLabelSize =  [FCCommonUtil sizeWithString:self.selectData.cityName font:[UIFont systemFontOfSize:16.0] ContentMaxSize:CGSizeMake(100, 80)];
+                headerView.gpsLabel.x = 15+citynameLabelSize.width;
             }else{
               headerView.cityNameLabel.text = @"定位";
             }

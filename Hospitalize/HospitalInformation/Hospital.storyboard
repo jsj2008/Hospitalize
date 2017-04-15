@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -226,9 +226,15 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktp-Pu-YQp">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                        <connections>
+                                                            <action selector="loactionAction:" destination="NOs-WQ-7NH" eventType="touchUpInside" id="qGb-Jq-5GG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnW-b6-pww">
                                                         <rect key="frame" x="0.0" y="50.5" width="375" height="52.5"/>
+                                                        <connections>
+                                                            <action selector="phoneAction:" destination="NOs-WQ-7NH" eventType="touchUpInside" id="DJu-Eb-Kva"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -363,7 +369,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgH-j6-IUE">
                                                         <rect key="frame" x="15" y="47.5" width="345" height="135.5"/>
-                                                        <string key="text">出圆资确解天日点同直议当，万并也则民达则制已关，光权程录备L贡卧先卖。也物目知花意起角压，积原有布得条行参过，九强求扯例年我芹。书系等生标或定调海需，织段价克度己金片正林，好众-辰为料东我。热精层日科指不非身度，先流革话好图论器，数起露化园呈命统、形天本组委她证是前工布，连火候同再给相多思青消，何员T管能7明B丧。该般主太合十民志间平属子效步热军。</string>
+                                                        <mutableString key="text">出圆资确解天日点同直议当，万并也则民达则制已关，光权程录备L贡卧先卖。也物目知花意起角压，积原有布得条行参过，九强求扯例年我芹。书系等生标或定调海需，织段价克度己金片正林，好众-辰为料东我。热精层日科指不非身度，先流革话好图论器，数起露化园呈命统、形天本组委她证是前工布，连火候同再给相多思青消，何员T管能7明B丧。该般主太合十民志间平属子效步热军。出圆资确解天日点同直议当，万并也则民达则制已关，光权程录备L贡卧先卖。也物目知花意起角压，积原有布得条行参过，九强求扯例年我芹。书系等生标或定调海需，织段价克度己金片正林，好众-辰为料东我。热精层日科指不非身度，先流革话好图论器，数起露化园呈命统、形天本组委她证是前工布，连火候同再给相多思青消，何员T管能7明B丧。该般主太合十民志间平属子效步热军。</mutableString>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -440,6 +446,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="bs8-oG-LCy" firstAttribute="leading" secondItem="TZO-mb-1oh" secondAttribute="leading" id="3Ie-Ja-lah"/>
                                     <constraint firstItem="bs8-oG-LCy" firstAttribute="top" secondItem="TZO-mb-1oh" secondAttribute="top" id="4PK-4d-Iah"/>
@@ -459,6 +466,12 @@
                     </view>
                     <connections>
                         <outlet property="doctorCollectionView" destination="4if-dN-XRh" id="Xyb-iV-s1V"/>
+                        <outlet property="guideHeightConstraint" destination="ddJ-fX-g7X" id="TL0-ye-4Nw"/>
+                        <outlet property="guideLabel" destination="ede-3k-1YH" id="EH7-aC-pWi"/>
+                        <outlet property="phoneLabel" destination="cba-LC-IIU" id="Rms-P4-q4H"/>
+                        <outlet property="profileHeightConstraint" destination="37d-cL-2BD" id="oVW-PA-Ns6"/>
+                        <outlet property="profileLabel" destination="tgH-j6-IUE" id="86D-gB-qSp"/>
+                        <outlet property="totalHeightConstraint" destination="K7n-od-CCy" id="FTH-bc-UFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-B8-FEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
