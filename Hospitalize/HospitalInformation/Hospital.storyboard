@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--医院简介-->
+        <scene sceneID="FY7-ze-mXk">
+            <objects>
+                <viewController id="snQ-ej-Oae" userLabel="医院简介" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Z3-7V-iWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="PU2-kA-El9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ua-Ls-QEm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbH-Rn-paX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="164"/>
+        </scene>
+        <!--医院公告-->
+        <scene sceneID="c8t-jA-Sky">
+            <objects>
+                <viewController id="reX-xg-N47" userLabel="医院公告" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cHD-cd-8Cf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ck3-Ev-I9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mdz-kS-6gY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaJ-bK-ThE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="164"/>
+        </scene>
+        <!--评价-->
+        <scene sceneID="xMZ-0x-Faf">
+            <objects>
+                <viewController id="5q5-PS-TZ1" userLabel="评价" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yG0-9D-a9m"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ro0-Yh-Ldd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IS9-dl-h03">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-1B-Abr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="161"/>
+        </scene>
+    </scenes>
+</document>
