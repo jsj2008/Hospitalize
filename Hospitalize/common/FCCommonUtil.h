@@ -28,7 +28,7 @@
 
 
 /**
- *定义成方法方便多个label调用 增加代码的复用性
+ *返回相应字符串的大小
  */
 + (CGSize)sizeWithString:(NSString *)string font:(UIFont *)font ContentMaxSize:(CGSize)contentMaxSize;
 

@@ -537,7 +537,7 @@
                                         <rect key="frame" x="15" y="0.0" width="360" height="50"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -579,6 +579,9 @@
                             <constraint firstItem="YDG-Jp-9Em" firstAttribute="leading" secondItem="Ail-gg-WVc" secondAttribute="leading" id="yLV-mD-Vbd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="Vf0-YI-sC7" id="Bhe-Nu-Frf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feR-wS-CWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -605,7 +608,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1e-Zj-AcD">
                                 <rect key="frame" x="0.0" y="70" width="375" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-hh-0tx">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-hh-0tx">
                                         <rect key="frame" x="15" y="0.0" width="240" height="50"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>

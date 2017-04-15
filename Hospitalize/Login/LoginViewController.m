@@ -9,7 +9,8 @@
 #import "LoginViewController.h"
 #import "ForgetPassWordViewController.h"
 #import "RegisterViewController.h"
-#import "HospitalProfileViewController.h"
+#import "OrderCostListViewController.h"
+
 
 @interface LoginViewController ()
 
@@ -33,8 +34,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)registerAction:(id)sender {
-    HospitalProfileViewController *hos = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalProfileViewController"];
-    [self.navigationController pushViewController:hos animated:YES];
+    OrderCostListViewController *cost = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderCostListViewController"];
+    [self.navigationController pushViewController:cost animated:YES];
     
 //    RegisterViewController *registerViewController = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"RegisterViewController"];
 //    [self.navigationController pushViewController:registerViewController animated:YES];
