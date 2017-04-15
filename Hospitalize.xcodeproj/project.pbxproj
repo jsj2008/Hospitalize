@@ -32,6 +32,8 @@
 		890592061EA0E723002F161F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890592051EA0E723002F161F /* Login.storyboard */; };
 		893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893315481EA1E514003C4F54 /* Hospital.storyboard */; };
 		8933154C1EA1E5C5003C4F54 /* HospitalNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */; };
+		8933154F1EA1E660003C4F54 /* HospitalEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933154E1EA1E660003C4F54 /* HospitalEvaluateViewController.m */; };
+		893315531EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -167,6 +169,10 @@
 		893315481EA1E514003C4F54 /* Hospital.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
 		8933154A1EA1E5C5003C4F54 /* HospitalNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalNoticeViewController.h; sourceTree = "<group>"; };
 		8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalNoticeViewController.m; sourceTree = "<group>"; };
+		8933154D1EA1E660003C4F54 /* HospitalEvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalEvaluateViewController.h; sourceTree = "<group>"; };
+		8933154E1EA1E660003C4F54 /* HospitalEvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalEvaluateViewController.m; sourceTree = "<group>"; };
+		893315511EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalNoticeMessageTableViewCell.h; sourceTree = "<group>"; };
+		893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalNoticeMessageTableViewCell.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -389,11 +395,23 @@
 		893315471EA1E4FB003C4F54 /* HospitalInformation */ = {
 			isa = PBXGroup;
 			children = (
+				893315501EA1E903003C4F54 /* Cell */,
 				893315481EA1E514003C4F54 /* Hospital.storyboard */,
 				8933154A1EA1E5C5003C4F54 /* HospitalNoticeViewController.h */,
 				8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */,
+				8933154D1EA1E660003C4F54 /* HospitalEvaluateViewController.h */,
+				8933154E1EA1E660003C4F54 /* HospitalEvaluateViewController.m */,
 			);
 			path = HospitalInformation;
+			sourceTree = "<group>";
+		};
+		893315501EA1E903003C4F54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				893315511EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.h */,
+				893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		89EEC2BE1E9F281B00678995 /* KNBannerView */ = {
@@ -1022,12 +1040,14 @@
 				E9648D061E9F40D600943168 /* PayTableViewController.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
+				8933154F1EA1E660003C4F54 /* HospitalEvaluateViewController.m in Sources */,
 				890591ED1EA0ADDE002F161F /* ChineseInclude.m in Sources */,
 				89FAFA5A1E9E3233002DE124 /* VisitsScheduleView.m in Sources */,
 				890591EC1EA0ADDE002F161F /* CityListViewController.m in Sources */,
 				89FAF9381E9E01EB002DE124 /* DepartmentsViewController.m in Sources */,
 				890591F11EA0ADDE002F161F /* PinyinFormatter.m in Sources */,
 				89FAFA521E9E317E002DE124 /* DoctorVisitsViewController.m in Sources */,
+				893315531EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
 				890591F21EA0ADDE002F161F /* PinYinForObjc.m in Sources */,

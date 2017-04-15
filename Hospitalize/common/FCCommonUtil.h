@@ -26,4 +26,10 @@
  */
 + (BOOL) isEmpty:(NSString *) value;
 
+
+/**
+ *定义成方法方便多个label调用 增加代码的复用性
+ */
++ (CGSize)sizeWithString:(NSString *)string font:(UIFont *)font ContentMaxSize:(CGSize)contentMaxSize;
+
 @end

@@ -26,4 +26,18 @@
  *  @return 视图对象
  */
 + (id) getViewControllerFromLoginStoryboardWithIdentifier:(NSString *) identifier;
+
+/**
+ *  从Hospital.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromHospitalStoryboardWithIdentifier:(NSString *) identifier;
+
+
+
+
+
+
 @end

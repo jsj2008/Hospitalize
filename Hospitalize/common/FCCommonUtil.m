@@ -67,4 +67,15 @@
 }
 
 
+/**
+ *定义成方法方便多个label调用 增加代码的复用性
+ */
++ (CGSize)sizeWithString:(NSString *)string font:(UIFont *)font ContentMaxSize:(CGSize)contentMaxSize {
+    //采用换行模式
+    NSStringDrawingOptions options  = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin;
+    CGRect rect = [string boundingRectWithSize:contentMaxSize options:options attributes:@{NSFontAttributeName: font} context:nil];
+    return rect.size;
+}
+
+
 @end
