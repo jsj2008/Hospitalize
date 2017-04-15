@@ -38,7 +38,6 @@
 		8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315591EA1F6D5003C4F54 /* FCStarView.m */; };
 		8933155D1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */; };
 		893315601EA20DBE003C4F54 /* UILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155F1EA20DBE003C4F54 /* UILogic.m */; };
-		893315641EA20E17003C4F54 /* FCAlertLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315631EA20E17003C4F54 /* FCAlertLabel.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -197,8 +196,6 @@
 		8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXCustomLeftBarButtonItem.m; sourceTree = "<group>"; };
 		8933155E1EA20DBE003C4F54 /* UILogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogic.h; sourceTree = "<group>"; };
 		8933155F1EA20DBE003C4F54 /* UILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILogic.m; sourceTree = "<group>"; };
-		893315621EA20E17003C4F54 /* FCAlertLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertLabel.h; sourceTree = "<group>"; };
-		893315631EA20E17003C4F54 /* FCAlertLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertLabel.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -477,15 +474,6 @@
 			path = FCStarView;
 			sourceTree = "<group>";
 		};
-		893315611EA20E17003C4F54 /* FCAlertLabel */ = {
-			isa = PBXGroup;
-			children = (
-				893315621EA20E17003C4F54 /* FCAlertLabel.h */,
-				893315631EA20E17003C4F54 /* FCAlertLabel.m */,
-			);
-			path = FCAlertLabel;
-			sourceTree = "<group>";
-		};
 		89EEC2BE1E9F281B00678995 /* KNBannerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,14 +525,6 @@
 				89FAF91A1E9DC09C002DE124 /* HomeViewController.m */,
 				8933155B1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.h */,
 				8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */,
-				E9648D131E9F5E7500943168 /* OrderMessageViewController.h */,
-				E9648D141E9F5E7500943168 /* OrderMessageViewController.m */,
-				E9648D051E9F40D600943168 /* PayTableViewController.m */,
-				E9648D041E9F40D600943168 /* PayTableViewController.h */,
-				E9648D071E9F468100943168 /* PaySucessViewController.h */,
-				E9648D081E9F468100943168 /* PaySucessViewController.m */,
-				E9648D0A1E9F46DA00943168 /* PayfaildViewController.h */,
-				E9648D0B1E9F46DA00943168 /* PayfaildViewController.m */,
 				89EEC2F01E9F43E800678995 /* 1.jpg */,
 				89EEC2F21E9F45A400678995 /* 2.jpg */,
 				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
@@ -805,7 +785,6 @@
 				E97D73611EA1F85100540DF7 /* RegularUtil.m */,
 				8933155E1EA20DBE003C4F54 /* UILogic.h */,
 				8933155F1EA20DBE003C4F54 /* UILogic.m */,
-				893315611EA20E17003C4F54 /* FCAlertLabel */,
 				89FAF9301E9DD5A5002DE124 /* pinyin.c */,
 				89FAF9311E9DD5A5002DE124 /* pinyin.h */,
 				E97D73631EA1FA7100540DF7 /* AlertLabel */,
@@ -1142,7 +1121,6 @@
 				E97D737D1EA220F400540DF7 /* PayfaildViewController.m in Sources */,
 				890591EE1EA0ADDE002F161F /* ChineseToPinyinResource.m in Sources */,
 				E97D735B1EA1EBC000540DF7 /* HospitalProfileViewController.m in Sources */,
-				893315641EA20E17003C4F54 /* FCAlertLabel.m in Sources */,
 				E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */,
 				E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
@@ -1158,10 +1136,7 @@
 				E97D73751EA220B800540DF7 /* OrderMessageViewController.m in Sources */,
 				890591E91EA0ADDE002F161F /* CityButton.m in Sources */,
 				E97D737E1EA220F400540DF7 /* PaySucessViewController.m in Sources */,
-				E9648D091E9F468100943168 /* PaySucessViewController.m in Sources */,
 				8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */,
-				E9648D0C1E9F46DA00943168 /* PayfaildViewController.m in Sources */,
-				89EEC2ED1E9F411C00678995 /* PayViewController.m in Sources */,
 				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
 				890591EB1EA0ADDE002F161F /* CityItem.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
