@@ -405,6 +405,10 @@
 			children = (
 				893315501EA1E903003C4F54 /* Cell */,
 				893315481EA1E514003C4F54 /* Hospital.storyboard */,
+				E97D73591EA1EBC000540DF7 /* HospitalProfileViewController.h */,
+				E97D735A1EA1EBC000540DF7 /* HospitalProfileViewController.m */,
+				E97D735C1EA1EBFD00540DF7 /* Cell */,
+				E97D73571EA1E83500540DF7 /* Hospital.xcassets */,
 				8933154A1EA1E5C5003C4F54 /* HospitalNoticeViewController.h */,
 				8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */,
 				8933154D1EA1E660003C4F54 /* HospitalEvaluateViewController.h */,
