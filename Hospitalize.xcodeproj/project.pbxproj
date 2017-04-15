@@ -31,6 +31,7 @@
 		890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */; };
 		890592061EA0E723002F161F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890592051EA0E723002F161F /* Login.storyboard */; };
 		893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893315481EA1E514003C4F54 /* Hospital.storyboard */; };
+		8933154C1EA1E5C5003C4F54 /* HospitalNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -164,6 +165,8 @@
 		890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterWithPasswordViewController.m; sourceTree = "<group>"; };
 		890592051EA0E723002F161F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		893315481EA1E514003C4F54 /* Hospital.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
+		8933154A1EA1E5C5003C4F54 /* HospitalNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalNoticeViewController.h; sourceTree = "<group>"; };
+		8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalNoticeViewController.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -387,6 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				893315481EA1E514003C4F54 /* Hospital.storyboard */,
+				8933154A1EA1E5C5003C4F54 /* HospitalNoticeViewController.h */,
+				8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */,
 			);
 			path = HospitalInformation;
 			sourceTree = "<group>";
@@ -1001,6 +1006,7 @@
 				E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
 				89EEC2D21E9F281B00678995 /* NSString+hash.m in Sources */,
+				8933154C1EA1E5C5003C4F54 /* HospitalNoticeViewController.m in Sources */,
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				E9648CF51E9F290B00943168 /* OrderRankView.m in Sources */,
 				89EEC2D91E9F39B600678995 /* HomeHospitalizeTableViewCell.m in Sources */,
