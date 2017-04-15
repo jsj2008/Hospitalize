@@ -92,6 +92,9 @@
 		E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */; };
 		E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91A1E9DC09C002DE124 /* HomeViewController.m */; };
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
+		E97D73581EA1E83500540DF7 /* Hospital.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97D73571EA1E83500540DF7 /* Hospital.xcassets */; };
+		E97D735B1EA1EBC000540DF7 /* HospitalProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D735A1EA1EBC000540DF7 /* HospitalProfileViewController.m */; };
+		E97D735F1EA1EC1200540DF7 /* DoctorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D735E1EA1EC1200540DF7 /* DoctorCollectionViewCell.m */; };
 		E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143D81EA06D6900765903 /* MPLocationManager.m */; };
 		E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */; };
 		E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E31EA0DB8200765903 /* ChangePwdViewController.m */; };
@@ -281,6 +284,11 @@
 		E9648D0B1E9F46DA00943168 /* PayfaildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayfaildViewController.m; sourceTree = "<group>"; };
 		E9648D131E9F5E7500943168 /* OrderMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMessageViewController.h; sourceTree = "<group>"; };
 		E9648D141E9F5E7500943168 /* OrderMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMessageViewController.m; sourceTree = "<group>"; };
+		E97D73571EA1E83500540DF7 /* Hospital.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Hospital.xcassets; sourceTree = "<group>"; };
+		E97D73591EA1EBC000540DF7 /* HospitalProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalProfileViewController.h; sourceTree = "<group>"; };
+		E97D735A1EA1EBC000540DF7 /* HospitalProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalProfileViewController.m; sourceTree = "<group>"; };
+		E97D735D1EA1EC1200540DF7 /* DoctorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorCollectionViewCell.h; sourceTree = "<group>"; };
+		E97D735E1EA1EC1200540DF7 /* DoctorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorCollectionViewCell.m; sourceTree = "<group>"; };
 		E99143D71EA06D6900765903 /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
 		E99143D81EA06D6900765903 /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
 		E99143DF1EA0D86F00765903 /* ForgetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassWordViewController.h; sourceTree = "<group>"; };
@@ -387,6 +395,10 @@
 			isa = PBXGroup;
 			children = (
 				893315481EA1E514003C4F54 /* Hospital.storyboard */,
+				E97D73591EA1EBC000540DF7 /* HospitalProfileViewController.h */,
+				E97D735A1EA1EBC000540DF7 /* HospitalProfileViewController.m */,
+				E97D735C1EA1EBFD00540DF7 /* Cell */,
+				E97D73571EA1E83500540DF7 /* Hospital.xcassets */,
 			);
 			path = HospitalInformation;
 			sourceTree = "<group>";
@@ -626,6 +638,15 @@
 			path = OrderRankAndScreen;
 			sourceTree = "<group>";
 		};
+		E97D735C1EA1EBFD00540DF7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E97D735D1EA1EC1200540DF7 /* DoctorCollectionViewCell.h */,
+				E97D735E1EA1EC1200540DF7 /* DoctorCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E99143D61EA06D5B00765903 /* MPLocationManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +846,7 @@
 				890591EA1EA0ADDE002F161F /* citydict.plist in Resources */,
 				89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */,
 				89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */,
+				E97D73581EA1E83500540DF7 /* Hospital.xcassets in Resources */,
 				890591F41EA0ADDE002F161F /* unicode_to_hanyu_pinyin.txt in Resources */,
 				E9554CAA1E9CB3BC0080C02D /* Assets.xcassets in Resources */,
 				E9554CA81E9CB3BC0080C02D /* Main.storyboard in Resources */,
@@ -997,6 +1019,7 @@
 			files = (
 				890591F31EA0ADDE002F161F /* PinyinHelper.m in Sources */,
 				890591EE1EA0ADDE002F161F /* ChineseToPinyinResource.m in Sources */,
+				E97D735B1EA1EBC000540DF7 /* HospitalProfileViewController.m in Sources */,
 				E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */,
 				E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
@@ -1050,6 +1073,7 @@
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
 				E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */,
 				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
+				E97D735F1EA1EC1200540DF7 /* DoctorCollectionViewCell.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				89FAF92C1E9DD18F002DE124 /* DetpartMentsListTableViewCell.m in Sources */,
 				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
