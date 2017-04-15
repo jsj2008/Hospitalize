@@ -45,16 +45,6 @@
     UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
     return [loginStoryboard instantiateViewControllerWithIdentifier:identifier];
 }
-/**
- *  从Hospital.Storyboard获取视图对象。
- *
- *  @param identifier 视图对象ID
- *  @return 视图对象
- */
-+ (id) getViewControllerFromHospitalStoryboardWithIdentifier:(NSString *) identifier {
-    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Hospital" bundle:nil];
-    return [loginStoryboard instantiateViewControllerWithIdentifier:identifier];
-}
 
 /**
  *  从Hospital.Storyboard获取视图对象。

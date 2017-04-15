@@ -22,10 +22,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-ni-TfP">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="56" id="D8g-ml-TOt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HospitalNoticeTimeTableViewCell" rowHeight="56" id="D8g-ml-TOt" customClass="HospitalNoticeTimeTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8g-ml-TOt" id="ZFx-qr-sbx">
@@ -55,6 +55,9 @@
                                                 <constraint firstItem="0ge-4A-AG4" firstAttribute="top" secondItem="ZFx-qr-sbx" secondAttribute="top" constant="24" id="awI-nA-CM7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="0ge-4A-AG4" id="zG8-a1-vel"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HospitalNoticeMessageTableViewCell" id="pBa-NZ-2cD" customClass="HospitalNoticeMessageTableViewCell">
                                         <rect key="frame" x="0.0" y="84" width="375" height="200"/>
@@ -66,8 +69,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-Rg-Hse">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="199.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evt-Cb-FGu">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evt-Cb-FGu">
                                                             <rect key="frame" x="16" y="24" width="313" height="151.5"/>
+                                                            <string key="text">出圆资确解天日点同直议当万并也则民达则制已关，光权程录备L贡卧先卖也物目知花意起角压，积原有布得条行参过九强求扯例年我芹，书系等生标或定调海需织段价克度。己金片正林好众-辰为料东我。热精层日科指不非身度，先流革话好图论器，数起露化园呈命统、形天本组委她证是前工布，连火候同再给相多思青消，何员T管能7明B丧。 该般主太合十民志间平属子效步热军。</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -111,6 +115,9 @@
                             <constraint firstItem="Ck3-Ev-I9z" firstAttribute="top" secondItem="hcK-ni-TfP" secondAttribute="bottom" id="uLu-Dx-eu0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="hcK-ni-TfP" id="ROC-ok-8Xw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaJ-bK-ThE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,8 +134,45 @@
                     <view key="view" contentMode="scaleToFill" id="IS9-dl-h03">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxW-aE-sPQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="95"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA3-BH-p6t">
+                                        <rect key="frame" x="87.5" y="15" width="200" height="35"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="FIf-x8-v2q"/>
+                                            <constraint firstAttribute="height" constant="35" id="HIz-1R-0HP"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轻点星星来评分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8M-lr-fa4">
+                                        <rect key="frame" x="144.5" y="56.5" width="86" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aA3-BH-p6t" firstAttribute="top" secondItem="YxW-aE-sPQ" secondAttribute="top" constant="15" id="6Qm-T7-zxj"/>
+                                    <constraint firstAttribute="bottom" secondItem="B8M-lr-fa4" secondAttribute="bottom" constant="24" id="6e4-fp-ERU"/>
+                                    <constraint firstItem="B8M-lr-fa4" firstAttribute="centerX" secondItem="aA3-BH-p6t" secondAttribute="centerX" id="7yU-PU-Ong"/>
+                                    <constraint firstAttribute="height" constant="95" id="8rl-Ou-D52"/>
+                                    <constraint firstItem="aA3-BH-p6t" firstAttribute="centerX" secondItem="YxW-aE-sPQ" secondAttribute="centerX" id="h2h-TD-sbl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstItem="YxW-aE-sPQ" firstAttribute="leading" secondItem="IS9-dl-h03" secondAttribute="leading" id="h8u-ns-LAg"/>
+                            <constraint firstItem="YxW-aE-sPQ" firstAttribute="top" secondItem="yG0-9D-a9m" secondAttribute="bottom" id="pw6-n8-5MS"/>
+                            <constraint firstAttribute="trailing" secondItem="YxW-aE-sPQ" secondAttribute="trailing" id="vbQ-8X-cWy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="starBaseView" destination="aA3-BH-p6t" id="u2h-dA-s9S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-1B-Abr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

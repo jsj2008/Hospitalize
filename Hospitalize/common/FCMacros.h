@@ -78,7 +78,8 @@
 
 
 
-
+// 颜色定义
+#define DEFAULT_BACKGROUND_COLOR [UIColor colorWithRed:0xf5/255.0 green:0xf5/255.0 blue:0xf5/255.0 alpha:1.0]
 
 
 

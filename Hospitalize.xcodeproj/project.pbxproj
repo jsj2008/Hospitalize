@@ -34,6 +34,11 @@
 		8933154C1EA1E5C5003C4F54 /* HospitalNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933154B1EA1E5C5003C4F54 /* HospitalNoticeViewController.m */; };
 		8933154F1EA1E660003C4F54 /* HospitalEvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933154E1EA1E660003C4F54 /* HospitalEvaluateViewController.m */; };
 		893315531EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */; };
+		893315561EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315551EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.m */; };
+		8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315591EA1F6D5003C4F54 /* FCStarView.m */; };
+		8933155D1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */; };
+		893315601EA20DBE003C4F54 /* UILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155F1EA20DBE003C4F54 /* UILogic.m */; };
+		893315641EA20E17003C4F54 /* FCAlertLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315631EA20E17003C4F54 /* FCAlertLabel.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -176,6 +181,16 @@
 		8933154E1EA1E660003C4F54 /* HospitalEvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalEvaluateViewController.m; sourceTree = "<group>"; };
 		893315511EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalNoticeMessageTableViewCell.h; sourceTree = "<group>"; };
 		893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalNoticeMessageTableViewCell.m; sourceTree = "<group>"; };
+		893315541EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalNoticeTimeTableViewCell.h; sourceTree = "<group>"; };
+		893315551EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalNoticeTimeTableViewCell.m; sourceTree = "<group>"; };
+		893315581EA1F6D5003C4F54 /* FCStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCStarView.h; sourceTree = "<group>"; };
+		893315591EA1F6D5003C4F54 /* FCStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCStarView.m; sourceTree = "<group>"; };
+		8933155B1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXCustomLeftBarButtonItem.h; sourceTree = "<group>"; };
+		8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXCustomLeftBarButtonItem.m; sourceTree = "<group>"; };
+		8933155E1EA20DBE003C4F54 /* UILogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogic.h; sourceTree = "<group>"; };
+		8933155F1EA20DBE003C4F54 /* UILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILogic.m; sourceTree = "<group>"; };
+		893315621EA20E17003C4F54 /* FCAlertLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertLabel.h; sourceTree = "<group>"; };
+		893315631EA20E17003C4F54 /* FCAlertLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertLabel.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -422,8 +437,28 @@
 			children = (
 				893315511EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.h */,
 				893315521EA1E947003C4F54 /* HospitalNoticeMessageTableViewCell.m */,
+				893315541EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.h */,
+				893315551EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		893315571EA1F6D5003C4F54 /* FCStarView */ = {
+			isa = PBXGroup;
+			children = (
+				893315581EA1F6D5003C4F54 /* FCStarView.h */,
+				893315591EA1F6D5003C4F54 /* FCStarView.m */,
+			);
+			path = FCStarView;
+			sourceTree = "<group>";
+		};
+		893315611EA20E17003C4F54 /* FCAlertLabel */ = {
+			isa = PBXGroup;
+			children = (
+				893315621EA20E17003C4F54 /* FCAlertLabel.h */,
+				893315631EA20E17003C4F54 /* FCAlertLabel.m */,
+			);
+			path = FCAlertLabel;
 			sourceTree = "<group>";
 		};
 		89EEC2BE1E9F281B00678995 /* KNBannerView */ = {
@@ -466,10 +501,12 @@
 				89FAF9291E9DCFEC002DE124 /* Cell */,
 				89FAF9191E9DC09C002DE124 /* HomeViewController.h */,
 				89FAF91A1E9DC09C002DE124 /* HomeViewController.m */,
+				8933155B1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.h */,
+				8933155C1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m */,
 				E9648D131E9F5E7500943168 /* OrderMessageViewController.h */,
 				E9648D141E9F5E7500943168 /* OrderMessageViewController.m */,
-				E9648D041E9F40D600943168 /* PayTableViewController.h */,
 				E9648D051E9F40D600943168 /* PayTableViewController.m */,
+				E9648D041E9F40D600943168 /* PayTableViewController.h */,
 				E9648D071E9F468100943168 /* PaySucessViewController.h */,
 				E9648D081E9F468100943168 /* PaySucessViewController.m */,
 				E9648D0A1E9F46DA00943168 /* PayfaildViewController.h */,
@@ -711,8 +748,12 @@
 				89FAF9241E9DC271002DE124 /* BaseViewController.m */,
 				89FAF92D1E9DD405002DE124 /* ChineseStringUtil.h */,
 				89FAF92E1E9DD405002DE124 /* ChineseStringUtil.m */,
+				8933155E1EA20DBE003C4F54 /* UILogic.h */,
+				8933155F1EA20DBE003C4F54 /* UILogic.m */,
+				893315611EA20E17003C4F54 /* FCAlertLabel */,
 				89FAF9301E9DD5A5002DE124 /* pinyin.c */,
 				89FAF9311E9DD5A5002DE124 /* pinyin.h */,
+				893315571EA1F6D5003C4F54 /* FCStarView */,
 				89EEC2BE1E9F281B00678995 /* KNBannerView */,
 				89FAFA401E9E1DBE002DE124 /* FCCalender */,
 				89FAFA441E9E1E13002DE124 /* DateLogic.h */,
@@ -1043,6 +1084,7 @@
 				890591F31EA0ADDE002F161F /* PinyinHelper.m in Sources */,
 				890591EE1EA0ADDE002F161F /* ChineseToPinyinResource.m in Sources */,
 				E97D735B1EA1EBC000540DF7 /* HospitalProfileViewController.m in Sources */,
+				893315641EA20E17003C4F54 /* FCAlertLabel.m in Sources */,
 				E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */,
 				E9648D231E9F83BC00943168 /* HomeViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
@@ -1050,14 +1092,17 @@
 				8933154C1EA1E5C5003C4F54 /* HospitalNoticeViewController.m in Sources */,
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				E9648CF51E9F290B00943168 /* OrderRankView.m in Sources */,
+				893315561EA1F217003C4F54 /* HospitalNoticeTimeTableViewCell.m in Sources */,
 				89EEC2D91E9F39B600678995 /* HomeHospitalizeTableViewCell.m in Sources */,
 				E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */,
 				89FAF9321E9DD5A5002DE124 /* pinyin.c in Sources */,
 				890591E81EA0ADDE002F161F /* ButtonGroupView.m in Sources */,
 				890591E91EA0ADDE002F161F /* CityButton.m in Sources */,
 				E9648D091E9F468100943168 /* PaySucessViewController.m in Sources */,
+				8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */,
 				E9648D0C1E9F46DA00943168 /* PayfaildViewController.m in Sources */,
 				89EEC2ED1E9F411C00678995 /* PayViewController.m in Sources */,
+				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
 				890591EB1EA0ADDE002F161F /* CityItem.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
 				E9648D061E9F40D600943168 /* PayTableViewController.m in Sources */,
@@ -1109,6 +1154,7 @@
 				E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */,
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
+				8933155D1EA20C60003C4F54 /* NXCustomLeftBarButtonItem.m in Sources */,
 				89EEC2D01E9F281B00678995 /* KNJudgementTool.m in Sources */,
 				89EEC2D11E9F281B00678995 /* NSData+KNCache.m in Sources */,
 				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
