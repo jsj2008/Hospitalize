@@ -125,6 +125,10 @@
 		E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E31EA0DB8200765903 /* ChangePwdViewController.m */; };
 		E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */; };
 		E9A487E21EA612C900C2EBBF /* CasesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487E11EA612C900C2EBBF /* CasesListViewController.m */; };
+		E9A487E61EA6349600C2EBBF /* CasesListCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487E51EA6349600C2EBBF /* CasesListCardTableViewCell.m */; };
+		E9A487E91EA634C900C2EBBF /* CasesListOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487E81EA634C900C2EBBF /* CasesListOrderTableViewCell.m */; };
+		E9A487EC1EA634F700C2EBBF /* CasesListSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487EB1EA634F700C2EBBF /* CasesListSectionTableViewCell.m */; };
+		E9A487EF1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487EE1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
@@ -374,6 +378,14 @@
 		E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCostListModel.m; sourceTree = "<group>"; };
 		E9A487E01EA612C900C2EBBF /* CasesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListViewController.h; sourceTree = "<group>"; };
 		E9A487E11EA612C900C2EBBF /* CasesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListViewController.m; sourceTree = "<group>"; };
+		E9A487E41EA6349600C2EBBF /* CasesListCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListCardTableViewCell.h; sourceTree = "<group>"; };
+		E9A487E51EA6349600C2EBBF /* CasesListCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListCardTableViewCell.m; sourceTree = "<group>"; };
+		E9A487E71EA634C900C2EBBF /* CasesListOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListOrderTableViewCell.h; sourceTree = "<group>"; };
+		E9A487E81EA634C900C2EBBF /* CasesListOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListOrderTableViewCell.m; sourceTree = "<group>"; };
+		E9A487EA1EA634F700C2EBBF /* CasesListSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListSectionTableViewCell.h; sourceTree = "<group>"; };
+		E9A487EB1EA634F700C2EBBF /* CasesListSectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListSectionTableViewCell.m; sourceTree = "<group>"; };
+		E9A487ED1EA6355800C2EBBF /* CasesListRecipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListRecipeTableViewCell.h; sourceTree = "<group>"; };
+		E9A487EE1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListRecipeTableViewCell.m; sourceTree = "<group>"; };
 		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
 		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
@@ -557,6 +569,7 @@
 		8915812B1EA608C50090F3E6 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				E9A487E31EA6347200C2EBBF /* Cell */,
 				8915812E1EA608ED0090F3E6 /* Cases.xcassets */,
 				8915812C1EA608E20090F3E6 /* Cases.storyboard */,
 				891581301EA609050090F3E6 /* CasesViewController.h */,
@@ -861,6 +874,21 @@
 				890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E9A487E31EA6347200C2EBBF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9A487E41EA6349600C2EBBF /* CasesListCardTableViewCell.h */,
+				E9A487E51EA6349600C2EBBF /* CasesListCardTableViewCell.m */,
+				E9A487E71EA634C900C2EBBF /* CasesListOrderTableViewCell.h */,
+				E9A487E81EA634C900C2EBBF /* CasesListOrderTableViewCell.m */,
+				E9A487EA1EA634F700C2EBBF /* CasesListSectionTableViewCell.h */,
+				E9A487EB1EA634F700C2EBBF /* CasesListSectionTableViewCell.m */,
+				E9A487ED1EA6355800C2EBBF /* CasesListRecipeTableViewCell.h */,
+				E9A487EE1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E9CD59631E9CB72C00B1DCAB /* common */ = {
@@ -1224,6 +1252,7 @@
 				E9554CE51E9CB4C60080C02D /* UIView+Extension.m in Sources */,
 				891581101EA5DE290090F3E6 /* CityListViewController.m in Sources */,
 				893315681EA238E7003C4F54 /* ReportListViewController.m in Sources */,
+				E9A487E91EA634C900C2EBBF /* CasesListOrderTableViewCell.m in Sources */,
 				891580851EA5DBEC0090F3E6 /* HospitalEvaluateViewController.m in Sources */,
 				8915811B1EA5DE290090F3E6 /* DepartmentsViewController.m in Sources */,
 				E9648CF51E9F290B00943168 /* OrderRankView.m in Sources */,
@@ -1236,6 +1265,7 @@
 				E97D73751EA220B800540DF7 /* OrderMessageViewController.m in Sources */,
 				E97D737E1EA220F400540DF7 /* PaySucessViewController.m in Sources */,
 				8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */,
+				E9A487EC1EA634F700C2EBBF /* CasesListSectionTableViewCell.m in Sources */,
 				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
@@ -1283,10 +1313,12 @@
 				891580861EA5DBEC0090F3E6 /* HospitalNoticeViewController.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
 				E97D738B1EA231FE00540DF7 /* OrderCostLsitHeaderView.m in Sources */,
+				E9A487EF1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m in Sources */,
 				E9648CF61E9F290B00943168 /* OrderScreenSelectData.m in Sources */,
 				E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */,
 				E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */,
 				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
+				E9A487E61EA6349600C2EBBF /* CasesListCardTableViewCell.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				89FAF92C1E9DD18F002DE124 /* DetpartMentsListTableViewCell.m in Sources */,
 				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
