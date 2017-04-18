@@ -28,7 +28,9 @@
 
 @end
 
-@implementation OrderViewController
+@implementation OrderViewController{
+    NSArray *_rowNameArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,7 +49,8 @@
     // 排序
     self.orderRankView = [[OrderRankView alloc] initWithStartY:42];
     self.orderRankView.delegate = self;
-    self.orderRankView.rowNameArray = @[@"开发度",@"好评度",@"门诊量",@"预约量",@"医院级别",@"距离"];
+    _rowNameArray = @[@"开发度",@"好评度",@"门诊量",@"预约量",@"医院级别",@"距离"];
+    self.orderRankView.rowNameArray = _rowNameArray;
     [self.view addSubview:self.orderRankView];
     //筛选
     self.orderScreenView = [[OrderScreenView alloc] initWithStartY:42];
@@ -151,6 +154,7 @@
     if (self.rankButton.selected) {
         self.rankButton.selected = !self.rankButton.selected;
     }
+    
     NSLog(@"选择了第%d行",(int)orderById);
 }
 - (void)orderResultCancel{

@@ -33,7 +33,11 @@
 
 @end
 
-@implementation OrderCostListViewController
+@implementation OrderCostListViewController{
+    int rankTag;//记录排序按钮，1：时间排序 2：支付排序
+    NSArray *_dateRowNameArray;
+    NSArray *_payRowNameArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,6 +52,9 @@
     [self.view addSubview:self.orderRankView];
     
     self.selectArray = [NSMutableArray array];
+    
+    _dateRowNameArray = @[@"一周内",@"一月内",@"半年内",@"一年内"];
+    _payRowNameArray = @[@"未支付",@"已支付",@"全部"];
     
     OrderCostListModel *model = [[OrderCostListModel alloc]init];
      OrderCostListModel *model1 = [[OrderCostListModel alloc]init];
@@ -211,36 +218,54 @@
 }
 //时间排序
 - (IBAction)dateAction:(id)sender {
+    rankTag = 1;
     if (self.payButton.selected) {
         self.payButton.selected = !self.payButton.selected;
     }
     UIButton *button = sender;
     button.selected  = !button.selected;
     
-    self.orderRankView.rowNameArray = @[@"一周内",@"一月内",@"半年内",@"一年内"];
+    self.orderRankView.rowNameArray = _dateRowNameArray;
     if (self.orderRankView.show && button.selected) {
         self.orderRankView.show = NO;
     }
-    
+    //高亮行
+    for (int i =0; i <_dateRowNameArray.count; i++) {
+        if ([_dateRowNameArray[i]isEqualToString:self.dateButton.titleLabel.text]) {
+            self.orderRankView.hightLightRow = i+1;//+1筛选掉0，0默认没有高亮行
+        }
+    }
     [self.orderRankView orderRank];
 }
 //支付排序
 - (IBAction)payAction:(id)sender {
+    rankTag = 2;
     if (self.dateButton.selected) {
         self.dateButton.selected = !self.dateButton.selected;
     }
     UIButton *button = sender;
     button.selected  = !button.selected;
     
-    self.orderRankView.rowNameArray = @[@"未支付",@"已支付",@"全部"];
+    self.orderRankView.rowNameArray = _payRowNameArray;
     if (self.orderRankView.show && button.selected) {
         self.orderRankView.show = NO;
+    }
+    //高亮行
+    for (int i =0; i <_payRowNameArray.count; i++) {
+        if ([_payRowNameArray[i]isEqualToString:self.payButton.titleLabel.text]) {
+            self.orderRankView.hightLightRow = i+1;//+1筛选掉0，0默认没有高亮行
+        }
     }
     [self.orderRankView orderRank];
 }
 
 - (void)orderResultId:(NSInteger)orderById{
     [self checkSelect];
+    if (rankTag ==1) {
+        [self.dateButton setTitle:_dateRowNameArray[orderById] forState:UIControlStateNormal];
+    }else if (rankTag ==2){
+        [self.payButton setTitle:_payRowNameArray[orderById] forState:UIControlStateNormal];
+    }
     NSLog(@"选择了第%d行",(int)orderById);
 }
 - (void)orderResultCancel{
