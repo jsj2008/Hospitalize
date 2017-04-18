@@ -54,6 +54,9 @@
 		891581231EA5DE290090F3E6 /* VisitsStopScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581091EA5DE290090F3E6 /* VisitsStopScheduleView.m */; };
 		891581241EA5DE290090F3E6 /* VisitsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915810B1EA5DE290090F3E6 /* VisitsTitleView.m */; };
 		8915812A1EA5E5830090F3E6 /* ReportCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581291EA5E5830090F3E6 /* ReportCategoryTableViewCell.m */; };
+		8915812D1EA608E20090F3E6 /* Cases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8915812C1EA608E20090F3E6 /* Cases.storyboard */; };
+		8915812F1EA608ED0090F3E6 /* Cases.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8915812E1EA608ED0090F3E6 /* Cases.xcassets */; };
+		891581321EA609050090F3E6 /* CasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581311EA609050090F3E6 /* CasesViewController.m */; };
 		893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893315481EA1E514003C4F54 /* Hospital.storyboard */; };
 		8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315591EA1F6D5003C4F54 /* FCStarView.m */; };
 		893315601EA20DBE003C4F54 /* UILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155F1EA20DBE003C4F54 /* UILogic.m */; };
@@ -90,7 +93,6 @@
 		E9554CB81E9CB3BC0080C02D /* HospitalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CB71E9CB3BC0080C02D /* HospitalizeTests.m */; };
 		E9554CC31E9CB3BC0080C02D /* HospitalizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CC21E9CB3BC0080C02D /* HospitalizeUITests.m */; };
 		E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD21E9CB4C60080C02D /* FifthViewController.m */; };
-		E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD61E9CB4C60080C02D /* FourthViewController.m */; };
 		E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CD81E9CB4C60080C02D /* MainTabBarViewController.m */; };
 		E9554CE31E9CB4C60080C02D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDA1E9CB4C60080C02D /* SecondViewController.m */; };
 		E9554CE41E9CB4C60080C02D /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CDC1E9CB4C60080C02D /* ThridViewController.m */; };
@@ -238,6 +240,10 @@
 		8915810B1EA5DE290090F3E6 /* VisitsTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitsTitleView.m; sourceTree = "<group>"; };
 		891581281EA5E5830090F3E6 /* ReportCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportCategoryTableViewCell.h; sourceTree = "<group>"; };
 		891581291EA5E5830090F3E6 /* ReportCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportCategoryTableViewCell.m; sourceTree = "<group>"; };
+		8915812C1EA608E20090F3E6 /* Cases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cases.storyboard; sourceTree = "<group>"; };
+		8915812E1EA608ED0090F3E6 /* Cases.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cases.xcassets; sourceTree = "<group>"; };
+		891581301EA609050090F3E6 /* CasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesViewController.h; sourceTree = "<group>"; };
+		891581311EA609050090F3E6 /* CasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesViewController.m; sourceTree = "<group>"; };
 		893315481EA1E514003C4F54 /* Hospital.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
 		893315581EA1F6D5003C4F54 /* FCStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCStarView.h; sourceTree = "<group>"; };
 		893315591EA1F6D5003C4F54 /* FCStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCStarView.m; sourceTree = "<group>"; };
@@ -309,8 +315,6 @@
 		E9554CC41E9CB3BC0080C02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9554CD11E9CB4C60080C02D /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		E9554CD21E9CB4C60080C02D /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
-		E9554CD51E9CB4C60080C02D /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		E9554CD61E9CB4C60080C02D /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		E9554CD71E9CB4C60080C02D /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		E9554CD81E9CB4C60080C02D /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		E9554CD91E9CB4C60080C02D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -547,6 +551,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8915812B1EA608C50090F3E6 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				8915812E1EA608ED0090F3E6 /* Cases.xcassets */,
+				8915812C1EA608E20090F3E6 /* Cases.storyboard */,
+				891581301EA609050090F3E6 /* CasesViewController.h */,
+				891581311EA609050090F3E6 /* CasesViewController.m */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
 		893315471EA1E4FB003C4F54 /* HospitalInformation */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +639,8 @@
 		89FAF9181E9DC07F002DE124 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				89FAF9211E9DC247002DE124 /* Home.xcassets */,
+				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
 				891580D81EA5DE290090F3E6 /* Doctor */,
 				E9648CE81E9F28B200943168 /* OrderRankAndScreen */,
 				89EEC2DA1E9F411C00678995 /* Order */,
@@ -631,8 +648,6 @@
 				89FAF9291E9DCFEC002DE124 /* Cell */,
 				89EEC2F01E9F43E800678995 /* 1.jpg */,
 				89EEC2F21E9F45A400678995 /* 2.jpg */,
-				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
-				89FAF9211E9DC247002DE124 /* Home.xcassets */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -711,6 +726,7 @@
 		E9554C9C1E9CB3BC0080C02D /* Hospitalize */ = {
 			isa = PBXGroup;
 			children = (
+				8915812B1EA608C50090F3E6 /* Cases */,
 				893315471EA1E4FB003C4F54 /* HospitalInformation */,
 				89FAF9181E9DC07F002DE124 /* Home */,
 				E99143DC1EA0D0B300765903 /* Login */,
@@ -762,8 +778,6 @@
 				E9554CE61E9CB52E0080C02D /* tabbar.xcassets */,
 				E9554CD11E9CB4C60080C02D /* FifthViewController.h */,
 				E9554CD21E9CB4C60080C02D /* FifthViewController.m */,
-				E9554CD51E9CB4C60080C02D /* FourthViewController.h */,
-				E9554CD61E9CB4C60080C02D /* FourthViewController.m */,
 				E9554CD71E9CB4C60080C02D /* MainTabBarViewController.h */,
 				E9554CD81E9CB4C60080C02D /* MainTabBarViewController.m */,
 				E9554CD91E9CB4C60080C02D /* SecondViewController.h */,
@@ -1024,10 +1038,12 @@
 				89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */,
 				89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */,
 				E97D73581EA1E83500540DF7 /* Hospital.xcassets in Resources */,
+				8915812F1EA608ED0090F3E6 /* Cases.xcassets in Resources */,
 				E9554CAA1E9CB3BC0080C02D /* Assets.xcassets in Resources */,
 				E9554CA81E9CB3BC0080C02D /* Main.storyboard in Resources */,
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
 				89EEC2F31E9F45A400678995 /* 2.jpg in Resources */,
+				8915812D1EA608E20090F3E6 /* Cases.storyboard in Resources */,
 				89EEC2F11E9F43E800678995 /* 1.jpg in Resources */,
 				893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */,
 				890592061EA0E723002F161F /* Login.storyboard in Resources */,
@@ -1224,7 +1240,6 @@
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				E97D73821EA2213100540DF7 /* PayViewController.m in Sources */,
 				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
-				E9554CE11E9CB4C60080C02D /* FourthViewController.m in Sources */,
 				890592011EA0D46C002F161F /* RegisterViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				891581161EA5DE290090F3E6 /* PinYinForObjc.m in Sources */,
@@ -1269,6 +1284,7 @@
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				89FAF92C1E9DD18F002DE124 /* DetpartMentsListTableViewCell.m in Sources */,
 				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
+				891581321EA609050090F3E6 /* CasesViewController.m in Sources */,
 				89EEC2D61E9F2A8000678995 /* HomeBannerTableViewCell.m in Sources */,
 				891581121EA5DE290090F3E6 /* ChineseToPinyinResource.m in Sources */,
 				E97D73721EA21B2E00540DF7 /* OrderNoteViewController.m in Sources */,
