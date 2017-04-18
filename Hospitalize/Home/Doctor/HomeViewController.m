@@ -43,7 +43,6 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = NO;
     
     [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:titleViewAlpha]] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
@@ -55,7 +54,6 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.tabBarController.tabBar.hidden = YES;
     
     [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
     //导航栏下面黑线
@@ -171,7 +169,6 @@
     cityListView.arrayHistoricalCity = [NSMutableArray arrayWithObjects:@"福州",@"厦门",@"泉州", nil];
     //定位城市列表
     cityListView.arrayLocatingCity   = [NSMutableArray arrayWithObjects:@"福州", nil];
-    
     [self.navigationController pushViewController:cityListView animated:YES];
 }
 

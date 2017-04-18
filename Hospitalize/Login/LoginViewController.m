@@ -34,11 +34,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)registerAction:(id)sender {
-    OrderCostListViewController *cost = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderCostListViewController"];
-    [self.navigationController pushViewController:cost animated:YES];
+//    OrderCostListViewController *cost = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderCostListViewController"];
+//    [self.navigationController pushViewController:cost animated:YES];
     
-//    RegisterViewController *registerViewController = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"RegisterViewController"];
-//    [self.navigationController pushViewController:registerViewController animated:YES];
+    RegisterViewController *registerViewController = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"RegisterViewController"];
+    [self.navigationController pushViewController:registerViewController animated:YES];
     
 }
 

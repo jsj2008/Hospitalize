@@ -1,24 +1,23 @@
 //
-//  FourthViewController.m
-//  Logic
+//  CasesViewController.m
+//  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/7.
-//  Copyright © 2017年 宋明月. All rights reserved.
+//  Created by 宋明月 on 2017/4/18.
+//  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "FourthViewController.h"
+#import "CasesViewController.h"
 
-@interface FourthViewController ()
+@interface CasesViewController ()
 
 @end
 
-@implementation FourthViewController
+@implementation CasesViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {

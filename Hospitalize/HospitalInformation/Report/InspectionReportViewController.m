@@ -60,6 +60,8 @@
         return cell;
     } else if (indexPath.row == 3){
         ReportCategoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReportCategoryTableViewCell" forIndexPath:indexPath];
+        cell.projectContent.textColor = COLOR949A9E;
+        cell.resultLabel.textColor = COLOR333333;
         return cell;
     } else if (indexPath.row == 4){
         InspectionReportPersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InspectionReportPersonTableViewCell" forIndexPath:indexPath];
