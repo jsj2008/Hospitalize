@@ -157,7 +157,7 @@
         } else {
             //无箭头
             cell.accessoryType = UITableViewCellAccessoryNone;
-            cell.stateRightConstraint.constant = 40;
+            cell.stateRightConstraint.constant = 35;
             cell.stateLabel.textColor = COLOR949A9E;
             cell.stateLabel.text = @"未出";
         }
