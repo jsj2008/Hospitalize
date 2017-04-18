@@ -50,7 +50,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jM4-jZ-FRr" firstAttribute="top" secondItem="rNT-2h-ObC" secondAttribute="bottom" constant="2" id="0uQ-j7-2ae"/>
                             <constraint firstAttribute="trailing" secondItem="fyh-qJ-hQC" secondAttribute="trailing" id="5n1-dc-SLF"/>

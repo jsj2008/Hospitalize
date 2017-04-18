@@ -57,5 +57,16 @@
     return [hospitalStoryboard instantiateViewControllerWithIdentifier:identifier];
 }
 
+/**
+ *  从Cases.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier {
+    UIStoryboard *casesStoryboard = [UIStoryboard storyboardWithName:@"Cases" bundle:nil];
+    return [casesStoryboard instantiateViewControllerWithIdentifier:identifier];
+}
+
 
 @end

@@ -14,10 +14,27 @@
 
 @implementation CasesViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    //导航栏下面黑线
+    self.navigationController.navigationBar.shadowImage = nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"韩梅梅";
 }
 
 - (void)didReceiveMemoryWarning {

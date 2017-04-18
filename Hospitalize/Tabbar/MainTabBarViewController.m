@@ -43,7 +43,7 @@
     ThridViewController *thridVC = [[ThridViewController alloc] init];
     [self setChildVC:thridVC title:@"消息" image:@"person" selectedImage:@"mine"];
     
-    CasesViewController *casesVC = [[CasesViewController alloc] init];
+    CasesViewController *casesVC = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesViewController"];
     [self setChildVC:casesVC title:@"病例" image:@"person" selectedImage:@"mine"];
     
     FifthViewController *fifthVC = [[FifthViewController alloc] init];
