@@ -329,135 +329,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvX-DR-3kR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索医院" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dj0-fg-K1d">
-                                        <rect key="frame" x="73" y="27" width="255" height="28"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="2FN-U7-eJD"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugl-Kk-g0q">
-                                        <rect key="frame" x="328" y="20" width="47" height="44"/>
-                                        <state key="normal" image="home_itme_qrcodeScanning"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXf-C0-vAq">
-                                        <rect key="frame" x="0.0" y="20" width="73" height="44"/>
-                                        <state key="normal" title="杭州" image="home_itme_positioning">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN2-cN-IQ7">
-                                        <rect key="frame" x="73" y="27" width="255" height="28"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="JN2-cN-IQ7" firstAttribute="centerY" secondItem="Dj0-fg-K1d" secondAttribute="centerY" id="9TP-t8-TpF"/>
-                                    <constraint firstItem="JN2-cN-IQ7" firstAttribute="width" secondItem="Dj0-fg-K1d" secondAttribute="width" id="D6H-oi-wA6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dj0-fg-K1d" secondAttribute="trailing" constant="47" id="GEu-uo-bop"/>
-                                    <constraint firstItem="Dj0-fg-K1d" firstAttribute="top" secondItem="fvX-DR-3kR" secondAttribute="top" constant="27" id="Ny9-s2-iXD"/>
-                                    <constraint firstItem="Ugl-Kk-g0q" firstAttribute="top" secondItem="fvX-DR-3kR" secondAttribute="top" constant="20" id="OEq-Nz-oow"/>
-                                    <constraint firstItem="JN2-cN-IQ7" firstAttribute="height" secondItem="Dj0-fg-K1d" secondAttribute="height" id="Soq-F5-HQn"/>
-                                    <constraint firstAttribute="bottom" secondItem="lXf-C0-vAq" secondAttribute="bottom" id="VD7-iv-le8"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ugl-Kk-g0q" secondAttribute="trailing" id="VtV-Aa-A4V"/>
-                                    <constraint firstItem="Dj0-fg-K1d" firstAttribute="leading" secondItem="fvX-DR-3kR" secondAttribute="leading" constant="73" id="bhn-h2-P9p"/>
-                                    <constraint firstItem="lXf-C0-vAq" firstAttribute="leading" secondItem="fvX-DR-3kR" secondAttribute="leading" id="cuz-dG-dQm"/>
-                                    <constraint firstItem="JN2-cN-IQ7" firstAttribute="centerX" secondItem="Dj0-fg-K1d" secondAttribute="centerX" id="hUv-ds-TTK"/>
-                                    <constraint firstItem="lXf-C0-vAq" firstAttribute="top" secondItem="fvX-DR-3kR" secondAttribute="top" constant="20" id="nPH-G0-dqe"/>
-                                    <constraint firstItem="Ugl-Kk-g0q" firstAttribute="leading" secondItem="Dj0-fg-K1d" secondAttribute="trailing" id="o34-Qe-Jzs"/>
-                                    <constraint firstItem="Dj0-fg-K1d" firstAttribute="leading" secondItem="lXf-C0-vAq" secondAttribute="trailing" id="oOz-Wn-YBp"/>
-                                    <constraint firstAttribute="height" constant="64" id="tma-D3-8iI"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ugl-Kk-g0q" secondAttribute="bottom" id="tzi-UF-1vu"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-zB-fgH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索医院" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c97-UL-KsW">
-                                        <rect key="frame" x="73" y="27" width="255" height="28"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="S4P-zm-qzP"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEt-cu-tfZ">
-                                        <rect key="frame" x="328" y="20" width="47" height="44"/>
-                                        <state key="normal" image="home_itme_qrcodeScanning"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQb-1L-xIw">
-                                        <rect key="frame" x="0.0" y="20" width="73" height="44"/>
-                                        <state key="normal" title="杭州" image="home_itme_positioning">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qut-cx-92S">
-                                        <rect key="frame" x="73" y="27" width="255" height="28"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.29411764709999999" green="0.53725490200000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
-                                <constraints>
-                                    <constraint firstItem="VQb-1L-xIw" firstAttribute="top" secondItem="TQO-zB-fgH" secondAttribute="top" constant="20" id="2Ah-Ud-Hkr"/>
-                                    <constraint firstAttribute="trailing" secondItem="SEt-cu-tfZ" secondAttribute="trailing" id="3XT-Gc-of6"/>
-                                    <constraint firstAttribute="bottom" secondItem="VQb-1L-xIw" secondAttribute="bottom" id="8cr-Wq-JHF"/>
-                                    <constraint firstItem="c97-UL-KsW" firstAttribute="top" secondItem="TQO-zB-fgH" secondAttribute="top" constant="27" id="B6J-Nt-roF"/>
-                                    <constraint firstAttribute="bottom" secondItem="SEt-cu-tfZ" secondAttribute="bottom" id="Cv4-vj-fmu"/>
-                                    <constraint firstItem="Qut-cx-92S" firstAttribute="height" secondItem="c97-UL-KsW" secondAttribute="height" id="J0C-yJ-oeE"/>
-                                    <constraint firstItem="c97-UL-KsW" firstAttribute="leading" secondItem="VQb-1L-xIw" secondAttribute="trailing" id="LKE-QG-Cze"/>
-                                    <constraint firstItem="Qut-cx-92S" firstAttribute="centerX" secondItem="c97-UL-KsW" secondAttribute="centerX" id="O5p-aO-n4b"/>
-                                    <constraint firstItem="c97-UL-KsW" firstAttribute="leading" secondItem="TQO-zB-fgH" secondAttribute="leading" constant="73" id="O7T-Qh-cFv"/>
-                                    <constraint firstItem="VQb-1L-xIw" firstAttribute="leading" secondItem="TQO-zB-fgH" secondAttribute="leading" id="Ojj-wW-uTX"/>
-                                    <constraint firstAttribute="height" constant="64" id="PLJ-Dq-uGz"/>
-                                    <constraint firstAttribute="trailing" secondItem="c97-UL-KsW" secondAttribute="trailing" constant="47" id="Vvp-03-K5q"/>
-                                    <constraint firstItem="SEt-cu-tfZ" firstAttribute="top" secondItem="TQO-zB-fgH" secondAttribute="top" constant="20" id="fFN-OB-Pg1"/>
-                                    <constraint firstItem="Qut-cx-92S" firstAttribute="centerY" secondItem="c97-UL-KsW" secondAttribute="centerY" id="fsr-rY-xvd"/>
-                                    <constraint firstItem="Qut-cx-92S" firstAttribute="width" secondItem="c97-UL-KsW" secondAttribute="width" id="nME-gv-XeV"/>
-                                    <constraint firstItem="SEt-cu-tfZ" firstAttribute="leading" secondItem="c97-UL-KsW" secondAttribute="trailing" id="vTO-lU-0KW"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zft-SX-Mxx" firstAttribute="top" secondItem="V2w-TV-7gb" secondAttribute="top" id="4Nz-ly-GWF"/>
-                            <constraint firstAttribute="trailing" secondItem="TQO-zB-fgH" secondAttribute="trailing" id="76p-2J-1XD"/>
-                            <constraint firstItem="fvX-DR-3kR" firstAttribute="top" secondItem="V2w-TV-7gb" secondAttribute="top" id="AEk-SG-XdJ"/>
-                            <constraint firstItem="N8P-Zt-Tv8" firstAttribute="top" secondItem="Zft-SX-Mxx" secondAttribute="bottom" id="LUI-cZ-DIb"/>
-                            <constraint firstItem="fvX-DR-3kR" firstAttribute="leading" secondItem="V2w-TV-7gb" secondAttribute="leading" id="Ryj-Q8-EEk"/>
-                            <constraint firstAttribute="trailing" secondItem="fvX-DR-3kR" secondAttribute="trailing" id="ddH-AE-48Z"/>
+                            <constraint firstItem="Zft-SX-Mxx" firstAttribute="top" secondItem="V2w-TV-7gb" secondAttribute="top" id="Fci-Yp-xRf"/>
+                            <constraint firstItem="N8P-Zt-Tv8" firstAttribute="top" secondItem="Zft-SX-Mxx" secondAttribute="bottom" id="PWk-kA-IzX"/>
                             <constraint firstAttribute="trailing" secondItem="Zft-SX-Mxx" secondAttribute="trailing" id="drc-JD-h1s"/>
-                            <constraint firstItem="TQO-zB-fgH" firstAttribute="leading" secondItem="V2w-TV-7gb" secondAttribute="leading" id="frr-XG-hFn"/>
                             <constraint firstItem="Zft-SX-Mxx" firstAttribute="leading" secondItem="V2w-TV-7gb" secondAttribute="leading" id="v8k-fo-IRk"/>
-                            <constraint firstItem="TQO-zB-fgH" firstAttribute="top" secondItem="V2w-TV-7gb" secondAttribute="top" id="zfx-pl-dNg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="barPositioningButton" destination="VQb-1L-xIw" id="03J-DA-MYZ"/>
-                        <outlet property="barQrcodeScanningButton" destination="SEt-cu-tfZ" id="XE6-CO-Eaf"/>
-                        <outlet property="barSearchButton" destination="Qut-cx-92S" id="z0P-ZU-eaW"/>
-                        <outlet property="barSearchTextField" destination="c97-UL-KsW" id="hhn-O6-Coa"/>
-                        <outlet property="barTitleView" destination="TQO-zB-fgH" id="J9g-lW-iK5"/>
                         <outlet property="mainTableView" destination="Zft-SX-Mxx" id="sYw-D1-F7S"/>
-                        <outlet property="positioningButton" destination="lXf-C0-vAq" id="X6L-Dg-nwU"/>
-                        <outlet property="qrcodeScanningButton" destination="Ugl-Kk-g0q" id="Fsk-a2-1K5"/>
-                        <outlet property="searchButton" destination="JN2-cN-IQ7" id="FlA-z5-rlD"/>
-                        <outlet property="searchTextField" destination="Dj0-fg-K1d" id="pqA-4O-Ceb"/>
-                        <outlet property="titleView" destination="fvX-DR-3kR" id="PWy-gv-XUN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMa-cI-uH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2337,8 +2219,6 @@
         <image name="home_icon_star_quanhuangxing" width="11" height="11"/>
         <image name="home_img_notResults" width="150" height="150"/>
         <image name="home_itme_back" width="20" height="20"/>
-        <image name="home_itme_positioning" width="14" height="14"/>
-        <image name="home_itme_qrcodeScanning" width="20" height="20"/>
         <image name="order_cancal" width="20" height="20"/>
         <image name="order_default_head" width="48" height="48"/>
         <image name="order_keshi" width="20" height="20"/>

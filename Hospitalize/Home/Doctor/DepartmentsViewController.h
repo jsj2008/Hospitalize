@@ -10,6 +10,6 @@
 
 @interface DepartmentsViewController : BaseViewController
 
-@property(nonatomic, copy)NSString *title;
+@property(nonatomic, copy)NSString *titleName;
 
 @end

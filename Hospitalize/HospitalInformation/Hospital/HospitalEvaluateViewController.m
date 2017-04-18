@@ -7,8 +7,13 @@
 //
 
 #import "HospitalEvaluateViewController.h"
+#import "FCStarView.h"
 
 @interface HospitalEvaluateViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *starBaseView;
+@property (strong, nonatomic) FCStarView *starView;
+
 
 @end
 
@@ -17,6 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"医院评价";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonAction:)];
+    
+    
+    self.starView = [[FCStarView alloc]initWithFrame:CGRectMake(0, 0, 200, 35) withNumberOfStars:5 withPercent:1 withUserInteractionEnabled:YES];
+    [self.starBaseView addSubview:self.starView];
+    
+}
+
+#pragma mark Action
+- (void)rightBarButtonAction:(id)sender {
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
