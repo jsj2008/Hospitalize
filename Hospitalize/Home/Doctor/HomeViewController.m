@@ -185,6 +185,7 @@
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {
     OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
+
     [self.navigationController pushViewController:order animated:YES];
 }
 //在线咨询事件
