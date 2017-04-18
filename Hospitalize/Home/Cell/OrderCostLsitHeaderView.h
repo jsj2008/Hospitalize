@@ -10,4 +10,7 @@
 
 @interface OrderCostLsitHeaderView : UITableViewHeaderFooterView
 
+@property (nonatomic,retain)UIButton *selectButton;
+
+@property (nonatomic,retain)UIButton *showButton;
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OrderCostListTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *selectButton;
 
 @end

@@ -754,6 +754,9 @@
                                         <state key="normal" title="一周内">
                                             <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dateAction:" destination="Pz4-RB-ivT" eventType="touchUpInside" id="XEM-mG-YYR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPL-eN-LuN">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="42"/>
@@ -761,6 +764,9 @@
                                         <state key="normal" title="未支付">
                                             <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="payAction:" destination="Pz4-RB-ivT" eventType="touchUpInside" id="y2F-me-9SX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -827,14 +833,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.10108612804878049" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCostListTableViewCell" id="M1G-DT-4zC" customClass="OrderCostListTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCostListTableViewCell" id="M1G-DT-4zC" customClass="OrderCostListTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1G-DT-4zC" id="7sm-pQ-k3E">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mm-AL-JzU">
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mm-AL-JzU">
                                                     <rect key="frame" x="15" y="15" width="15" height="22"/>
                                                     <state key="normal" image="zhifuqueren_no"/>
                                                     <state key="selected" image="zhifuqueren"/>
@@ -885,6 +891,9 @@
                                                 <constraint firstItem="GZb-OX-tZu" firstAttribute="centerY" secondItem="no5-cp-v1n" secondAttribute="centerY" id="zQB-iI-bKu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="selectButton" destination="2Mm-AL-JzU" id="axc-CR-nof"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -904,7 +913,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateButton" destination="pNy-Z7-PfD" id="FYy-nL-LLJ"/>
                         <outlet property="mainTableView" destination="jC3-OH-1XY" id="HJ3-GG-05r"/>
+                        <outlet property="payButton" destination="LPL-eN-LuN" id="TgT-Mn-Iih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7J-de-TOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1170,8 +1181,8 @@
                                                     <color key="textColor" red="0.58039215690000001" green="0.60392156860000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¥5.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-vg-rBS">
-                                                    <rect key="frame" x="280" y="17" width="61" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥5.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-vg-rBS">
+                                                    <rect key="frame" x="298.5" y="16" width="42.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>

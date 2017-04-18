@@ -11,7 +11,7 @@
 #import "FCCommonUtil.h"
 
 #define LineHeight 42
-#define LineNum 6
+//#define LineNum 6
 @interface OrderRankView() <UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
 
 @property (nonatomic, assign) CGFloat startY;
@@ -36,17 +36,18 @@
         
         self.startY = startY;
         self.show = NO;
-
-        self.height = LineHeight*LineNum +LineNum + 4;
-        
-        self.classArray = @[@"开放度",@"好评度",@"门诊量",@"预约量",@"医院级别",@"距离"];
     }
     return self;
 
 }
+
+-(void)setRowNameArray:(NSArray *)rowNameArray{
+    self.height = LineHeight*rowNameArray.count +rowNameArray.count + 4;
+    self.classArray = rowNameArray;
+}
 #pragma mark tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return LineNum;
+    return self.classArray.count;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -64,7 +65,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.textLabel.textColor = COLORFC7845;
-    //回调
+    // 返回点击数据
+    if ([self.delegate respondsToSelector:@selector(orderResultId:)]) {
+        [self.delegate orderResultId:indexPath.row];
+    }
     [self closeOrderRank];
 }
 #pragma mark 初始化
@@ -118,6 +122,9 @@
 }
 //点击灰色背景，关闭排序
 - (void)backgroundTapped:(UITapGestureRecognizer *)paramSender {
+    if ([self.delegate respondsToSelector:@selector(orderResultCancel)]) {
+        [self.delegate orderResultCancel];
+    }
     [self closeOrderRank];
 }
 
