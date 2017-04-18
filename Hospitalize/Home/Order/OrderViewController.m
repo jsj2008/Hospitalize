@@ -18,7 +18,7 @@
 #import "SearchViewController.h"
 
 
-@interface OrderViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface OrderViewController () <UITableViewDelegate,UITableViewDataSource,OrderRankResultDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @property (strong, nonatomic) OrderRankView  *orderRankView;//排序视图
@@ -46,6 +46,8 @@
     
     // 排序
     self.orderRankView = [[OrderRankView alloc] initWithStartY:42];
+    self.orderRankView.delegate = self;
+    self.orderRankView.rowNameArray = @[@"开发度",@"好评度",@"门诊量",@"预约量",@"医院级别",@"距离"];
     [self.view addSubview:self.orderRankView];
     //筛选
     self.orderScreenView = [[OrderScreenView alloc] initWithStartY:42];
@@ -143,6 +145,19 @@
         [self.orderRankView orderRank];
     }
     [self.orderScreenView orderScreen];
+}
+
+- (void)orderResultId:(NSInteger)orderById{
+    if (self.rankButton.selected) {
+        self.rankButton.selected = !self.rankButton.selected;
+    }
+    NSLog(@"选择了第%d行",(int)orderById);
+}
+- (void)orderResultCancel{
+    if (self.rankButton.selected) {
+        self.rankButton.selected = !self.rankButton.selected;
+    }
+    NSLog(@"取消了选择");
 }
 
 -(void)sreachAction{

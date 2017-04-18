@@ -121,6 +121,7 @@
 		E99143D91EA06D6900765903 /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143D81EA06D6900765903 /* MPLocationManager.m */; };
 		E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */; };
 		E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99143E31EA0DB8200765903 /* ChangePwdViewController.m */; };
+		E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */; };
 		E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */; };
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
@@ -364,6 +365,8 @@
 		E99143E01EA0D86F00765903 /* ForgetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassWordViewController.m; sourceTree = "<group>"; };
 		E99143E21EA0DB8200765903 /* ChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewController.h; sourceTree = "<group>"; };
 		E99143E31EA0DB8200765903 /* ChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdViewController.m; sourceTree = "<group>"; };
+		E9A487DA1EA5B0D800C2EBBF /* OrderCostListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCostListModel.h; sourceTree = "<group>"; };
+		E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCostListModel.m; sourceTree = "<group>"; };
 		E9C581231E9DF1AF005BBC08 /* UIView+CornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerBorder.h"; sourceTree = "<group>"; };
 		E9C581241E9DF1B4005BBC08 /* UIView+CornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerBorder.m"; sourceTree = "<group>"; };
 		E9CD59641E9CB74800B1DCAB /* FCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMacros.h; sourceTree = "<group>"; };
@@ -612,6 +615,8 @@
 				E97D73741EA220B800540DF7 /* OrderMessageViewController.m */,
 				E97D73831EA22C6B00540DF7 /* OrderCostListViewController.h */,
 				E97D73841EA22C6B00540DF7 /* OrderCostListViewController.m */,
+				E9A487DA1EA5B0D800C2EBBF /* OrderCostListModel.h */,
+				E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -1225,6 +1230,7 @@
 				891581161EA5DE290090F3E6 /* PinYinForObjc.m in Sources */,
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
+				E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */,
 				891581171EA5DE290090F3E6 /* PinyinHelper.m in Sources */,
 				E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */,
 				89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */,
