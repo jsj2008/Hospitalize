@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = self.title;
+    self.navigationItem.title = self.titleName;
     
     self.doctorArray = [NSMutableArray array];
     self.doctorArray = [@[@"1",@"1",@"1",@"1",@"1",@"1",@"1"] mutableCopy];

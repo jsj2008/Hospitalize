@@ -142,7 +142,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     DepartmentsViewController *departmentsViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsViewController"];
-    departmentsViewController.title = [[self.mergeSortArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    departmentsViewController.titleName = [[self.mergeSortArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:departmentsViewController animated:YES];
 }
 

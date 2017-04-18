@@ -17,6 +17,7 @@
 #import "CityListViewController.h"
 
 #import "LoginViewController.h"
+#import "ReportListViewController.h"
 #import "HospitalNoticeViewController.h"
 #import "HospitalEvaluateViewController.h"
 #import "NXCustomLeftBarButtonItem.h"
@@ -91,6 +92,10 @@
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
     
 }
+#pragma mark -CityListViewDelegate
+- (void)didClickedWithCityName:(NSString*)cityName{
+    
+}
 
 - (void)initLeftBarButtonItem {
     self.leftBarButtonItem.title = @"杭州";
@@ -156,11 +161,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)didClickedWithCityName:(NSString*)cityName{
-    
-}
-
-
 //定位事件
 -(void)leftBarButtonItemClick:(id)sender{
     CityListViewController *cityListView = [[CityListViewController alloc]init];
@@ -182,7 +182,8 @@
 }
 //二维码扫描事件
 -(void)scanButtonAction:(id)sender{
-    
+    ReportListViewController *reportList = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"ReportListViewController"];
+    [self.navigationController pushViewController:reportList animated:YES];
 }
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {

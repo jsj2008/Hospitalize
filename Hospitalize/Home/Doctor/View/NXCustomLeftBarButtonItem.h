@@ -10,7 +10,7 @@
 
 @interface NXCustomLeftBarButtonItem : UIView
 
-@property (nonatomic,   copy) NSString *title;
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) UIImageView *rightImageView;
 @property (nonatomic, strong) UIButton *clickButton;
 
