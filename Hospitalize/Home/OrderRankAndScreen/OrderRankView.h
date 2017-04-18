@@ -21,6 +21,8 @@
 
 @property (nonatomic, assign) BOOL show;//是否在显示状态
 
+@property (nonatomic,assign) int hightLightRow;//显示高亮行，0默认没有高亮行
+
 -(instancetype)initWithStartY:(CGFloat)startY;
 //显示
 -(void)orderRank;

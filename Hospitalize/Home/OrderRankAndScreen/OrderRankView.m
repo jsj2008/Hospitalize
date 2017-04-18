@@ -58,11 +58,25 @@
     cell.textLabel.text = self.classArray[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.textColor = COLOR666666;
+    if (self.hightLightRow >0) {
+        if (self.hightLightRow-1 ==indexPath.row) {
+          cell.textLabel.textColor = COLORFC7845;
+        }
+    }
+    
     return cell;
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    //取消之前的高亮行
+    if (self.hightLightRow >0) {
+            NSIndexPath *path = [NSIndexPath indexPathForRow:self.hightLightRow-1 inSection:0];
+            UITableViewCell *usedCell = [tableView cellForRowAtIndexPath:path];
+            usedCell.textLabel.textColor = COLOR666666;
+    }
+    //显示现在的高亮行
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.textLabel.textColor = COLORFC7845;
     // 返回点击数据

@@ -63,9 +63,9 @@
  *  @param identifier 视图对象ID
  *  @return 视图对象
  */
-+ (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier {
-    UIStoryboard *casesStoryboard = [UIStoryboard storyboardWithName:@"Cases" bundle:nil];
-    return [casesStoryboard instantiateViewControllerWithIdentifier:identifier];
++ (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier{
+    UIStoryboard *hospitalStoryboard = [UIStoryboard storyboardWithName:@"Cases" bundle:nil];
+    return [hospitalStoryboard instantiateViewControllerWithIdentifier:identifier];
 }
 
 

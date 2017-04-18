@@ -35,6 +35,8 @@
  */
 + (id) getViewControllerFromHospitalStoryboardWithIdentifier:(NSString *) identifier;
 
+
+
 /**
  *  从Cases.Storyboard获取视图对象。
  *
@@ -42,7 +44,6 @@
  *  @return 视图对象
  */
 + (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier;
-
 
 
 @end

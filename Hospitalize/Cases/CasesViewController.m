@@ -7,8 +7,10 @@
 //
 
 #import "CasesViewController.h"
+#import "CasesListViewController.h"
 #import "CasesListTableViewCell.h"
 #import "BackNumberInstructionsViewController.h"
+#import "CasesListViewController.h"
 
 @interface CasesViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -70,9 +72,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
-    [self.navigationController pushViewController:backNumberInstructions animated:YES];
+//    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
+//    [self.navigationController pushViewController:backNumberInstructions animated:YES];
+    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
+    [self.navigationController pushViewController:list animated:YES];
     
+}
+- (IBAction)buttonAction:(id)sender {
+    CasesListViewController *lsit = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
+    [self.navigationController pushViewController:lsit animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
