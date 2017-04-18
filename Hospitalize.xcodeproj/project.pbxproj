@@ -54,7 +54,6 @@
 		891581231EA5DE290090F3E6 /* VisitsStopScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581091EA5DE290090F3E6 /* VisitsStopScheduleView.m */; };
 		891581241EA5DE290090F3E6 /* VisitsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915810B1EA5DE290090F3E6 /* VisitsTitleView.m */; };
 		8915812A1EA5E5830090F3E6 /* ReportCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581291EA5E5830090F3E6 /* ReportCategoryTableViewCell.m */; };
-		8915812D1EA608E20090F3E6 /* Cases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8915812C1EA608E20090F3E6 /* Cases.storyboard */; };
 		8915812F1EA608ED0090F3E6 /* Cases.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8915812E1EA608ED0090F3E6 /* Cases.xcassets */; };
 		891581321EA609050090F3E6 /* CasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891581311EA609050090F3E6 /* CasesViewController.m */; };
 		893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893315481EA1E514003C4F54 /* Hospital.storyboard */; };
@@ -245,7 +244,6 @@
 		8915810B1EA5DE290090F3E6 /* VisitsTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitsTitleView.m; sourceTree = "<group>"; };
 		891581281EA5E5830090F3E6 /* ReportCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportCategoryTableViewCell.h; sourceTree = "<group>"; };
 		891581291EA5E5830090F3E6 /* ReportCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportCategoryTableViewCell.m; sourceTree = "<group>"; };
-		8915812C1EA608E20090F3E6 /* Cases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cases.storyboard; sourceTree = "<group>"; };
 		8915812E1EA608ED0090F3E6 /* Cases.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cases.xcassets; sourceTree = "<group>"; };
 		891581301EA609050090F3E6 /* CasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesViewController.h; sourceTree = "<group>"; };
 		891581311EA609050090F3E6 /* CasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesViewController.m; sourceTree = "<group>"; };
@@ -571,7 +569,6 @@
 			children = (
 				E9A487E31EA6347200C2EBBF /* Cell */,
 				8915812E1EA608ED0090F3E6 /* Cases.xcassets */,
-				8915812C1EA608E20090F3E6 /* Cases.storyboard */,
 				891581301EA609050090F3E6 /* CasesViewController.h */,
 				891581311EA609050090F3E6 /* CasesViewController.m */,
 				E9A487E01EA612C900C2EBBF /* CasesListViewController.h */,
@@ -1076,7 +1073,6 @@
 				E9554CA81E9CB3BC0080C02D /* Main.storyboard in Resources */,
 				E9554CE71E9CB52E0080C02D /* tabbar.xcassets in Resources */,
 				89EEC2F31E9F45A400678995 /* 2.jpg in Resources */,
-				8915812D1EA608E20090F3E6 /* Cases.storyboard in Resources */,
 				89EEC2F11E9F43E800678995 /* 1.jpg in Resources */,
 				893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */,
 				890592061EA0E723002F161F /* Login.storyboard in Resources */,
