@@ -32,4 +32,6 @@
  */
 + (CGSize)sizeWithString:(NSString *)string font:(UIFont *)font ContentMaxSize:(CGSize)contentMaxSize;
 
++(UIImage*) createImageWithColor:(UIColor*) color;
+
 @end

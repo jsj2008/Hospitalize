@@ -7,34 +7,72 @@
 //
 
 #import "CasesViewController.h"
+#import "CasesListTableViewCell.h"
+#import "BackNumberInstructionsViewController.h"
 
-@interface CasesViewController ()
+@interface CasesViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end
 
 @implementation CasesViewController
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    
-    self.navigationController.navigationBar.translucent = YES;
-}
-
-
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    
-    //导航栏下面黑线
-    self.navigationController.navigationBar.shadowImage = nil;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    [navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[UIColor clearColor]]
+                       forBarPosition:UIBarPositionAny
+                           barMetrics:UIBarMetricsDefault];
+    [navigationBar setShadowImage:[UIImage new]];
     self.navigationItem.title = @"韩梅梅";
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
+    [self setExtraCellLineHidden:self.mainTableView];
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row % 2 == 0) {
+        return 184;
+    }
+    return 156;
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 4;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CasesListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CasesListTableViewCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    cell.contentBigView.layer.shadowColor=[UIColor blackColor].CGColor;
+    cell.contentBigView.layer.shadowOffset=CGSizeMake(0, 0);
+    cell.contentBigView.layer.shadowOpacity=0.15;
+    cell.contentBigView.layer.shadowRadius=5;
+    
+    if (indexPath.row % 2 == 0) {
+        cell.doctorImageView.hidden = NO;
+        cell.doctorName.hidden = NO;
+        cell.costTopConstraint.constant = 41;
+    } else {
+        cell.doctorImageView.hidden = YES;
+        cell.doctorName.hidden = YES;
+        cell.costTopConstraint.constant = 12;
+        
+    }
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
+    [self.navigationController pushViewController:backNumberInstructions animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,14 +80,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)setExtraCellLineHidden: (UITableView *)tableView {
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
 }
-*/
 
 @end

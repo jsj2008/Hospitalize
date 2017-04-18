@@ -44,7 +44,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:titleViewAlpha]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:titleViewAlpha]] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     
     titleView.backgroundColor = [UIColor whiteColor] ;
@@ -55,7 +55,7 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
-    [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
     //导航栏下面黑线
     self.navigationController.navigationBar.shadowImage = nil;
 }
@@ -80,7 +80,7 @@
     self.navigationItem.titleView = [self titleView];
     
     //    导航栏背景设置
-    [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:titleViewAlpha]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:titleViewAlpha]] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
@@ -257,9 +257,9 @@
         CGFloat alpha = MIN(1, (offsetY)/99);
         titleViewAlpha = alpha;
         titleView.backgroundColor = [UIColor whiteColor];
-        [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
+        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
     } else {
-        [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:[[UIColor clearColor] colorWithAlphaComponent:0]] forBarMetrics:UIBarMetricsDefault];
+        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[[UIColor clearColor] colorWithAlphaComponent:0]] forBarMetrics:UIBarMetricsDefault];
         self.navigationController.navigationBar.hidden=YES;
     }
 }
@@ -279,17 +279,7 @@
     
 }
 
--(UIImage*) createImageWithColor:(UIColor*) color
-{
-    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
-}
+
 
 
 @end
