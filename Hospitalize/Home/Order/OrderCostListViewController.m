@@ -218,7 +218,7 @@
     button.selected  = !button.selected;
     
     self.orderRankView.rowNameArray = @[@"一周内",@"一月内",@"半年内",@"一年内"];
-    if (self.orderRankView.show) {
+    if (self.orderRankView.show && button.selected) {
         self.orderRankView.show = NO;
     }
     
@@ -233,7 +233,7 @@
     button.selected  = !button.selected;
     
     self.orderRankView.rowNameArray = @[@"未支付",@"已支付",@"全部"];
-    if (self.orderRankView.show) {
+    if (self.orderRankView.show && button.selected) {
         self.orderRankView.show = NO;
     }
     [self.orderRankView orderRank];

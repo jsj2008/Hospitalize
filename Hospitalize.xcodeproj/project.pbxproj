@@ -1231,6 +1231,7 @@
 				E9554CDF1E9CB4C60080C02D /* FifthViewController.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
 				E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */,
+				891581171EA5DE290090F3E6 /* PinyinHelper.m in Sources */,
 				E99143E11EA0D86F00765903 /* ForgetPassWordViewController.m in Sources */,
 				89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */,
 				8915810F1EA5DE290090F3E6 /* CityItem.m in Sources */,
