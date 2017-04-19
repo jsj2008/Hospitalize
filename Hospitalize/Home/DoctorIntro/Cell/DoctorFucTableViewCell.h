@@ -1,5 +1,5 @@
 //
-//  DoctorFunctionTableViewCell.h
+//  DoctorFucTableViewCell.h
 //  Hospitalize
 //
 //  Created by 周鑫 on 2017/4/19.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DoctorFunctionTableViewCell : UITableViewCell
+@interface DoctorFucTableViewCell : UITableViewCell
 
 @end
