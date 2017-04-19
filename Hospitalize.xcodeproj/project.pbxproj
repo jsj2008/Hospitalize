@@ -105,7 +105,6 @@
 		89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA451E9E1E13002DE124 /* DateLogic.m */; };
 		89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA4E1E9E2598002DE124 /* DoctorTimePointCell.m */; };
 		C7F07E480D83C8B2C93A8F6D /* libPods-HospitalizeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */; };
-		E91398271EA7476D0097A65A /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91398261EA7476D0097A65A /* DoctorViewController.m */; };
 		E9554C9F1E9CB3BC0080C02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554C9E1E9CB3BC0080C02D /* main.m */; };
 		E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CA11E9CB3BC0080C02D /* AppDelegate.m */; };
 		E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CA41E9CB3BC0080C02D /* ViewController.m */; };
@@ -153,6 +152,11 @@
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
 		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
+		E9D10FC51EA75658000307AF /* DoctorFunctionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */; };
+		E9D10FC61EA75658000307AF /* DoctorHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */; };
+		E9D10FC71EA75658000307AF /* DoctorIntroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */; };
+		E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */; };
+		E9D10FC91EA75658000307AF /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC41EA75658000307AF /* DoctorViewController.m */; };
 		E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */; };
 		E9FC93D21EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93D11EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m */; };
 		E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93D41EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m */; };
@@ -364,8 +368,6 @@
 		B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HospitalizeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A82B1766EDB563F893387 /* Pods-Hospitalize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitalize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospitalize/Pods-Hospitalize.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3160331A1CDB1D57B07FC9 /* Pods-HospitalizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeTests/Pods-HospitalizeTests.release.xcconfig"; sourceTree = "<group>"; };
-		E91398251EA7476D0097A65A /* DoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
-		E91398261EA7476D0097A65A /* DoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorViewController.m; sourceTree = "<group>"; };
 		E9554C9A1E9CB3BC0080C02D /* Hospitalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospitalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9554C9E1E9CB3BC0080C02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9554CA01E9CB3BC0080C02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -456,6 +458,16 @@
 		E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+NMAlertAction.m"; sourceTree = "<group>"; };
 		E9CD596E1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NMAlertAction.h"; sourceTree = "<group>"; };
 		E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NMAlertAction.m"; sourceTree = "<group>"; };
+		E9D10FBB1EA75658000307AF /* DoctorFunctionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionTableViewCell.h; sourceTree = "<group>"; };
+		E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionTableViewCell.m; sourceTree = "<group>"; };
+		E9D10FBD1EA75658000307AF /* DoctorHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorHeadTableViewCell.h; sourceTree = "<group>"; };
+		E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorHeadTableViewCell.m; sourceTree = "<group>"; };
+		E9D10FBF1EA75658000307AF /* DoctorIntroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroTableViewCell.h; sourceTree = "<group>"; };
+		E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorIntroTableViewCell.m; sourceTree = "<group>"; };
+		E9D10FC11EA75658000307AF /* DoctorMajorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMajorTableViewCell.h; sourceTree = "<group>"; };
+		E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMajorTableViewCell.m; sourceTree = "<group>"; };
+		E9D10FC31EA75658000307AF /* DoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
+		E9D10FC41EA75658000307AF /* DoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorViewController.m; sourceTree = "<group>"; };
 		E9FC93CD1EA6F65900BBC07E /* CasesListReportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListReportTableViewCell.h; sourceTree = "<group>"; };
 		E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListReportTableViewCell.m; sourceTree = "<group>"; };
 		E9FC93D01EA6F70C00BBC07E /* CasesListReportCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListReportCellTableViewCell.h; sourceTree = "<group>"; };
@@ -801,9 +813,13 @@
 			children = (
 				8907016F1EA7314F0062BBC2 /* HomeViewController.h */,
 				890701701EA7314F0062BBC2 /* HomeViewController.m */,
+				E9D10FB91EA75658000307AF /* DoctorIntro */,
 				89FAF9211E9DC247002DE124 /* Home.xcassets */,
 				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
-				E9FC93D61EA7321500BBC07E /* Doctor */,
+				890701721EA7358F0062BBC2 /* PatientsEvaluationViewController.h */,
+				890701731EA7358F0062BBC2 /* PatientsEvaluationViewController.m */,
+				890701751EA7366A0062BBC2 /* StarTableViewCell.h */,
+				890701761EA7366A0062BBC2 /* StarTableViewCell.m */,
 				890701221EA730EA0062BBC2 /* MakeAppointment */,
 				E9648CE81E9F28B200943168 /* OrderRankAndScreen */,
 				89EEC2DA1E9F411C00678995 /* Order */,
@@ -1101,13 +1117,29 @@
 			path = FCAlertAction;
 			sourceTree = "<group>";
 		};
-		E9FC93D61EA7321500BBC07E /* Doctor */ = {
+		E9D10FB91EA75658000307AF /* DoctorIntro */ = {
 			isa = PBXGroup;
 			children = (
-				E91398251EA7476D0097A65A /* DoctorViewController.h */,
-				E91398261EA7476D0097A65A /* DoctorViewController.m */,
+				E9D10FBA1EA75658000307AF /* Cell */,
+				E9D10FC31EA75658000307AF /* DoctorViewController.h */,
+				E9D10FC41EA75658000307AF /* DoctorViewController.m */,
 			);
-			path = Doctor;
+			path = DoctorIntro;
+			sourceTree = "<group>";
+		};
+		E9D10FBA1EA75658000307AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9D10FBB1EA75658000307AF /* DoctorFunctionTableViewCell.h */,
+				E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */,
+				E9D10FBD1EA75658000307AF /* DoctorHeadTableViewCell.h */,
+				E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */,
+				E9D10FBF1EA75658000307AF /* DoctorIntroTableViewCell.h */,
+				E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */,
+				E9D10FC11EA75658000307AF /* DoctorMajorTableViewCell.h */,
+				E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1441,6 +1473,7 @@
 				8907011E1EA70BD30062BBC2 /* HospitalHeadCollectionReusableView.m in Sources */,
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				890701771EA7366A0062BBC2 /* StarTableViewCell.m in Sources */,
+				E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9A487E21EA612C900C2EBBF /* CasesListViewController.m in Sources */,
@@ -1453,11 +1486,13 @@
 				8907015D1EA730EA0062BBC2 /* HanyuPinyinOutputFormat.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				E97D73821EA2213100540DF7 /* PayViewController.m in Sources */,
+				E9D10FC51EA75658000307AF /* DoctorFunctionTableViewCell.m in Sources */,
 				890700F11EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m in Sources */,
 				890701691EA730EA0062BBC2 /* SearchViewController.m in Sources */,
 				890701671EA730EA0062BBC2 /* DoctorVisitsViewController.m in Sources */,
 				8907016B1EA730EA0062BBC2 /* NXCustomLeftBarButtonItem.m in Sources */,
 				890701711EA7314F0062BBC2 /* HomeViewController.m in Sources */,
+				E9D10FC61EA75658000307AF /* DoctorHeadTableViewCell.m in Sources */,
 				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
 				8915813C1EA62BC00090F3E6 /* CostViewController.m in Sources */,
 				890592011EA0D46C002F161F /* RegisterViewController.m in Sources */,
@@ -1512,8 +1547,8 @@
 				891580821EA5DBEC0090F3E6 /* DoctorCollectionViewCell.m in Sources */,
 				891581391EA628D00090F3E6 /* BackNumberInstructionsViewController.m in Sources */,
 				E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */,
-				E91398271EA7476D0097A65A /* DoctorViewController.m in Sources */,
 				E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */,
+				E9D10FC91EA75658000307AF /* DoctorViewController.m in Sources */,
 				E97D736C1EA218EC00540DF7 /* OrderApplyViewController.m in Sources */,
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
@@ -1535,6 +1570,7 @@
 				E97D737F1EA220F400540DF7 /* PayTableViewController.m in Sources */,
 				89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */,
 				890701641EA730EA0062BBC2 /* DepartmentsListViewController.m in Sources */,
+				E9D10FC71EA75658000307AF /* DoctorIntroTableViewCell.m in Sources */,
 				89FAFA431E9E1DBE002DE124 /* FCCalender.m in Sources */,
 				8907015B1EA730EA0062BBC2 /* ChineseInclude.m in Sources */,
 				891581361EA617F10090F3E6 /* CasesListTableViewCell.m in Sources */,
@@ -1687,6 +1723,7 @@
 			baseConfigurationReference = C78A82B1766EDB563F893387 /* Pods-Hospitalize.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -1694,6 +1731,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
 				);
 				INFOPLIST_FILE = Hospitalize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1714,6 +1756,7 @@
 			baseConfigurationReference = FCEBFCA8681D4E1C4961AD0A /* Pods-Hospitalize.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -1721,6 +1764,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
 				);
 				INFOPLIST_FILE = Hospitalize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

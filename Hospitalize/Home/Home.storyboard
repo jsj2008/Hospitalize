@@ -631,7 +631,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="22" id="vNc-dS-IBq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorHeadTableViewCell" rowHeight="22" id="vNc-dS-IBq" customClass="DoctorHeadTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vNc-dS-IBq" id="Z6H-u9-oeA">
@@ -749,7 +749,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="Azf-Sl-a7d">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorMajorTableViewCell" rowHeight="128" id="Azf-Sl-a7d" customClass="DoctorMajorTableViewCell">
                                         <rect key="frame" x="0.0" y="50" width="375" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Azf-Sl-a7d" id="DRQ-gg-i9Q">
@@ -802,7 +802,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="leo-Vu-Nrc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorFunctionTableViewCell" rowHeight="137" id="leo-Vu-Nrc" customClass="DoctorFunctionTableViewCell">
                                         <rect key="frame" x="0.0" y="178" width="375" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="leo-Vu-Nrc" id="b6b-lF-asL">
@@ -916,7 +916,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="Py1-zf-xgt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorIntroTableViewCell1" rowHeight="172" id="Py1-zf-xgt" customClass="DoctorIntroTableViewCell">
                                         <rect key="frame" x="0.0" y="315" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Py1-zf-xgt" id="BXn-pE-pDA">
@@ -969,31 +969,6 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="He7-3A-Pav">
-                                        <rect key="frame" x="0.0" y="487" width="375" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="He7-3A-Pav" id="IOY-34-grc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="患者评价(54)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooV-c2-7yQ">
-                                                    <rect key="frame" x="15" y="15" width="96" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_right" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-NO-q6N">
-                                                    <rect key="frame" x="346" y="18" width="14" height="14"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Aj9-NO-q6N" secondAttribute="trailing" constant="15" id="ABN-7P-ByA"/>
-                                                <constraint firstItem="ooV-c2-7yQ" firstAttribute="centerY" secondItem="IOY-34-grc" secondAttribute="centerY" id="U4e-Ll-OWT"/>
-                                                <constraint firstItem="ooV-c2-7yQ" firstAttribute="leading" secondItem="IOY-34-grc" secondAttribute="leading" constant="15" id="lhI-kd-9Zu"/>
-                                                <constraint firstItem="Aj9-NO-q6N" firstAttribute="centerY" secondItem="ooV-c2-7yQ" secondAttribute="centerY" id="ucg-Tp-yfc"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -1005,6 +980,9 @@
                             <constraint firstItem="JgH-bW-8g1" firstAttribute="top" secondItem="vXu-RQ-UUq" secondAttribute="top" id="fqc-fY-Vi2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="JgH-bW-8g1" id="Fgf-ee-F8Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVY-Bf-lQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1560,7 +1538,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGH-sQ-tck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="1009"/>
+            <point key="canvasLocation" x="876" y="1009"/>
         </scene>
         <!--Pay Sucess View Controller-->
         <scene sceneID="UZx-wt-Ble">
@@ -1595,7 +1573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzZ-5h-Xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="1009"/>
+            <point key="canvasLocation" x="1559" y="1009"/>
         </scene>
         <!--Payfaild View Controller-->
         <scene sceneID="3bM-GV-qPZ">
@@ -1649,7 +1627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQj-el-UiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2398" y="1009"/>
+            <point key="canvasLocation" x="2231" y="1009"/>
         </scene>
         <!--预约单-->
         <scene sceneID="qyL-8X-k6X">
