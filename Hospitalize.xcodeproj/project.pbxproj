@@ -105,6 +105,7 @@
 		89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA451E9E1E13002DE124 /* DateLogic.m */; };
 		89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAFA4E1E9E2598002DE124 /* DoctorTimePointCell.m */; };
 		C7F07E480D83C8B2C93A8F6D /* libPods-HospitalizeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */; };
+		E91398271EA7476D0097A65A /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91398261EA7476D0097A65A /* DoctorViewController.m */; };
 		E9554C9F1E9CB3BC0080C02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554C9E1E9CB3BC0080C02D /* main.m */; };
 		E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CA11E9CB3BC0080C02D /* AppDelegate.m */; };
 		E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9554CA41E9CB3BC0080C02D /* ViewController.m */; };
@@ -361,6 +362,8 @@
 		B18C4BAD801E1B2356659459 /* libPods-HospitalizeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HospitalizeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A82B1766EDB563F893387 /* Pods-Hospitalize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitalize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospitalize/Pods-Hospitalize.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3160331A1CDB1D57B07FC9 /* Pods-HospitalizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalizeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalizeTests/Pods-HospitalizeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E91398251EA7476D0097A65A /* DoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
+		E91398261EA7476D0097A65A /* DoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorViewController.m; sourceTree = "<group>"; };
 		E9554C9A1E9CB3BC0080C02D /* Hospitalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospitalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9554C9E1E9CB3BC0080C02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9554CA01E9CB3BC0080C02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -798,6 +801,7 @@
 				890701701EA7314F0062BBC2 /* HomeViewController.m */,
 				89FAF9211E9DC247002DE124 /* Home.xcassets */,
 				89FAF91C1E9DC0AB002DE124 /* Home.storyboard */,
+				E9FC93D61EA7321500BBC07E /* Doctor */,
 				890701221EA730EA0062BBC2 /* MakeAppointment */,
 				E9648CE81E9F28B200943168 /* OrderRankAndScreen */,
 				89EEC2DA1E9F411C00678995 /* Order */,
@@ -1095,6 +1099,15 @@
 				E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */,
 			);
 			path = FCAlertAction;
+			sourceTree = "<group>";
+		};
+		E9FC93D61EA7321500BBC07E /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				E91398251EA7476D0097A65A /* DoctorViewController.h */,
+				E91398261EA7476D0097A65A /* DoctorViewController.m */,
+			);
+			path = Doctor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1499,6 +1512,7 @@
 				891580821EA5DBEC0090F3E6 /* DoctorCollectionViewCell.m in Sources */,
 				891581391EA628D00090F3E6 /* BackNumberInstructionsViewController.m in Sources */,
 				E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */,
+				E91398271EA7476D0097A65A /* DoctorViewController.m in Sources */,
 				E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */,
 				E97D736C1EA218EC00540DF7 /* OrderApplyViewController.m in Sources */,
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
