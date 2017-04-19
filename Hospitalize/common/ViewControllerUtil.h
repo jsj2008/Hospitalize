@@ -46,4 +46,30 @@
 + (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier;
 
 
+/**
+ *  从Message.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromMessageStoryboardWithIdentifier:(NSString *) identifier;
+
+
+/**
+ *  从Personal.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromPersonalStoryboardWithIdentifier:(NSString *) identifier;
+
+
+/**
+ *  从SeeDoctor.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromSeeDoctorStoryboardWithIdentifier:(NSString *) identifier;
+
 @end

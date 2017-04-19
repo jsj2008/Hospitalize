@@ -8,10 +8,10 @@
 
 #import "MainTabBarViewController.h"
 #import "HomeViewController.h"
-#import "SecondViewController.h"
-#import "ThridViewController.h"
 #import "CasesViewController.h"
-#import "FifthViewController.h"
+#import "SeeDoctorViewController.h"
+#import "MessageViewController.h"
+#import "PersonalViewController.h"
 
 #import "UIView+Extension.h"
 #import "ViewControllerUtil.h"
@@ -35,19 +35,21 @@
     
     
     HomeViewController *firstVC = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"HomeViewController"];
-    [self setChildVC:firstVC title:@"导诊" image:@"person" selectedImage:@"mine"];
+    [self setChildVC:firstVC title:@"导诊" image:@"daozhen" selectedImage:@"daozhena"];
     
-    SecondViewController *secondVC = [[SecondViewController alloc] init];
-    [self setChildVC:secondVC title:@"就诊" image:@"person" selectedImage:@"mine"];
+    SeeDoctorViewController *seeDoctorVC = [ViewControllerUtil getViewControllerFromSeeDoctorStoryboardWithIdentifier:@"SeeDoctorViewController"];
+    [self setChildVC:seeDoctorVC title:@"就诊" image:@"jiuzhen" selectedImage:@"jiuzhena"];
     
-    ThridViewController *thridVC = [[ThridViewController alloc] init];
-    [self setChildVC:thridVC title:@"消息" image:@"person" selectedImage:@"mine"];
+    MessageViewController *messageVC = [ViewControllerUtil getViewControllerFromMessageStoryboardWithIdentifier:@"MessageViewController"];
+    [self setChildVC:messageVC title:@"消息" image:@"xiaoxi" selectedImage:@"xiaoxia"];
     
     CasesViewController *casesVC = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesViewController"];
-    [self setChildVC:casesVC title:@"病例" image:@"person" selectedImage:@"mine"];
+    [self setChildVC:casesVC title:@"病例" image:@"bingli" selectedImage:@"binglia"];
     
-    FifthViewController *fifthVC = [[FifthViewController alloc] init];
-    [self setChildVC:fifthVC title:@"个人" image:@"person" selectedImage:@"mine"];
+    PersonalViewController *personalVC = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonalViewController"];
+    [self setChildVC:personalVC title:@"个人" image:@"geren" selectedImage:@"gerena"];
+    
+    self.tabBar.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

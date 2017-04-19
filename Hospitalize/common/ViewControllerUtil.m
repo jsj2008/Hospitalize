@@ -64,8 +64,41 @@
  *  @return 视图对象
  */
 + (id) getViewControllerFromCasesStoryboardWithIdentifier:(NSString *) identifier{
-    UIStoryboard *hospitalStoryboard = [UIStoryboard storyboardWithName:@"Cases" bundle:nil];
-    return [hospitalStoryboard instantiateViewControllerWithIdentifier:identifier];
+    UIStoryboard *casesStoryboard = [UIStoryboard storyboardWithName:@"Cases" bundle:nil];
+    return [casesStoryboard instantiateViewControllerWithIdentifier:identifier];
+}
+
+/**
+ *  从Message.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromMessageStoryboardWithIdentifier:(NSString *) identifier{
+    UIStoryboard *messageStoryboard = [UIStoryboard storyboardWithName:@"Message" bundle:nil];
+    return [messageStoryboard instantiateViewControllerWithIdentifier:identifier];
+}
+
+/**
+ *  从Personal.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromPersonalStoryboardWithIdentifier:(NSString *) identifier{
+    UIStoryboard *personalStoryboard = [UIStoryboard storyboardWithName:@"Personal" bundle:nil];
+    return [personalStoryboard instantiateViewControllerWithIdentifier:identifier];
+}
+
+/**
+ *  从SeeDoctor.Storyboard获取视图对象。
+ *
+ *  @param identifier 视图对象ID
+ *  @return 视图对象
+ */
++ (id) getViewControllerFromSeeDoctorStoryboardWithIdentifier:(NSString *) identifier{
+    UIStoryboard *seeDoctorStoryboard = [UIStoryboard storyboardWithName:@"SeeDoctor" bundle:nil];
+    return [seeDoctorStoryboard instantiateViewControllerWithIdentifier:identifier];
 }
 
 
