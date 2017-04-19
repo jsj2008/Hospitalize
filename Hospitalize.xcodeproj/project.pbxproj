@@ -59,6 +59,9 @@
 		890701711EA7314F0062BBC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701701EA7314F0062BBC2 /* HomeViewController.m */; };
 		8907017A1EA758E30062BBC2 /* PatientsEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701791EA758E30062BBC2 /* PatientsEvaluationViewController.m */; };
 		8907017D1EA758EE0062BBC2 /* StarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8907017C1EA758EE0062BBC2 /* StarTableViewCell.m */; };
+		890701801EA75C450062BBC2 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8907017F1EA75C450062BBC2 /* MessageTableViewCell.m */; };
+		890701831EA75C520062BBC2 /* PersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701821EA75C520062BBC2 /* PersonalTableViewCell.m */; };
+		890701861EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701851EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m */; };
 		891580631EA59F540090F3E6 /* InspectionReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580621EA59F540090F3E6 /* InspectionReportViewController.m */; };
 		891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580661EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m */; };
 		8915806A1EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580691EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m */; };
@@ -276,6 +279,12 @@
 		890701791EA758E30062BBC2 /* PatientsEvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsEvaluationViewController.m; sourceTree = "<group>"; };
 		8907017B1EA758EE0062BBC2 /* StarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarTableViewCell.h; sourceTree = "<group>"; };
 		8907017C1EA758EE0062BBC2 /* StarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarTableViewCell.m; sourceTree = "<group>"; };
+		8907017E1EA75C450062BBC2 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		8907017F1EA75C450062BBC2 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		890701811EA75C520062BBC2 /* PersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewCell.h; sourceTree = "<group>"; };
+		890701821EA75C520062BBC2 /* PersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewCell.m; sourceTree = "<group>"; };
+		890701841EA75C5F0062BBC2 /* SeeDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeDoctorTableViewCell.h; sourceTree = "<group>"; };
+		890701851EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeDoctorTableViewCell.m; sourceTree = "<group>"; };
 		891580611EA59F540090F3E6 /* InspectionReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportViewController.h; sourceTree = "<group>"; };
 		891580621EA59F540090F3E6 /* InspectionReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionReportViewController.m; sourceTree = "<group>"; };
 		891580651EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportInformationTableViewCell.h; sourceTree = "<group>"; };
@@ -533,6 +542,8 @@
 		890700F91EA702A80062BBC2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8907017E1EA75C450062BBC2 /* MessageTableViewCell.h */,
+				8907017F1EA75C450062BBC2 /* MessageTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -552,6 +563,8 @@
 		890700FB1EA702A80062BBC2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				890701811EA75C520062BBC2 /* PersonalTableViewCell.h */,
+				890701821EA75C520062BBC2 /* PersonalTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -571,6 +584,8 @@
 		890700FD1EA702A80062BBC2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				890701841EA75C5F0062BBC2 /* SeeDoctorTableViewCell.h */,
+				890701851EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1516,6 +1531,7 @@
 				E9648CF91E9F290B00943168 /* ScreenCollectionReusableView.m in Sources */,
 				E9648CF71E9F290B00943168 /* OrderScreenView.m in Sources */,
 				E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */,
+				890701831EA75C520062BBC2 /* PersonalTableViewCell.m in Sources */,
 				890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */,
 				891580861EA5DBEC0090F3E6 /* HospitalNoticeViewController.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
@@ -1558,6 +1574,7 @@
 				890701571EA730EA0062BBC2 /* CityButton.m in Sources */,
 				E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */,
 				E97D73881EA22CAF00540DF7 /* OrderCostListTableViewCell.m in Sources */,
+				890701861EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m in Sources */,
 				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
 				8907011B1EA70BB10062BBC2 /* HospitalFootCollectionReusableView.m in Sources */,
@@ -1572,6 +1589,7 @@
 				890701641EA730EA0062BBC2 /* DepartmentsListViewController.m in Sources */,
 				E9D10FC71EA75658000307AF /* DoctorIntroTableViewCell.m in Sources */,
 				89FAFA431E9E1DBE002DE124 /* FCCalender.m in Sources */,
+				890701801EA75C450062BBC2 /* MessageTableViewCell.m in Sources */,
 				8907015B1EA730EA0062BBC2 /* ChineseInclude.m in Sources */,
 				891581361EA617F10090F3E6 /* CasesListTableViewCell.m in Sources */,
 			);
