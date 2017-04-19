@@ -1,24 +1,22 @@
 //
-//  ThridViewController.m
-//  Logic
+//  MessageViewController.m
+//  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/7.
-//  Copyright © 2017年 宋明月. All rights reserved.
+//  Created by 宋明月 on 2017/4/19.
+//  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "ThridViewController.h"
+#import "MessageViewController.h"
 
-@interface ThridViewController ()
+@interface MessageViewController ()
 
 @end
 
-@implementation ThridViewController
+@implementation MessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor magentaColor];
 }
 
 - (void)didReceiveMemoryWarning {

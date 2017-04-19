@@ -7,6 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "HomeViewController.h"
+#import "CasesViewController.h"
+#import "SeeDoctorViewController.h"
+#import "MessageViewController.h"
+#import "PersonalViewController.h"
 
 
 @interface BaseViewController ()
@@ -14,6 +19,16 @@
 @end
 
 @implementation BaseViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if ([self isKindOfClass:[HomeViewController class]] || [self isKindOfClass:[CasesViewController class]] || [self isKindOfClass:[SeeDoctorViewController class]] || [self isKindOfClass:[MessageViewController class]] || [self isKindOfClass:[PersonalViewController class]]) {
+        self.tabBarController.tabBar.hidden = NO;
+    } else {
+        self.tabBarController.tabBar.hidden = YES;
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

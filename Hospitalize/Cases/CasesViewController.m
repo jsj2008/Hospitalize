@@ -14,11 +14,13 @@
 
 @interface CasesViewController ()<UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIImageView *porImageView;
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end
 
 @implementation CasesViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -72,10 +74,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
-//    [self.navigationController pushViewController:backNumberInstructions animated:YES];
-    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
-    [self.navigationController pushViewController:list animated:YES];
+    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
+    [self.navigationController pushViewController:backNumberInstructions animated:YES];
+    
+//    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
+//    [self.navigationController pushViewController:list animated:YES];
     
 }
 - (IBAction)buttonAction:(id)sender {

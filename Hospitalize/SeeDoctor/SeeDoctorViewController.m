@@ -1,24 +1,22 @@
 //
-//  SecondViewController.m
-//  Logic
+//  SeeDoctorViewController.m
+//  Hospitalize
 //
-//  Created by 宋明月 on 2017/4/7.
-//  Copyright © 2017年 宋明月. All rights reserved.
+//  Created by 宋明月 on 2017/4/19.
+//  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SeeDoctorViewController.h"
 
-@interface SecondViewController ()
+@interface SeeDoctorViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SeeDoctorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning {
