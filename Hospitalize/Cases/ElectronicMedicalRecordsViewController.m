@@ -12,8 +12,11 @@
 #import "MedicalRecordsReportTableViewCell.h"
 #import "MedicalRecordsDrugTableViewCell.h"
 #import "CostViewController.h"
+#import "InspectionReportViewController.h"
 
-@interface ElectronicMedicalRecordsViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ElectronicMedicalRecordsViewController ()<UITableViewDelegate, UITableViewDataSource>{
+    BOOL isOPenState;//内容打开状态
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
@@ -27,6 +30,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"病例";
+    isOPenState = NO;
     
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
@@ -41,6 +45,9 @@
         return 170;
 
     } else if (indexPath.row == 1){
+        if (isOPenState) {
+           return 81;
+        }
         return 81;
 
     } else if (indexPath.row == 2){
@@ -72,11 +79,17 @@
         return cell;
     } else if (indexPath.row == 1){
         MedicalRecordsContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalRecordsContentTableViewCell" forIndexPath:indexPath];
+        if (isOPenState) {
+            cell.content.numberOfLines = 0;
+        } else {
+            cell.content.numberOfLines = 1;
+        }
         cell.stateButton.hidden = NO;
         [cell.stateButton addTarget:self action:@selector(openContentAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     } else if (indexPath.row == 2){
         MedicalRecordsReportTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalRecordsReportTableViewCell" forIndexPath:indexPath];
+        [cell.reportButton addTarget:self action:@selector(openReportAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     } else if (indexPath.row == 3){
         MedicalRecordsContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalRecordsContentTableViewCell" forIndexPath:indexPath];
@@ -106,8 +119,20 @@
 }
 
 //内容
--(void)openContentAction:(id)sender{
-    
+-(void)openContentAction:(UIButton *)button{
+    if (isOPenState) {
+        isOPenState = NO;
+        [button setImage:[UIImage imageNamed:@"order_down"] forState:UIControlStateNormal];
+    } else {
+        isOPenState = YES;
+        [button setImage:[UIImage imageNamed:@"order_up"] forState:UIControlStateNormal];
+    }
+    [self.mainTableView reloadData];
+}
+//打开报告详情事件
+-(void)openReportAction:(id)sender{
+    InspectionReportViewController *inspectionReport = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"InspectionReportViewController"];
+    [self.navigationController pushViewController:inspectionReport animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

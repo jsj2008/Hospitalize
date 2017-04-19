@@ -12,6 +12,8 @@
 #import "CasesListSectionTableViewCell.h"
 #import "CasesListRecipeTableViewCell.h"
 #import "CasesListReportTableViewCell.h"
+#import "BackNumberInstructionsViewController.h"
+
 
 #import "InspectionReportViewController.h"
 
@@ -106,6 +108,8 @@
 }
 //右上角说明按钮
 -(void)illusAction{
+    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
+    [self.navigationController pushViewController:backNumberInstructions animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {
