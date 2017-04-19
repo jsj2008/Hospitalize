@@ -37,7 +37,7 @@
     // Do any additional setup after loading the view.
 //    self.navigationController.navigationBar.hidden = YES;
 
-    
+    //定位
     [self loadcationAction];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"order_right_search"] style:UIBarButtonItemStylePlain target:self action:@selector(sreachAction)];

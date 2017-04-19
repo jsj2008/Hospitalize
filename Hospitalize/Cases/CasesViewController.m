@@ -74,11 +74,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
-    [self.navigationController pushViewController:backNumberInstructions animated:YES];
+//    BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
+//    [self.navigationController pushViewController:backNumberInstructions animated:YES];
     
-//    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
-//    [self.navigationController pushViewController:list animated:YES];
+    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
+    [self.navigationController pushViewController:list animated:YES];
     
 }
 - (IBAction)buttonAction:(id)sender {
