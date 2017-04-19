@@ -12,7 +12,7 @@
 #import "HospitalHeadCollectionReusableView.h"
 #import "HospitalEvaluateViewController.h"
 
-#import "OrderViewController.h"
+#import "DepartmentsListViewController.h"
 #import "HospitalNoticeViewController.h"
 #import "HospitalProfileViewController.h"
 #import "FCAlertAction.h"
@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = self.titleName;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_itme_rili"] style:UIBarButtonItemStylePlain target:self action:@selector(collectionAction:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"shoucang"] style:UIBarButtonItemStylePlain target:self action:@selector(collectionAction:)];
     
     self.mainCollectionView.delegate = self;
     self.mainCollectionView.dataSource = self;
@@ -60,7 +60,7 @@
     UICollectionReusableView *reusableview = nil;
     if (kind == UICollectionElementKindSectionHeader){
         HospitalHeadCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HospitalHeadCollectionReusableView" forIndexPath:indexPath];
-        [headerView.hospitaImageView setImage:[UIImage imageNamed:@"1.jpg"]];
+        [headerView.hospitaImageView setImage:[UIImage imageNamed:@"yiyuanmoren"]];
         [headerView.hospitalView setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.5]];
         [headerView.telButton addTarget:self action:@selector(callHospitalAction:) forControlEvents:UIControlEventTouchUpInside];
         reusableview = headerView;
@@ -79,7 +79,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(collectionView.frame.size.width/3, 77);
+    return CGSizeMake(collectionView.frame.size.width/3, 95);
 }
 
 - (UIEdgeInsets) collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
@@ -89,24 +89,36 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     HospitalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HospitalCollectionViewCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
+    cell.promptInformation.hidden = YES;
     if (indexPath.item == 0) {
         cell.name.text = @"预约挂号";
+        [cell.imageView setImage:[UIImage imageNamed:@"yuyueguahao"]];
     } else if (indexPath.item == 1){
         cell.name.text = @"处方缴费";
+        [cell.imageView setImage:[UIImage imageNamed:@"chufanjiaofei"]];
     } else if (indexPath.item == 2){
         cell.name.text = @"取报告";
+        [cell.imageView setImage:[UIImage imageNamed:@"qubaogao"]];
     } else if (indexPath.item == 3){
         cell.name.text = @"住院缴费";
+        [cell.imageView setImage:[UIImage imageNamed:@"zhuyuanjiaofei"]];
     } else if (indexPath.item == 4){
         cell.name.text = @"医院简介";
+        [cell.imageView setImage:[UIImage imageNamed:@"yiyuanjianjie"]];
     } else if (indexPath.item == 5){
         cell.name.text = @"医院公告";
+        [cell.imageView setImage:[UIImage imageNamed:@"yiyuangonggao"]];
     } else if (indexPath.item == 6){
         cell.name.text = @"就诊卡充值";
+        [cell.imageView setImage:[UIImage imageNamed:@"jiuzhenkachongzhi"]];
     } else if (indexPath.item == 7){
         cell.name.text = @"排队等候";
+        cell.promptInformation.hidden = NO;
+        [cell.imageView setImage:[UIImage imageNamed:@"paiduidenghou"]];
     } else if (indexPath.item == 8){
         cell.name.text = @"体检";
+        cell.promptInformation.hidden = NO;
+        [cell.imageView setImage:[UIImage imageNamed:@"tijian"]];
     }
     return cell;
 }
@@ -114,9 +126,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     if (indexPath.item == 0) {//预约挂号
-        OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
-        
-        [self.navigationController pushViewController:order animated:YES];
+        DepartmentsListViewController *departmentsListViewController = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DepartmentsListViewController"];
+        [self.navigationController pushViewController:departmentsListViewController animated:YES];
     } else if (indexPath.item == 1){//处方缴费
         
     } else if (indexPath.item == 2){//取报告

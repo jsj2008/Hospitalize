@@ -17,7 +17,7 @@
 @interface DoctorTimePointViewController ()<UITableViewDelegate, UITableViewDataSource, FCCalenderDelegate>{
     
     FCCalender *_calendar;
-
+    
 }
 
 @property (copy, nonatomic) NSString *selectDateStr;
@@ -40,8 +40,14 @@
     self.timePointArray = [NSMutableArray array];
     self.timePointArray = [@[@"1",@"1",@"1",@"1",@"1",@"1",@"1"] mutableCopy];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_icon_por"] style:UIBarButtonItemStylePlain target:self action:@selector(goNextPersonAction:)];
-
+    // 导航栏右侧的按钮
+    UIImage* image= [UIImage imageNamed:@"home_icon_por"];
+    CGRect frame= CGRectMake(0, 0, 35, 35);
+    UIButton *someButton= [[UIButton alloc] initWithFrame:frame];
+    [someButton addTarget:self action:@selector(goNextPersonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [someButton setBackgroundImage:image forState:UIControlStateNormal];
+    UIBarButtonItem* someBarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:someButton];
+    [self.navigationItem setRightBarButtonItem:someBarButtonItem];
     
     self.mainTableView.dataSource = self;
     self.mainTableView.delegate = self;
@@ -107,7 +113,7 @@
     //箭头
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     //无箭头
-//    cell.accessoryType = UITableViewCellAccessoryNone;
+    //    cell.accessoryType = UITableViewCellAccessoryNone;
     cell.timeLabel.text = @"14号 ( 15:00 )";
     cell.detailLabel.text = [NSString stringWithFormat:@"%@\n￥%@",@"专家门诊",@"20.00"];
     return cell;
