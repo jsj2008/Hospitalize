@@ -15,11 +15,10 @@
 #import "FCMacros.h"
 #import "SearchViewController.h"
 #import "CityListViewController.h"
+#import "HospitalViewController.h"
 
 #import "LoginViewController.h"
 #import "ReportListViewController.h"
-#import "HospitalNoticeViewController.h"
-#import "HospitalEvaluateViewController.h"
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
 
@@ -190,13 +189,11 @@
 }
 //在线咨询事件
 - (void)onlineConsultingAction:(id)sender {
-    HospitalNoticeViewController *hospitalNotice = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalNoticeViewController"];
-    [self.navigationController pushViewController:hospitalNotice animated:YES];
+    
 }
 //互联网诊室事件
 - (void)internetOfficeAction:(id)sender {
-    HospitalEvaluateViewController *hospitalEvaluate = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalEvaluateViewController"];
-    [self.navigationController pushViewController:hospitalEvaluate animated:YES];
+    
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
@@ -247,6 +244,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    HospitalViewController *hospitalViewController = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalViewController"];
+    hospitalViewController.titleName = @"浙江省医院";
+    [self.navigationController pushViewController:hospitalViewController animated:YES];
+    
 }
 
 #pragma mark - ScrollViewDelegate
