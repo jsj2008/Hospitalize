@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsv-5I-ReC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="10.344827586206897"/>
+            <point key="canvasLocation" x="-90" y="163"/>
         </scene>
         <!--医院公告-->
         <scene sceneID="c8t-jA-Sky">

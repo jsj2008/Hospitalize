@@ -15,6 +15,7 @@
 #import "OrderViewController.h"
 #import "HospitalNoticeViewController.h"
 #import "HospitalProfileViewController.h"
+#import "FCAlertAction.h"
 
 
 @interface HospitalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
@@ -61,6 +62,7 @@
         HospitalHeadCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HospitalHeadCollectionReusableView" forIndexPath:indexPath];
         [headerView.hospitaImageView setImage:[UIImage imageNamed:@"1.jpg"]];
         [headerView.hospitalView setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.5]];
+        [headerView.telButton addTarget:self action:@selector(callHospitalAction:) forControlEvents:UIControlEventTouchUpInside];
         reusableview = headerView;
         return reusableview;
     } else if (kind == UICollectionElementKindSectionFooter){
@@ -146,5 +148,16 @@
 -(void)collectionAction:(id)sender{
     
 }
+//打电话事件
+-(void)callHospitalAction:(id)sender{
+    NSArray *array = @[@"012-12345678"];
+    [FCAlertAction showActionSheetWithTitle:nil message:@"拨打医院电话"  cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitle:array chooseBlock:^(NSInteger buttonIdx) {
+        if (buttonIdx > 0) {
+            NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"tel:%@",array[buttonIdx - 1]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+        }
+    }];
+}
+
 
 @end
