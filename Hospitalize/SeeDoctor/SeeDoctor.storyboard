@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--See Doctor View Controller-->
+        <!--就诊-->
         <scene sceneID="PJ3-kn-kcK">
             <objects>
-                <viewController storyboardIdentifier="SeeDoctorViewController" id="Ctl-k5-PH3" customClass="SeeDoctorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeeDoctorViewController" id="Ctl-k5-PH3" userLabel="就诊" customClass="SeeDoctorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kfz-hJ-qxF"/>
                         <viewControllerLayoutGuide type="bottom" id="Vjq-uP-NJM"/>

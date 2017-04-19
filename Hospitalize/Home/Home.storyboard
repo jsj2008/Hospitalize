@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--主页-->
         <scene sceneID="Wcq-I7-7Ta">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="V95-iA-ZNM" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="V95-iA-ZNM" userLabel="主页" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ho0-RD-LRt"/>
                         <viewControllerLayoutGuide type="bottom" id="N8P-Zt-Tv8"/>
@@ -346,10 +346,10 @@
             </objects>
             <point key="canvasLocation" x="-615.20000000000005" y="194.75262368815595"/>
         </scene>
-        <!--Search View Controller-->
+        <!--医院搜索-->
         <scene sceneID="mhq-fV-aB4">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="PwZ-Oe-6gY" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="PwZ-Oe-6gY" userLabel="医院搜索" customClass="SearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TXq-jf-D4k"/>
                         <viewControllerLayoutGuide type="bottom" id="VDI-pY-tsn"/>
@@ -978,10 +978,10 @@
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="198.35082458770617"/>
         </scene>
-        <!--Departments List View Controller-->
+        <!--科室列表-->
         <scene sceneID="fd3-zd-aUg">
             <objects>
-                <viewController storyboardIdentifier="DepartmentsListViewController" id="nVs-qb-5xQ" customClass="DepartmentsListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DepartmentsListViewController" id="nVs-qb-5xQ" userLabel="科室列表" customClass="DepartmentsListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7dH-A5-4Xx"/>
                         <viewControllerLayoutGuide type="bottom" id="PAQ-da-WJP"/>
@@ -993,6 +993,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-Dm-RLw">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DetpartMentsListTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetpartMentsListTableViewCell" id="qO6-Qd-1aO" customClass="DetpartMentsListTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -1164,7 +1165,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGH-sQ-tck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="1059.2203898050975"/>
+            <point key="canvasLocation" x="876" y="1009"/>
         </scene>
         <!--Pay Sucess View Controller-->
         <scene sceneID="UZx-wt-Ble">
@@ -1199,7 +1200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzZ-5h-Xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="1045.7271364317842"/>
+            <point key="canvasLocation" x="1559" y="1009"/>
         </scene>
         <!--Payfaild View Controller-->
         <scene sceneID="3bM-GV-qPZ">
@@ -1253,7 +1254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQj-el-UiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="1045.7271364317842"/>
+            <point key="canvasLocation" x="2231" y="1009"/>
         </scene>
         <!--预约单-->
         <scene sceneID="qyL-8X-k6X">
@@ -1898,10 +1899,10 @@
             </objects>
             <point key="canvasLocation" x="5855" y="1049"/>
         </scene>
-        <!--Departments View Controller-->
+        <!--科室医生时间-->
         <scene sceneID="hHC-02-feF">
             <objects>
-                <viewController storyboardIdentifier="DepartmentsViewController" id="lqd-ye-XEF" customClass="DepartmentsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DepartmentsViewController" id="lqd-ye-XEF" userLabel="科室医生时间" customClass="DepartmentsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nxg-bX-ikN"/>
                         <viewControllerLayoutGuide type="bottom" id="mXJ-qN-QC7"/>
@@ -2054,10 +2055,10 @@
             </objects>
             <point key="canvasLocation" x="1452" y="196.55172413793105"/>
         </scene>
-        <!--Doctor Time Point View Controller-->
+        <!--预约医生时间-->
         <scene sceneID="sbV-yY-Fx9">
             <objects>
-                <viewController storyboardIdentifier="DoctorTimePointViewController" id="1Ab-AK-UgN" customClass="DoctorTimePointViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoctorTimePointViewController" id="1Ab-AK-UgN" userLabel="预约医生时间" customClass="DoctorTimePointViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q1G-Ud-ebM"/>
                         <viewControllerLayoutGuide type="bottom" id="TL0-1E-Exy"/>
@@ -2156,10 +2157,10 @@
             </objects>
             <point key="canvasLocation" x="2155" y="198"/>
         </scene>
-        <!--Doctor Visits View Controller-->
+        <!--出诊表-->
         <scene sceneID="pgl-tf-4c6">
             <objects>
-                <viewController storyboardIdentifier="DoctorVisitsViewController" id="dL1-ZT-OdW" customClass="DoctorVisitsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoctorVisitsViewController" id="dL1-ZT-OdW" userLabel="出诊表" customClass="DoctorVisitsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Ze-1x-5Yq"/>
                         <viewControllerLayoutGuide type="bottom" id="eCK-gS-n5n"/>
@@ -2209,6 +2210,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4V-0Z-fwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2810" y="197"/>
+        </scene>
+        <!--患者评价列表-->
+        <scene sceneID="c1h-Oq-A7M">
+            <objects>
+                <viewController storyboardIdentifier="PatientsEvaluationViewController" id="dq1-Wf-teZ" userLabel="患者评价列表" customClass="PatientsEvaluationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CDo-Tj-IcL"/>
+                        <viewControllerLayoutGuide type="bottom" id="eeB-qr-bOW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9iX-gJ-nxM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iDj-94-bqk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StarTableViewCell" id="MO9-wX-CvA" customClass="StarTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MO9-wX-CvA" id="3dF-Mg-lO1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-03-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-sg-we2">
+                                                    <rect key="frame" x="306" y="33" width="54" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.58039215686274503" green="0.60392156862745094" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李＊＊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INc-4H-El5">
+                                                    <rect key="frame" x="15" y="33" width="37" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.58039215690000001" green="0.60392156860000001" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_star_quanhuangxing" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-e7-LMd">
+                                                    <rect key="frame" x="15" y="16" width="11" height="11"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_star_quanhuangxing" translatesAutoresizingMaskIntoConstraints="NO" id="klX-TL-8rv">
+                                                    <rect key="frame" x="30" y="16" width="11" height="11"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_star_quanhuangxing" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-HW-dWw">
+                                                    <rect key="frame" x="45" y="16" width="11" height="11"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_star_quanhuangxing" translatesAutoresizingMaskIntoConstraints="NO" id="QTI-vS-CXD">
+                                                    <rect key="frame" x="60" y="16" width="11" height="11"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_star_quanhuangxing" translatesAutoresizingMaskIntoConstraints="NO" id="RQX-WS-u7e">
+                                                    <rect key="frame" x="75" y="16" width="11" height="11"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1gg-HW-dWw" firstAttribute="centerY" secondItem="klX-TL-8rv" secondAttribute="centerY" id="2Ft-Oo-w2o"/>
+                                                <constraint firstItem="yxI-e7-LMd" firstAttribute="top" secondItem="3dF-Mg-lO1" secondAttribute="top" constant="16" id="48q-Pe-ADV"/>
+                                                <constraint firstItem="QTI-vS-CXD" firstAttribute="centerY" secondItem="1gg-HW-dWw" secondAttribute="centerY" id="4RH-Kd-WHa"/>
+                                                <constraint firstAttribute="bottom" secondItem="INc-4H-El5" secondAttribute="bottom" constant="18" id="Cwr-gy-xgl"/>
+                                                <constraint firstItem="QTI-vS-CXD" firstAttribute="leading" secondItem="1gg-HW-dWw" secondAttribute="trailing" constant="4" id="SiZ-aV-tRE"/>
+                                                <constraint firstItem="yxI-e7-LMd" firstAttribute="leading" secondItem="3dF-Mg-lO1" secondAttribute="leading" constant="15" id="Ukl-12-7Jc"/>
+                                                <constraint firstItem="klX-TL-8rv" firstAttribute="leading" secondItem="yxI-e7-LMd" secondAttribute="trailing" constant="4" id="VMi-hS-QaQ"/>
+                                                <constraint firstItem="RQX-WS-u7e" firstAttribute="leading" secondItem="QTI-vS-CXD" secondAttribute="trailing" constant="4" id="W0l-4O-pQb"/>
+                                                <constraint firstItem="RQX-WS-u7e" firstAttribute="centerY" secondItem="QTI-vS-CXD" secondAttribute="centerY" id="Xq3-UQ-DiZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="bmY-sg-we2" secondAttribute="trailing" constant="15" id="lTs-T7-rDI"/>
+                                                <constraint firstItem="klX-TL-8rv" firstAttribute="centerY" secondItem="yxI-e7-LMd" secondAttribute="centerY" id="oyu-s6-fxM"/>
+                                                <constraint firstAttribute="bottom" secondItem="bmY-sg-we2" secondAttribute="bottom" constant="18" id="qKz-N1-39p"/>
+                                                <constraint firstItem="INc-4H-El5" firstAttribute="leading" secondItem="3dF-Mg-lO1" secondAttribute="leading" constant="15" id="tu0-TR-7TH"/>
+                                                <constraint firstItem="1gg-HW-dWw" firstAttribute="leading" secondItem="klX-TL-8rv" secondAttribute="trailing" constant="4" id="uvw-nP-3pN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iDj-94-bqk" firstAttribute="top" secondItem="CDo-Tj-IcL" secondAttribute="bottom" id="7JH-2W-81k"/>
+                            <constraint firstItem="iDj-94-bqk" firstAttribute="leading" secondItem="9iX-gJ-nxM" secondAttribute="leading" id="7gj-q8-Y0s"/>
+                            <constraint firstItem="eeB-qr-bOW" firstAttribute="top" secondItem="iDj-94-bqk" secondAttribute="bottom" id="Kmi-1I-c6l"/>
+                            <constraint firstAttribute="trailing" secondItem="iDj-94-bqk" secondAttribute="trailing" id="sNm-n4-MB9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="iDj-94-bqk" id="Fyp-bj-VTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEA-tL-Dwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3458" y="196"/>
         </scene>
     </scenes>
     <resources>

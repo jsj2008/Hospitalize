@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Message View Controller-->
+        <!--消息-->
         <scene sceneID="L96-04-EZ4">
             <objects>
-                <viewController storyboardIdentifier="MessageViewController" id="iG8-Uy-Qk2" customClass="MessageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageViewController" id="iG8-Uy-Qk2" userLabel="消息" customClass="MessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sca-G5-8u2"/>
                         <viewControllerLayoutGuide type="bottom" id="l6I-sg-VNl"/>

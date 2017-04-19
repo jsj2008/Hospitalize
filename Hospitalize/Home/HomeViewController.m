@@ -21,6 +21,7 @@
 #import "ReportListViewController.h"
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
+#import "PatientsEvaluationViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
     UIView *titleView;    //导航栏背景view
@@ -193,7 +194,8 @@
 }
 //互联网诊室事件
 - (void)internetOfficeAction:(id)sender {
-    
+    PatientsEvaluationViewController *patientsEvaluation = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PatientsEvaluationViewController"];
+    [self.navigationController pushViewController:patientsEvaluation animated:YES];
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
@@ -221,7 +223,7 @@
     if (indexPath.row == 0) {
         HomeBannerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeBannerTableViewCell" forIndexPath:indexPath];
         if ([[cell.bannerView subviews] count] == 0) {
-            NSArray *imgArr = @[@"1.jpg", @"2.jpg"];
+            NSArray *imgArr = @[@"banner copy"];
             // 设置 网络 轮播图
             KNBannerView *bannerView = [KNBannerView bannerViewWithLocationImagesArr:[imgArr mutableCopy] frame:CGRectMake(0, 0, KmainScreenWidth, KmainScreenHeight * 175 / 667)];
             bannerView.delegate = self;
