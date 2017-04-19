@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^SelectBlock)(int row);
+
 @interface CasesListReportTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UITableView *reportTableView;
+
+/**
+ 传递点击事件
+ */
+@property (nonatomic,copy)SelectBlock selectBlock;
+/**
+ 传递点击事件
+ */
+- (void)selectBlock:(SelectBlock)block;
 
 @end

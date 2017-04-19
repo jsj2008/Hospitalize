@@ -23,6 +23,8 @@
 #import "UILogic.h"
 #import "PatientsEvaluationViewController.h"
 
+#import "DoctorViewController.h"
+
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
     UIView *titleView;    //导航栏背景view
     NSMutableArray * actDoArray;    //  直播信息数组
@@ -190,6 +192,8 @@
 }
 //在线咨询事件
 - (void)onlineConsultingAction:(id)sender {
+    DoctorViewController *doctor = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DoctorViewController"];
+    [self.navigationController pushViewController:doctor animated:YES];
     
 }
 //互联网诊室事件
