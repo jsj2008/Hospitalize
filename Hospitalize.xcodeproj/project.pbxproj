@@ -1749,7 +1749,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.feichang.Hospitalize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1784,7 +1784,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.feichang.Hospitalize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
