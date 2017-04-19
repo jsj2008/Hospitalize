@@ -139,6 +139,9 @@
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
 		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
+		E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */; };
+		E9FC93D21EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93D11EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m */; };
+		E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93D41EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +418,12 @@
 		E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+NMAlertAction.m"; sourceTree = "<group>"; };
 		E9CD596E1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NMAlertAction.h"; sourceTree = "<group>"; };
 		E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NMAlertAction.m"; sourceTree = "<group>"; };
+		E9FC93CD1EA6F65900BBC07E /* CasesListReportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListReportTableViewCell.h; sourceTree = "<group>"; };
+		E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListReportTableViewCell.m; sourceTree = "<group>"; };
+		E9FC93D01EA6F70C00BBC07E /* CasesListReportCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListReportCellTableViewCell.h; sourceTree = "<group>"; };
+		E9FC93D11EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListReportCellTableViewCell.m; sourceTree = "<group>"; };
+		E9FC93D31EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListRecipeCellTableViewCell.h; sourceTree = "<group>"; };
+		E9FC93D41EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasesListRecipeCellTableViewCell.m; sourceTree = "<group>"; };
 		FCEBFCA8681D4E1C4961AD0A /* Pods-Hospitalize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitalize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospitalize/Pods-Hospitalize.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -911,6 +920,12 @@
 				E9A487EB1EA634F700C2EBBF /* CasesListSectionTableViewCell.m */,
 				E9A487ED1EA6355800C2EBBF /* CasesListRecipeTableViewCell.h */,
 				E9A487EE1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m */,
+				E9FC93D31EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.h */,
+				E9FC93D41EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m */,
+				E9FC93CD1EA6F65900BBC07E /* CasesListReportTableViewCell.h */,
+				E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */,
+				E9FC93D01EA6F70C00BBC07E /* CasesListReportCellTableViewCell.h */,
+				E9FC93D11EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m */,
 				891581341EA617F10090F3E6 /* CasesListTableViewCell.h */,
 				891581351EA617F10090F3E6 /* CasesListTableViewCell.m */,
 				8915813D1EA62C8F0090F3E6 /* CostTableViewCell.h */,
@@ -1297,6 +1312,7 @@
 				8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */,
 				E9A487EC1EA634F700C2EBBF /* CasesListSectionTableViewCell.m in Sources */,
 				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
+				E9FC93D21EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m in Sources */,
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
@@ -1365,12 +1381,14 @@
 				E97D736F1EA21B1400540DF7 /* OrderAddMessageViewController.m in Sources */,
 				891580821EA5DBEC0090F3E6 /* DoctorCollectionViewCell.m in Sources */,
 				891581391EA628D00090F3E6 /* BackNumberInstructionsViewController.m in Sources */,
+				E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */,
 				E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */,
 				E97D736C1EA218EC00540DF7 /* OrderApplyViewController.m in Sources */,
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
 				E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */,
 				89EEC2D01E9F281B00678995 /* KNJudgementTool.m in Sources */,
 				89EEC2D11E9F281B00678995 /* NSData+KNCache.m in Sources */,
+				E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */,
 				E97D73881EA22CAF00540DF7 /* OrderCostListTableViewCell.m in Sources */,
 				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,

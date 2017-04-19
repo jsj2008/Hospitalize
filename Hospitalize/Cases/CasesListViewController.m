@@ -11,6 +11,7 @@
 #import "CasesListOrderTableViewCell.h"
 #import "CasesListSectionTableViewCell.h"
 #import "CasesListRecipeTableViewCell.h"
+#import "CasesListReportTableViewCell.h"
 
 @interface CasesListViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
@@ -35,13 +36,15 @@
     }else if (indexPath.row ==2){
         return 40;
     }else if (indexPath.row ==3){
-        return 167;
+        return 148;
+    }else if (indexPath.row ==4){
+        return 40;
     }else{
-        return 167;
+        return 112+30*3;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -53,14 +56,19 @@
         return orderCell;
     }else if (indexPath.row ==2){
         CasesListSectionTableViewCell *sectionCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListSectionTableViewCell"];
+        sectionCell.sectionNameLabel.text = @"检查报告";
         return sectionCell;
     }else if (indexPath.row ==3){
-        CasesListRecipeTableViewCell *recipeCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListRecipeTableViewCell"];
-        return recipeCell;
+        CasesListReportTableViewCell *reportCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListReportTableViewCell"];
+        return reportCell;
+    }else if(indexPath.row ==4){
+        CasesListSectionTableViewCell *sectionCell1 = [tableView dequeueReusableCellWithIdentifier:@"CasesListSectionTableViewCell"];
+        sectionCell1.sectionNameLabel.text = @"我的处方";
+        return sectionCell1;
+
     }else{
         CasesListRecipeTableViewCell *recipeCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListRecipeTableViewCell"];
         return recipeCell;
-
     }
 
     
