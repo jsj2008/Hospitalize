@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1164,7 +1164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGH-sQ-tck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="1059.2203898050975"/>
+            <point key="canvasLocation" x="892" y="1009"/>
         </scene>
         <!--Pay Sucess View Controller-->
         <scene sceneID="UZx-wt-Ble">
@@ -1199,7 +1199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzZ-5h-Xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="1045.7271364317842"/>
+            <point key="canvasLocation" x="1657" y="1009"/>
         </scene>
         <!--Payfaild View Controller-->
         <scene sceneID="3bM-GV-qPZ">
@@ -1253,7 +1253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQj-el-UiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="1045.7271364317842"/>
+            <point key="canvasLocation" x="2398" y="1009"/>
         </scene>
         <!--预约单-->
         <scene sceneID="qyL-8X-k6X">
@@ -1446,12 +1446,20 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doctorNameLabel" destination="PTq-Km-ZYl" id="sBa-r5-NCz"/>
+                        <outlet property="headImageView" destination="1UK-KL-PZZ" id="LAO-NU-Ghw"/>
+                        <outlet property="hospitalNameLabel" destination="Qwo-DG-86J" id="VE9-PZ-pSg"/>
+                        <outlet property="kesiLabel" destination="dns-SY-78l" id="oJe-LS-ZeF"/>
+                        <outlet property="menzhengIdLabel" destination="wVv-7g-l8g" id="s8q-IN-tWa"/>
+                        <outlet property="nameLabel" destination="fzZ-Gb-04c" id="3vv-bY-x3H"/>
+                        <outlet property="orderCostLabel" destination="JSG-Sg-RHD" id="YpK-Qt-1NX"/>
+                        <outlet property="orderTimeLabel" destination="8uX-Bh-334" id="4Zb-aK-ZCX"/>
                         <outlet property="scrollHightConstraint" destination="DcR-AB-60N" id="oog-0a-1lF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="re4-KP-y4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3847.1999999999998" y="1045.7271364317842"/>
+            <point key="canvasLocation" x="3174" y="991"/>
         </scene>
         <!--Order Apply View Controller-->
         <scene sceneID="Q5N-Gd-MHn">
@@ -1673,7 +1681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iO4-eW-QH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4528" y="1050"/>
+            <point key="canvasLocation" x="3932" y="991"/>
         </scene>
         <!--Order Add Message View Controller-->
         <scene sceneID="4hR-fb-icD">
@@ -1818,7 +1826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s99-Z1-20R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5172" y="1049"/>
+            <point key="canvasLocation" x="4663" y="991"/>
         </scene>
         <!--Order Note View Controller-->
         <scene sceneID="wj0-fF-13b">
@@ -1896,7 +1904,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBc-7I-V6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5855" y="1049"/>
+            <point key="canvasLocation" x="5385" y="991"/>
         </scene>
         <!--Departments View Controller-->
         <scene sceneID="hHC-02-feF">

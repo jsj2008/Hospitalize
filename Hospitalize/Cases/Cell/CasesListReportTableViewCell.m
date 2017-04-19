@@ -9,6 +9,7 @@
 #import "CasesListReportTableViewCell.h"
 #import "CasesListReportCellTableViewCell.h"
 
+
 @interface CasesListReportTableViewCell () <UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -17,8 +18,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.reportTableView.delegate = self;
     self.reportTableView.dataSource = self;
+    self.reportTableView.delegate = self;
     
     
     // Initialization code
@@ -31,6 +32,17 @@
     CasesListReportCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CasesListReportCellTableViewCell"];
     return cell;
     
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (self.selectBlock != nil) {
+        self.selectBlock((int)indexPath.row);
+    }
+    
+}
+-(void)selectBlock:(SelectBlock)block{
+    self.selectBlock = block;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

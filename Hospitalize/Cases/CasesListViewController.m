@@ -13,12 +13,16 @@
 #import "CasesListRecipeTableViewCell.h"
 #import "CasesListReportTableViewCell.h"
 
+#import "InspectionReportViewController.h"
+
 @interface CasesListViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end
 
-@implementation CasesListViewController
+@implementation CasesListViewController{
+    UITableView *_typeTableView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,6 +75,11 @@
         return sectionCell;
     }else if (indexPath.row ==3){//检查报告
         CasesListReportTableViewCell *reportCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListReportTableViewCell"];
+        WS(self)
+        [reportCell selectBlock:^(int row) {
+            [weakself pushInspectionReportView];
+            }];
+        
         return reportCell;
     }else if(indexPath.row ==4){//我的处方section
         CasesListSectionTableViewCell *sectionCell1 = [tableView dequeueReusableCellWithIdentifier:@"CasesListSectionTableViewCell"];
@@ -83,6 +92,17 @@
     }
 
     
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([tableView isKindOfClass:[_typeTableView class]]) {
+       
+    }
+}
+//跳转到InspectionReport页面
+-(void)pushInspectionReportView{
+    InspectionReportViewController *ins = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"InspectionReportViewController"];
+    [self.navigationController pushViewController:ins animated:YES];
+
 }
 //右上角说明按钮
 -(void)illusAction{

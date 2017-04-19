@@ -10,6 +10,18 @@
 #import "FCAlertAction.h"
 
 @interface OrderMessageViewController () <UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;//头像
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;//姓名
+@property (weak, nonatomic) IBOutlet UILabel *menzhengIdLabel;//门诊id
+@property (weak, nonatomic) IBOutlet UILabel *hospitalNameLabel;//医院名
+@property (weak, nonatomic) IBOutlet UILabel *kesiLabel;//科室名
+@property (weak, nonatomic) IBOutlet UILabel *doctorNameLabel;//医生名
+@property (weak, nonatomic) IBOutlet UILabel *orderTimeLabel;//预约时间
+@property (weak, nonatomic) IBOutlet UILabel *orderCostLabel;//挂号费
+
+
+
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollHightConstraint;
 @property (weak, nonatomic) IBOutlet UIView *blackView;
 @property (weak, nonatomic) IBOutlet UIView *noteView;//挂号须知view
