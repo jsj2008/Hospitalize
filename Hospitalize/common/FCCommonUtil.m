@@ -89,4 +89,28 @@
     return theImage;
 }
 
+/**
+ 显示星星评价
+
+ @param imageView1 星星1
+ @param imageView2 星星2
+ @param imageView3 星星3
+ @param imageView4 星星4
+ @param imageView5 星星5
+ @param number 星星数量
+ 
+ home_icon_star_bankehuangxing 半星
+ home_icon_star_quanhuangxing 全星
+ home_icon_star_quanxing 零星
+ */
++(void)showTheStarWithImage:(UIImageView *)imageView1
+                     image2:(UIImageView *)imageView2
+                     image3:(UIImageView *)imageView3
+                     image4:(UIImageView *)imageView4
+                     image5:(UIImageView *)imageView5
+                     number:(CGFloat)number{
+
+}
+
+
 @end
