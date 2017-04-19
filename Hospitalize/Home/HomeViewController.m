@@ -18,7 +18,6 @@
 #import "HospitalViewController.h"
 
 #import "LoginViewController.h"
-#import "ReportListViewController.h"
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
 #import "PatientsEvaluationViewController.h"
@@ -181,8 +180,7 @@
 }
 //二维码扫描事件
 -(void)scanButtonAction:(id)sender{
-    ReportListViewController *reportList = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"ReportListViewController"];
-    [self.navigationController pushViewController:reportList animated:YES];
+    
 }
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {
