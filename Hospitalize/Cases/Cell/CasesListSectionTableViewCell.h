@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CasesListSectionTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *sectionNameLabel;//section的头名
 
 @end
