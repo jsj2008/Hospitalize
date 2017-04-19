@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Personal View Controller-->
+        <!--个人-->
         <scene sceneID="Wu3-sR-TkJ">
             <objects>
-                <viewController storyboardIdentifier="PersonalViewController" id="fDc-gt-uMo" customClass="PersonalViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonalViewController" id="fDc-gt-uMo" userLabel="个人" customClass="PersonalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q93-9S-onp"/>
                         <viewControllerLayoutGuide type="bottom" id="W54-9Y-6Vi"/>
