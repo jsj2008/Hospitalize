@@ -12,6 +12,7 @@
 #import "HospitalHeadCollectionReusableView.h"
 #import "HospitalEvaluateViewController.h"
 
+#import "ReportListViewController.h"
 #import "DepartmentsListViewController.h"
 #import "HospitalNoticeViewController.h"
 #import "HospitalProfileViewController.h"
@@ -131,7 +132,8 @@
     } else if (indexPath.item == 1){//处方缴费
         
     } else if (indexPath.item == 2){//取报告
-        
+        ReportListViewController *reportList = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"ReportListViewController"];
+        [self.navigationController pushViewController:reportList animated:YES];
     } else if (indexPath.item == 3){//住院缴费
         
     } else if (indexPath.item == 4){//医院简介

@@ -26,5 +26,77 @@
             </objects>
             <point key="canvasLocation" x="110" y="169"/>
         </scene>
+        <!--个人信息-->
+        <scene sceneID="4NP-BS-27F">
+            <objects>
+                <viewController id="gVL-XM-nHS" userLabel="个人信息" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ylL-M0-qNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="HtY-nG-5jC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TLj-Qc-dsn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxT-IZ-cVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="836"/>
+        </scene>
+        <!--添加就诊卡-->
+        <scene sceneID="Ep7-lQ-rgZ">
+            <objects>
+                <viewController id="5R8-I2-wZd" userLabel="添加就诊卡" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jbj-Vk-kVb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7n9-E0-mXH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6wb-Hg-ogg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTq-e4-JEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="859"/>
+        </scene>
+        <!--就诊卡列表-->
+        <scene sceneID="CGj-zZ-sDE">
+            <objects>
+                <viewController id="Gov-gc-0Qr" userLabel="就诊卡列表" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLv-FP-TmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="sqR-DQ-RL9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fTd-4a-MtD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmE-vf-vxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="175"/>
+        </scene>
+        <!--就诊卡-->
+        <scene sceneID="iz3-Ib-hfw">
+            <objects>
+                <viewController id="FRQ-Nn-FAX" userLabel="就诊卡" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZT9-LR-evT"/>
+                        <viewControllerLayoutGuide type="bottom" id="C2n-B4-xg4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UUh-Ct-WEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTK-x5-0ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421" y="178"/>
+        </scene>
     </scenes>
 </document>
