@@ -153,6 +153,7 @@
 		E966B5B91EA8AE67000775DC /* PersonalCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5B81EA8AE67000775DC /* PersonalCollectViewController.m */; };
 		E966B5BC1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5BB1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m */; };
 		E966B5BF1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5BE1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m */; };
+		E966B5C21EA8C56C000775DC /* ChangePhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5C11EA8C56C000775DC /* ChangePhoneNumViewController.m */; };
 		E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */; };
 		E976F27B1EA760F2005CFE7F /* DoctorIntroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27A1EA760F2005CFE7F /* DoctorIntroTableViewCell.m */; };
 		E976F27E1EA767E1005CFE7F /* DoctorSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27D1EA767E1005CFE7F /* DoctorSectionTableViewCell.m */; };
@@ -490,6 +491,8 @@
 		E966B5BB1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHospitalTableViewCell.m; sourceTree = "<group>"; };
 		E966B5BD1EA8B5F4000775DC /* CollectionDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDoctorTableViewCell.h; sourceTree = "<group>"; };
 		E966B5BE1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDoctorTableViewCell.m; sourceTree = "<group>"; };
+		E966B5C01EA8C56C000775DC /* ChangePhoneNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneNumViewController.h; sourceTree = "<group>"; };
+		E966B5C11EA8C56C000775DC /* ChangePhoneNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneNumViewController.m; sourceTree = "<group>"; };
 		E976F2761EA75DF1005CFE7F /* DoctorFucTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFucTableViewCell.h; sourceTree = "<group>"; };
 		E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFucTableViewCell.m; sourceTree = "<group>"; };
 		E976F2791EA760F2005CFE7F /* DoctorIntroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroTableViewCell.h; sourceTree = "<group>"; };
@@ -794,6 +797,8 @@
 				895FB1081EA8BC8A0007BF87 /* ModifyNicknameViewController.m */,
 				895FB10A1EA8C0610007BF87 /* ChangePasswordViewController.h */,
 				895FB10B1EA8C0610007BF87 /* ChangePasswordViewController.m */,
+				E966B5C01EA8C56C000775DC /* ChangePhoneNumViewController.h */,
+				E966B5C11EA8C56C000775DC /* ChangePhoneNumViewController.m */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -1777,6 +1782,7 @@
 				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
 				8907011B1EA70BB10062BBC2 /* HospitalFootCollectionReusableView.m in Sources */,
+				E966B5C21EA8C56C000775DC /* ChangePhoneNumViewController.m in Sources */,
 				890701561EA730EA0062BBC2 /* ButtonGroupView.m in Sources */,
 				8907017D1EA758EE0062BBC2 /* StarTableViewCell.m in Sources */,
 				890701631EA730EA0062BBC2 /* ZYPinYinSearch.m in Sources */,
