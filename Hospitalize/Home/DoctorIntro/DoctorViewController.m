@@ -13,6 +13,7 @@
 #import "DoctorIntroTableViewCell.h"
 #import "DoctorStarTableViewCell.h"
 #import "DoctorSectionTableViewCell.h"
+#import "PatientsEvaluationViewController.h"
 
 @interface DoctorViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -121,6 +122,9 @@
     }else if (indexPath.row ==3){
         _introRowisOpen = !_introRowisOpen;
         [self.mainTableView reloadData];
+    } else if (indexPath.row == 4){
+        PatientsEvaluationViewController *patientsEvaluation = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PatientsEvaluationViewController"];
+        [self.navigationController pushViewController:patientsEvaluation animated:YES];
     }
 }
 - (IBAction)backAction:(id)sender {

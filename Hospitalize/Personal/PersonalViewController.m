@@ -11,6 +11,9 @@
 #import "PersonalCollectViewController.h"
 #import "ReservationListViewController.h"
 #import "SetViewController.h"
+#import "PersonInformationReviseViewController.h"
+#import "HealthRecordsViewController.h"
+
 
 @interface PersonalViewController ()
 //整体高度
@@ -47,6 +50,8 @@
 }
 //跳转信息修改
 - (IBAction)personalAction:(id)sender {
+    PersonInformationReviseViewController *personInformationRevise = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationReviseViewController"];
+    [self.navigationController pushViewController:personInformationRevise animated:YES];
 }
 //家庭成员
 - (IBAction)menberAction:(id)sender {
@@ -68,6 +73,8 @@
 }
 //健康档案
 - (IBAction)danganAction:(id)sender {
+    HealthRecordsViewController *healthRecords = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"HealthRecordsViewController"];
+    [self.navigationController pushViewController:healthRecords animated:YES];
 }
 //设置
 - (IBAction)settingAction:(id)sender {
