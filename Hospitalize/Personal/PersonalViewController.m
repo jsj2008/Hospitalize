@@ -9,14 +9,49 @@
 #import "PersonalViewController.h"
 
 @interface PersonalViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentHeightConstraint;
 
 @end
 
 @implementation PersonalViewController
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.contentHeightConstraint.constant = KmainScreenHeight;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+//家庭成员
+- (IBAction)menberAction:(id)sender {
+}
+//我的预约
+- (IBAction)orderAction:(id)sender {
+}
+//我的咨询
+- (IBAction)zixunAction:(id)sender {
+}
+//我的收藏
+- (IBAction)shoucangAction:(id)sender {
+}
+//健康档案
+- (IBAction)danganAction:(id)sender {
+}
+//设置
+- (IBAction)settingAction:(id)sender {
+}
+//联系客服
+- (IBAction)kefuAction:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {
