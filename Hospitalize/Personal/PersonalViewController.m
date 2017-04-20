@@ -7,11 +7,22 @@
 //
 
 #import "PersonalViewController.h"
+#import "PersonalMemberViewController.h"
+#import "PersonalCollectViewController.h"
 #import "ReservationListViewController.h"
 #import "SetViewController.h"
 
 @interface PersonalViewController ()
+//整体高度
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentHeightConstraint;
+//用户头像
+@property (weak, nonatomic) IBOutlet UIImageView *userHeadImageView;
+//用户名
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+//用户电话
+@property (weak, nonatomic) IBOutlet UILabel *userPhoneNumLabel;
+//登陆注册
+@property (weak, nonatomic) IBOutlet UILabel *loginLabel;
 
 @end
 
@@ -34,8 +45,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+//跳转信息修改
+- (IBAction)personalAction:(id)sender {
+}
 //家庭成员
 - (IBAction)menberAction:(id)sender {
+    PersonalMemberViewController *member = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonalMemberViewController"];
+    [self.navigationController pushViewController:member animated:YES];
 }
 //我的预约
 - (IBAction)orderAction:(id)sender {
@@ -47,6 +63,8 @@
 }
 //我的收藏
 - (IBAction)shoucangAction:(id)sender {
+    PersonalCollectViewController *collection = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonalCollectViewController"];
+    [self.navigationController pushViewController:collection animated:YES];
 }
 //健康档案
 - (IBAction)danganAction:(id)sender {

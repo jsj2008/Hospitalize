@@ -148,6 +148,11 @@
 		E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */; };
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
 		E966B5B01EA8500D000775DC /* ClinicAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5AF1EA8500D000775DC /* ClinicAddViewController.m */; };
+		E966B5B31EA8A8F5000775DC /* PersonalMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5B21EA8A8F5000775DC /* PersonalMemberViewController.m */; };
+		E966B5B61EA8A92D000775DC /* MemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5B51EA8A92D000775DC /* MemberTableViewCell.m */; };
+		E966B5B91EA8AE67000775DC /* PersonalCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5B81EA8AE67000775DC /* PersonalCollectViewController.m */; };
+		E966B5BC1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5BB1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m */; };
+		E966B5BF1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E966B5BE1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m */; };
 		E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */; };
 		E976F27B1EA760F2005CFE7F /* DoctorIntroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27A1EA760F2005CFE7F /* DoctorIntroTableViewCell.m */; };
 		E976F27E1EA767E1005CFE7F /* DoctorSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27D1EA767E1005CFE7F /* DoctorSectionTableViewCell.m */; };
@@ -475,6 +480,16 @@
 		E9648D021E9F2B7B00943168 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
 		E966B5AE1EA8500D000775DC /* ClinicAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicAddViewController.h; sourceTree = "<group>"; };
 		E966B5AF1EA8500D000775DC /* ClinicAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicAddViewController.m; sourceTree = "<group>"; };
+		E966B5B11EA8A8F5000775DC /* PersonalMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMemberViewController.h; sourceTree = "<group>"; };
+		E966B5B21EA8A8F5000775DC /* PersonalMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalMemberViewController.m; sourceTree = "<group>"; };
+		E966B5B41EA8A92D000775DC /* MemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTableViewCell.h; sourceTree = "<group>"; };
+		E966B5B51EA8A92D000775DC /* MemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTableViewCell.m; sourceTree = "<group>"; };
+		E966B5B71EA8AE67000775DC /* PersonalCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCollectViewController.h; sourceTree = "<group>"; };
+		E966B5B81EA8AE67000775DC /* PersonalCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCollectViewController.m; sourceTree = "<group>"; };
+		E966B5BA1EA8B5E1000775DC /* CollectionHospitalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHospitalTableViewCell.h; sourceTree = "<group>"; };
+		E966B5BB1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHospitalTableViewCell.m; sourceTree = "<group>"; };
+		E966B5BD1EA8B5F4000775DC /* CollectionDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDoctorTableViewCell.h; sourceTree = "<group>"; };
+		E966B5BE1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDoctorTableViewCell.m; sourceTree = "<group>"; };
 		E976F2761EA75DF1005CFE7F /* DoctorFucTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFucTableViewCell.h; sourceTree = "<group>"; };
 		E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFucTableViewCell.m; sourceTree = "<group>"; };
 		E976F2791EA760F2005CFE7F /* DoctorIntroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroTableViewCell.h; sourceTree = "<group>"; };
@@ -627,6 +642,10 @@
 				890700FB1EA702A80062BBC2 /* Cell */,
 				890701051EA702FA0062BBC2 /* PersonalViewController.h */,
 				890701061EA702FA0062BBC2 /* PersonalViewController.m */,
+				E966B5B11EA8A8F5000775DC /* PersonalMemberViewController.h */,
+				E966B5B21EA8A8F5000775DC /* PersonalMemberViewController.m */,
+				E966B5B71EA8AE67000775DC /* PersonalCollectViewController.h */,
+				E966B5B81EA8AE67000775DC /* PersonalCollectViewController.m */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -636,6 +655,12 @@
 			children = (
 				890701811EA75C520062BBC2 /* PersonalTableViewCell.h */,
 				890701821EA75C520062BBC2 /* PersonalTableViewCell.m */,
+				E966B5B41EA8A92D000775DC /* MemberTableViewCell.h */,
+				E966B5B51EA8A92D000775DC /* MemberTableViewCell.m */,
+				E966B5BA1EA8B5E1000775DC /* CollectionHospitalTableViewCell.h */,
+				E966B5BB1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m */,
+				E966B5BD1EA8B5F4000775DC /* CollectionDoctorTableViewCell.h */,
+				E966B5BE1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1637,7 +1662,9 @@
 				E9A487EC1EA634F700C2EBBF /* CasesListSectionTableViewCell.m in Sources */,
 				8907015C1EA730EA0062BBC2 /* ChineseToPinyinResource.m in Sources */,
 				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
+				E966B5BF1EA8B5F4000775DC /* CollectionDoctorTableViewCell.m in Sources */,
 				E9FC93D21EA6F70C00BBC07E /* CasesListReportCellTableViewCell.m in Sources */,
+				E966B5B91EA8AE67000775DC /* PersonalCollectViewController.m in Sources */,
 				8907011E1EA70BD30062BBC2 /* HospitalHeadCollectionReusableView.m in Sources */,
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */,
@@ -1685,6 +1712,7 @@
 				E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */,
 				891580631EA59F540090F3E6 /* InspectionReportViewController.m in Sources */,
 				89EEC2D31E9F281B00678995 /* UIView+Extension.m in Sources */,
+				E966B5B31EA8A8F5000775DC /* PersonalMemberViewController.m in Sources */,
 				891580871EA5DBEC0090F3E6 /* HospitalProfileViewController.m in Sources */,
 				8915806D1EA5A9890090F3E6 /* InspectionReportPersonTableViewCell.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
@@ -1698,6 +1726,7 @@
 				891580861EA5DBEC0090F3E6 /* HospitalNoticeViewController.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
 				8907015A1EA730EA0062BBC2 /* CityListViewController.m in Sources */,
+				E966B5B61EA8A92D000775DC /* MemberTableViewCell.m in Sources */,
 				E97D738B1EA231FE00540DF7 /* OrderCostLsitHeaderView.m in Sources */,
 				8907017A1EA758E30062BBC2 /* PatientsEvaluationViewController.m in Sources */,
 				89076F4C1EA8896800E86173 /* HealthRecordsViewController.m in Sources */,
@@ -1720,6 +1749,7 @@
 				891580731EA5BA880090F3E6 /* SelectTableViewCell.m in Sources */,
 				891580831EA5DBEC0090F3E6 /* HospitalNoticeMessageTableViewCell.m in Sources */,
 				8907015F1EA730EA0062BBC2 /* PinyinFormatter.m in Sources */,
+				E966B5BC1EA8B5E1000775DC /* CollectionHospitalTableViewCell.m in Sources */,
 				890701211EA70BE60062BBC2 /* HospitalCollectionViewCell.m in Sources */,
 				890701141EA703440062BBC2 /* SeeDoctorViewController.m in Sources */,
 				890701661EA730EA0062BBC2 /* DoctorTimePointViewController.m in Sources */,
