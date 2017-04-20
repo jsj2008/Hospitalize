@@ -9,6 +9,8 @@
 #import "PersonalViewController.h"
 #import "PersonalMemberViewController.h"
 #import "PersonalCollectViewController.h"
+#import "ReservationListViewController.h"
+#import "SetViewController.h"
 
 @interface PersonalViewController ()
 //整体高度
