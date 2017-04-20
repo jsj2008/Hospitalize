@@ -641,27 +641,31 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcJ-O2-YKi">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ass-Oi-7O1">
-                                                            <rect key="frame" x="145" y="32" width="84" height="84"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor_head_defult" translatesAutoresizingMaskIntoConstraints="NO" id="ass-Oi-7O1">
+                                                            <rect key="frame" x="152" y="32" width="70" height="70"/>
                                                             <color key="backgroundColor" red="0.91764705879999997" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="84" id="hld-7F-7Yn"/>
-                                                                <constraint firstAttribute="width" constant="84" id="ryS-d2-Dxb"/>
+                                                                <constraint firstAttribute="height" constant="70" id="O3X-as-53n"/>
+                                                                <constraint firstAttribute="width" constant="70" id="qep-TI-gRZ"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="42"/>
+                                                                    <real key="value" value="35"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="FFFFFF"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="韩梅梅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-ys-jAO">
-                                                            <rect key="frame" x="161.5" y="118" width="52" height="21"/>
+                                                            <rect key="frame" x="161.5" y="109" width="52" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主任医师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-TX-FX6">
-                                                            <rect key="frame" x="163" y="143" width="49.5" height="14.5"/>
+                                                            <rect key="frame" x="163" y="134" width="49.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -796,7 +800,7 @@
                                                         <constraint firstItem="ass-Oi-7O1" firstAttribute="top" secondItem="IcJ-O2-YKi" secondAttribute="top" constant="32" id="iPS-jB-twh"/>
                                                         <constraint firstItem="BpZ-TX-FX6" firstAttribute="centerX" secondItem="IcJ-O2-YKi" secondAttribute="centerX" id="ix9-WC-dWs"/>
                                                         <constraint firstItem="40b-dr-cmx" firstAttribute="leading" secondItem="IcJ-O2-YKi" secondAttribute="leading" id="l5w-5S-IMJ"/>
-                                                        <constraint firstItem="EHT-ys-jAO" firstAttribute="top" secondItem="ass-Oi-7O1" secondAttribute="bottom" constant="2" id="lVO-Yz-IIR"/>
+                                                        <constraint firstItem="EHT-ys-jAO" firstAttribute="top" secondItem="ass-Oi-7O1" secondAttribute="bottom" constant="7" id="lVO-Yz-IIR"/>
                                                         <constraint firstItem="ass-Oi-7O1" firstAttribute="centerX" secondItem="IcJ-O2-YKi" secondAttribute="centerX" id="oCF-DI-eXU"/>
                                                     </constraints>
                                                 </view>
@@ -1033,46 +1037,7 @@
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                            <tabStops>
-                                                                                <textTab alignment="left" location="28">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="56">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="84">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="112">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="140">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="168">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="196">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="224">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="252">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="280">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="308">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                                <textTab alignment="left" location="336">
-                                                                                    <options/>
-                                                                                </textTab>
-                                                                            </tabStops>
-                                                                        </paragraphStyle>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -2925,6 +2890,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doctor_head_defult" width="70" height="70"/>
         <image name="doctor_image" width="38" height="38"/>
         <image name="doctor_read" width="38" height="38"/>
         <image name="doctor_video" width="38" height="38"/>
