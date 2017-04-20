@@ -9,6 +9,7 @@
 #import "ClinicCardListViewController.h"
 #import "ClinicCardListTableViewCell.h"
 #import "AttendanceCardViewController.h"
+#import "ClinicAddViewController.h"
 
 @interface ClinicCardListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -95,7 +96,8 @@
 }
 
 -(void)addCardAction:(id)sender{
-    
+    ClinicAddViewController *add = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ClinicAddViewController"];
+    [self.navigationController pushViewController:add animated:YES];
 }
 
 
