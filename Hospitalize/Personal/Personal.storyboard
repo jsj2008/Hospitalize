@@ -617,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTq-e4-JEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="834"/>
+            <point key="canvasLocation" x="761" y="827"/>
         </scene>
         <!--健康档案-->
         <scene sceneID="lyX-WY-w2d">
@@ -902,7 +902,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zuo" translatesAutoresizingMaskIntoConstraints="NO" id="zIe-Gk-k1P">
                                         <rect key="frame" x="0.0" y="388" width="9" height="20"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xuxian" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-By-4ir">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-By-4ir">
                                         <rect key="frame" x="21" y="397" width="273" height="1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="rVp-bI-cQo"/>
@@ -927,7 +927,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xuxian" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-bR-udO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-bR-udO">
                                         <rect key="frame" x="21" y="464" width="273" height="1"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="zeK-iK-7Tu"/>
