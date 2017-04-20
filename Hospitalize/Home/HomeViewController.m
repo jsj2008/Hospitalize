@@ -23,7 +23,7 @@
 #import "PatientsEvaluationViewController.h"
 
 #import "DoctorViewController.h"
-#import "ClinicCardListViewController.h"
+#import "PersonInformationViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
@@ -182,8 +182,8 @@
 }
 //二维码扫描事件
 -(void)scanButtonAction:(id)sender{
-    ClinicCardListViewController *clinicCardList = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ClinicCardListViewController"];
-    [self.navigationController pushViewController:clinicCardList animated:YES];
+    PersonInformationViewController *personInformation = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationViewController"];
+    [self.navigationController pushViewController:personInformation animated:YES];
 }
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {

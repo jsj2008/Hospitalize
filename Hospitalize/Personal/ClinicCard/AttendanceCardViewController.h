@@ -10,4 +10,6 @@
 
 @interface AttendanceCardViewController : BaseViewController
 
+@property(nonatomic, assign)BOOL isMainCard;
+
 @end

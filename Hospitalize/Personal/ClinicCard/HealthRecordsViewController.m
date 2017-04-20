@@ -1,0 +1,79 @@
+//
+//  HealthRecordsViewController.m
+//  Hospitalize
+//
+//  Created by 宋明月 on 2017/4/20.
+//  Copyright © 2017年 feichang. All rights reserved.
+//
+
+#import "HealthRecordsViewController.h"
+#import "HealthRecordsTableViewCell.h"
+#import "FCAlertAction.h"
+
+@interface HealthRecordsViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+
+@end
+
+@implementation HealthRecordsViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"健康档案";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(saveHealthInformationAction:)];
+    
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
+    [self setExtraCellLineHidden:self.mainTableView];
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 8;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HealthRecordsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HealthRecordsTableViewCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 4) {
+        NSArray *array = @[@"未知血型",@"A血型",@"B血型",@"O血型",@"AB血型",@"其他血型"];
+        [FCAlertAction showActionSheetWithTitle:nil message:nil  cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitle:array chooseBlock:^(NSInteger buttonIdx) {
+            if (buttonIdx > 0) {
+                NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"%@",array[buttonIdx - 1]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+            }
+        }];
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)setExtraCellLineHidden: (UITableView *)tableView {
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
+
+//保存信息
+-(void)saveHealthInformationAction:(id)sender{
+    
+}
+
+@end
