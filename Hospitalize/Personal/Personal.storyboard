@@ -1281,7 +1281,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="logOutAction:" destination="brH-xv-yIk" eventType="touchUpInside" id="H4w-c6-qXk"/>
                                     <action selector="submitAction:" destination="NMv-cZ-7am" eventType="touchUpInside" id="m28-fe-nD0"/>
                                 </connections>
                             </button>
@@ -1535,8 +1534,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="confirmChangeAction:" destination="CEw-qD-tPk" eventType="touchUpInside" id="D6J-XR-UDS"/>
-                                    <action selector="logOutAction:" destination="brH-xv-yIk" eventType="touchUpInside" id="rB4-dO-4Jy"/>
-                                    <action selector="submitAction:" destination="NMv-cZ-7am" eventType="touchUpInside" id="8iw-kY-rsj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1813,7 +1810,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="confirmChangeAction:" destination="mN0-NA-hDa" eventType="touchUpInside" id="WaR-JF-pZ4"/>
-                                    <action selector="logOutAction:" destination="brH-xv-yIk" eventType="touchUpInside" id="uzF-4B-fCi"/>
                                 </connections>
                             </button>
                         </subviews>
