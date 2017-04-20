@@ -29,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"我的收藏";
     self.collectionHospitalButton.selected = YES;
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;

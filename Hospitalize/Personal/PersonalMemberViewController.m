@@ -7,6 +7,7 @@
 //
 
 #import "PersonalMemberViewController.h"
+#import "PersonInformationViewController.h"
 #import "MemberTableViewCell.h"
 
 @interface PersonalMemberViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -33,6 +34,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MemberTableViewCell" forIndexPath:indexPath];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    PersonInformationViewController *personInformation = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationViewController"];
+    [self.navigationController pushViewController:personInformation animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
