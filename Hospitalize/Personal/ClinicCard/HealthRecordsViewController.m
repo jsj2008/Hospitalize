@@ -32,6 +32,9 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        return 60;
+    }
     return 50;
 }
 
@@ -44,6 +47,35 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HealthRecordsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HealthRecordsTableViewCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.rightContent.hidden = YES;
+    cell.rightImageView.hidden = YES;
+    cell.line.hidden = YES;
+    cell.contentTextField.enabled = YES;
+
+    if (indexPath.row == 0) {
+        cell.contentTextField.enabled = NO;
+        cell.titleName.text = @"性别";
+        cell.contentTextField.text = @"女";
+    } else if (indexPath.row == 1){
+        cell.line.hidden = NO;
+        cell.contentTextField.enabled = NO;
+        cell.titleName.text = @"年龄";
+        cell.contentTextField.text = @"24岁";
+    } else if (indexPath.row == 2){
+        cell.titleName.text = @"身高(cm)";
+    } else if (indexPath.row == 3){
+        cell.titleName.text = @"体重(kg)";
+    } else if (indexPath.row == 4){
+        cell.rightImageView.hidden = NO;
+        cell.rightContent.hidden = NO;
+        cell.contentTextField.hidden = YES;
+    } else if (indexPath.row == 5){
+        cell.titleName.text = @"过敏史";
+    } else if (indexPath.row == 6){
+        cell.titleName.text = @"重大病史";
+    } else if (indexPath.row == 7){
+        cell.titleName.text = @"家庭病史";
+    }
     return cell;
 }
 
