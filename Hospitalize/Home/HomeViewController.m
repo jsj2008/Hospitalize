@@ -24,6 +24,7 @@
 
 #import "DoctorViewController.h"
 #import "PersonInformationViewController.h"
+#import "PersonInformationReviseViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
@@ -182,8 +183,8 @@
 }
 //二维码扫描事件
 -(void)scanButtonAction:(id)sender{
-    PersonInformationViewController *personInformation = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationViewController"];
-    [self.navigationController pushViewController:personInformation animated:YES];
+    PersonInformationReviseViewController *personInformationRevise = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationReviseViewController"];
+    [self.navigationController pushViewController:personInformationRevise animated:YES];
 }
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {
