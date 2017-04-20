@@ -87,6 +87,9 @@
 		8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315591EA1F6D5003C4F54 /* FCStarView.m */; };
 		893315601EA20DBE003C4F54 /* UILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155F1EA20DBE003C4F54 /* UILogic.m */; };
 		893315681EA238E7003C4F54 /* ReportListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315671EA238E7003C4F54 /* ReportListViewController.m */; };
+		89B0B93C1EA764E0006E9230 /* ClinicCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B93B1EA764E0006E9230 /* ClinicCardListViewController.m */; };
+		89B0B93F1EA764FD006E9230 /* ClinicCardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B93E1EA764FD006E9230 /* ClinicCardListTableViewCell.m */; };
+		89B0B9421EA76AF4006E9230 /* AttendanceCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B9411EA76AF4006E9230 /* AttendanceCardViewController.m */; };
 		89EEC2CD1E9F281B00678995 /* KNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C01E9F281B00678995 /* KNBannerView.m */; };
 		89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C21E9F281B00678995 /* KNCollectionViewCell.m */; };
 		89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2C41E9F281B00678995 /* KNCollectionViewTextView.m */; };
@@ -333,6 +336,12 @@
 		8933155F1EA20DBE003C4F54 /* UILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILogic.m; sourceTree = "<group>"; };
 		893315661EA238E7003C4F54 /* ReportListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportListViewController.h; sourceTree = "<group>"; };
 		893315671EA238E7003C4F54 /* ReportListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportListViewController.m; sourceTree = "<group>"; };
+		89B0B93A1EA764E0006E9230 /* ClinicCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicCardListViewController.h; sourceTree = "<group>"; };
+		89B0B93B1EA764E0006E9230 /* ClinicCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicCardListViewController.m; sourceTree = "<group>"; };
+		89B0B93D1EA764FD006E9230 /* ClinicCardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicCardListTableViewCell.h; sourceTree = "<group>"; };
+		89B0B93E1EA764FD006E9230 /* ClinicCardListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicCardListTableViewCell.m; sourceTree = "<group>"; };
+		89B0B9401EA76AF4006E9230 /* AttendanceCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceCardViewController.h; sourceTree = "<group>"; };
+		89B0B9411EA76AF4006E9230 /* AttendanceCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceCardViewController.m; sourceTree = "<group>"; };
 		89EEC2BF1E9F281B00678995 /* KNBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNBannerView.h; sourceTree = "<group>"; };
 		89EEC2C01E9F281B00678995 /* KNBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNBannerView.m; sourceTree = "<group>"; };
 		89EEC2C11E9F281B00678995 /* KNCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCollectionViewCell.h; sourceTree = "<group>"; };
@@ -551,6 +560,7 @@
 		890700FA1EA702A80062BBC2 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				89B0B9381EA764C3006E9230 /* ClinicCard */,
 				890701081EA703030062BBC2 /* Personal.storyboard */,
 				8907010A1EA7030A0062BBC2 /* Personal.xcassets */,
 				890700FB1EA702A80062BBC2 /* Cell */,
@@ -779,6 +789,27 @@
 				891580621EA59F540090F3E6 /* InspectionReportViewController.m */,
 			);
 			path = Report;
+			sourceTree = "<group>";
+		};
+		89B0B9381EA764C3006E9230 /* ClinicCard */ = {
+			isa = PBXGroup;
+			children = (
+				89B0B9391EA764C3006E9230 /* Cell */,
+				89B0B93A1EA764E0006E9230 /* ClinicCardListViewController.h */,
+				89B0B93B1EA764E0006E9230 /* ClinicCardListViewController.m */,
+				89B0B9401EA76AF4006E9230 /* AttendanceCardViewController.h */,
+				89B0B9411EA76AF4006E9230 /* AttendanceCardViewController.m */,
+			);
+			path = ClinicCard;
+			sourceTree = "<group>";
+		};
+		89B0B9391EA764C3006E9230 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89B0B93D1EA764FD006E9230 /* ClinicCardListTableViewCell.h */,
+				89B0B93E1EA764FD006E9230 /* ClinicCardListTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		89EEC2BE1E9F281B00678995 /* KNBannerView */ = {
@@ -1481,6 +1512,7 @@
 				890701041EA702D70062BBC2 /* MessageViewController.m in Sources */,
 				E97D737E1EA220F400540DF7 /* PaySucessViewController.m in Sources */,
 				8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */,
+				89B0B93F1EA764FD006E9230 /* ClinicCardListTableViewCell.m in Sources */,
 				E9A487EC1EA634F700C2EBBF /* CasesListSectionTableViewCell.m in Sources */,
 				8907015C1EA730EA0062BBC2 /* ChineseToPinyinResource.m in Sources */,
 				893315601EA20DBE003C4F54 /* UILogic.m in Sources */,
@@ -1510,6 +1542,7 @@
 				890591FE1EA0D369002F161F /* LoginViewController.m in Sources */,
 				8915813C1EA62BC00090F3E6 /* CostViewController.m in Sources */,
 				890592011EA0D46C002F161F /* RegisterViewController.m in Sources */,
+				89B0B93C1EA764E0006E9230 /* ClinicCardListViewController.m in Sources */,
 				89FAFA4F1E9E2598002DE124 /* DoctorTimePointCell.m in Sources */,
 				89002D231E9F17DE005832FB /* HomeItmeTableViewCell.m in Sources */,
 				E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */,
@@ -1539,6 +1572,7 @@
 				E97D738B1EA231FE00540DF7 /* OrderCostLsitHeaderView.m in Sources */,
 				8907017A1EA758E30062BBC2 /* PatientsEvaluationViewController.m in Sources */,
 				E9A487EF1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m in Sources */,
+				89B0B9421EA76AF4006E9230 /* AttendanceCardViewController.m in Sources */,
 				E9648CF61E9F290B00943168 /* OrderScreenSelectData.m in Sources */,
 				891581451EA637E80090F3E6 /* MedicalRecordsPersonTableViewCell.m in Sources */,
 				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
