@@ -130,6 +130,10 @@
 		E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9648D021E9F2B7B00943168 /* OrderTableViewCell.m */; };
 		E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596B1E9CBE8100B1DCAB /* FCAlertAction.m */; };
 		E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2E21E9F411C00678995 /* OrderViewController.m */; };
+		E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */; };
+		E976F27B1EA760F2005CFE7F /* DoctorIntroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27A1EA760F2005CFE7F /* DoctorIntroTableViewCell.m */; };
+		E976F27E1EA767E1005CFE7F /* DoctorSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F27D1EA767E1005CFE7F /* DoctorSectionTableViewCell.m */; };
+		E976F2811EA767F2005CFE7F /* DoctorStarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E976F2801EA767F2005CFE7F /* DoctorStarTableViewCell.m */; };
 		E97D73581EA1E83500540DF7 /* Hospital.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97D73571EA1E83500540DF7 /* Hospital.xcassets */; };
 		E97D73621EA1F85100540DF7 /* RegularUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D73611EA1F85100540DF7 /* RegularUtil.m */; };
 		E97D73661EA1FA9300540DF7 /* FCAlertLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D73651EA1FA9300540DF7 /* FCAlertLabel.m */; };
@@ -158,9 +162,7 @@
 		E9CD59671E9CB8B700B1DCAB /* FCCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD59661E9CB8B700B1DCAB /* FCCommonUtil.m */; };
 		E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */; };
 		E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */; };
-		E9D10FC51EA75658000307AF /* DoctorFunctionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */; };
 		E9D10FC61EA75658000307AF /* DoctorHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */; };
-		E9D10FC71EA75658000307AF /* DoctorIntroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */; };
 		E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */; };
 		E9D10FC91EA75658000307AF /* DoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D10FC41EA75658000307AF /* DoctorViewController.m */; };
 		E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC93CE1EA6F65900BBC07E /* CasesListReportTableViewCell.m */; };
@@ -419,6 +421,14 @@
 		E9648CF41E9F290B00943168 /* ScreenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCollectionViewCell.m; sourceTree = "<group>"; };
 		E9648D011E9F2B7B00943168 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
 		E9648D021E9F2B7B00943168 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		E976F2761EA75DF1005CFE7F /* DoctorFucTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFucTableViewCell.h; sourceTree = "<group>"; };
+		E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFucTableViewCell.m; sourceTree = "<group>"; };
+		E976F2791EA760F2005CFE7F /* DoctorIntroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroTableViewCell.h; sourceTree = "<group>"; };
+		E976F27A1EA760F2005CFE7F /* DoctorIntroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorIntroTableViewCell.m; sourceTree = "<group>"; };
+		E976F27C1EA767E1005CFE7F /* DoctorSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorSectionTableViewCell.h; sourceTree = "<group>"; };
+		E976F27D1EA767E1005CFE7F /* DoctorSectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorSectionTableViewCell.m; sourceTree = "<group>"; };
+		E976F27F1EA767F2005CFE7F /* DoctorStarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorStarTableViewCell.h; sourceTree = "<group>"; };
+		E976F2801EA767F2005CFE7F /* DoctorStarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorStarTableViewCell.m; sourceTree = "<group>"; };
 		E97D73571EA1E83500540DF7 /* Hospital.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Hospital.xcassets; sourceTree = "<group>"; };
 		E97D73601EA1F85100540DF7 /* RegularUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularUtil.h; sourceTree = "<group>"; };
 		E97D73611EA1F85100540DF7 /* RegularUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularUtil.m; sourceTree = "<group>"; };
@@ -476,12 +486,8 @@
 		E9CD596D1E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+NMAlertAction.m"; sourceTree = "<group>"; };
 		E9CD596E1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NMAlertAction.h"; sourceTree = "<group>"; };
 		E9CD596F1E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NMAlertAction.m"; sourceTree = "<group>"; };
-		E9D10FBB1EA75658000307AF /* DoctorFunctionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionTableViewCell.h; sourceTree = "<group>"; };
-		E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionTableViewCell.m; sourceTree = "<group>"; };
 		E9D10FBD1EA75658000307AF /* DoctorHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorHeadTableViewCell.h; sourceTree = "<group>"; };
 		E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorHeadTableViewCell.m; sourceTree = "<group>"; };
-		E9D10FBF1EA75658000307AF /* DoctorIntroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroTableViewCell.h; sourceTree = "<group>"; };
-		E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorIntroTableViewCell.m; sourceTree = "<group>"; };
 		E9D10FC11EA75658000307AF /* DoctorMajorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMajorTableViewCell.h; sourceTree = "<group>"; };
 		E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMajorTableViewCell.m; sourceTree = "<group>"; };
 		E9D10FC31EA75658000307AF /* DoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorViewController.h; sourceTree = "<group>"; };
@@ -1174,14 +1180,18 @@
 		E9D10FBA1EA75658000307AF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E9D10FBB1EA75658000307AF /* DoctorFunctionTableViewCell.h */,
-				E9D10FBC1EA75658000307AF /* DoctorFunctionTableViewCell.m */,
 				E9D10FBD1EA75658000307AF /* DoctorHeadTableViewCell.h */,
 				E9D10FBE1EA75658000307AF /* DoctorHeadTableViewCell.m */,
-				E9D10FBF1EA75658000307AF /* DoctorIntroTableViewCell.h */,
-				E9D10FC01EA75658000307AF /* DoctorIntroTableViewCell.m */,
+				E976F2761EA75DF1005CFE7F /* DoctorFucTableViewCell.h */,
+				E976F2771EA75DF1005CFE7F /* DoctorFucTableViewCell.m */,
 				E9D10FC11EA75658000307AF /* DoctorMajorTableViewCell.h */,
 				E9D10FC21EA75658000307AF /* DoctorMajorTableViewCell.m */,
+				E976F2791EA760F2005CFE7F /* DoctorIntroTableViewCell.h */,
+				E976F27A1EA760F2005CFE7F /* DoctorIntroTableViewCell.m */,
+				E976F27C1EA767E1005CFE7F /* DoctorSectionTableViewCell.h */,
+				E976F27D1EA767E1005CFE7F /* DoctorSectionTableViewCell.m */,
+				E976F27F1EA767F2005CFE7F /* DoctorStarTableViewCell.h */,
+				E976F2801EA767F2005CFE7F /* DoctorStarTableViewCell.m */,
 				8907017B1EA758EE0062BBC2 /* StarTableViewCell.h */,
 				8907017C1EA758EE0062BBC2 /* StarTableViewCell.m */,
 			);
@@ -1528,11 +1538,11 @@
 				8907015E1EA730EA0062BBC2 /* NSString+PinYin4Cocoa.m in Sources */,
 				8907016C1EA730EA0062BBC2 /* VisitsScheduleView.m in Sources */,
 				890701591EA730EA0062BBC2 /* CityItem.m in Sources */,
+				E976F2811EA767F2005CFE7F /* DoctorStarTableViewCell.m in Sources */,
 				891580841EA5DBEC0090F3E6 /* HospitalNoticeTimeTableViewCell.m in Sources */,
 				8907015D1EA730EA0062BBC2 /* HanyuPinyinOutputFormat.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				E97D73821EA2213100540DF7 /* PayViewController.m in Sources */,
-				E9D10FC51EA75658000307AF /* DoctorFunctionTableViewCell.m in Sources */,
 				890700F11EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m in Sources */,
 				890701691EA730EA0062BBC2 /* SearchViewController.m in Sources */,
 				890701671EA730EA0062BBC2 /* DoctorVisitsViewController.m in Sources */,
@@ -1565,6 +1575,7 @@
 				E9648CF71E9F290B00943168 /* OrderScreenView.m in Sources */,
 				E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */,
 				890701831EA75C520062BBC2 /* PersonalTableViewCell.m in Sources */,
+				E976F27B1EA760F2005CFE7F /* DoctorIntroTableViewCell.m in Sources */,
 				890591F81EA0C45B002F161F /* SearchHistoryTableViewCell.m in Sources */,
 				891580861EA5DBEC0090F3E6 /* HospitalNoticeViewController.m in Sources */,
 				89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */,
@@ -1597,6 +1608,7 @@
 				891581391EA628D00090F3E6 /* BackNumberInstructionsViewController.m in Sources */,
 				E9FC93D51EA6FE6300BBC07E /* CasesListRecipeCellTableViewCell.m in Sources */,
 				E9648D031E9F2B7B00943168 /* OrderTableViewCell.m in Sources */,
+				E976F27E1EA767E1005CFE7F /* DoctorSectionTableViewCell.m in Sources */,
 				E9D10FC91EA75658000307AF /* DoctorViewController.m in Sources */,
 				E97D736C1EA218EC00540DF7 /* OrderApplyViewController.m in Sources */,
 				89FAF93B1E9E020D002DE124 /* DepartmentsTableViewCell.m in Sources */,
@@ -1606,6 +1618,7 @@
 				89EEC2D11E9F281B00678995 /* NSData+KNCache.m in Sources */,
 				8907016D1EA730EA0062BBC2 /* VisitsStopScheduleView.m in Sources */,
 				890701571EA730EA0062BBC2 /* CityButton.m in Sources */,
+				E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */,
 				E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */,
 				E97D73881EA22CAF00540DF7 /* OrderCostListTableViewCell.m in Sources */,
 				890701861EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m in Sources */,
@@ -1621,7 +1634,6 @@
 				E97D737F1EA220F400540DF7 /* PayTableViewController.m in Sources */,
 				89EEC2CE1E9F281B00678995 /* KNCollectionViewCell.m in Sources */,
 				890701641EA730EA0062BBC2 /* DepartmentsListViewController.m in Sources */,
-				E9D10FC71EA75658000307AF /* DoctorIntroTableViewCell.m in Sources */,
 				89FAFA431E9E1DBE002DE124 /* FCCalender.m in Sources */,
 				890701801EA75C450062BBC2 /* MessageTableViewCell.m in Sources */,
 				8907015B1EA730EA0062BBC2 /* ChineseInclude.m in Sources */,
@@ -1774,11 +1786,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C78A82B1766EDB563F893387 /* Pods-Hospitalize.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
@@ -1800,6 +1813,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.feichang.Hospitalize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1807,11 +1821,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCEBFCA8681D4E1C4961AD0A /* Pods-Hospitalize.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Hospitalize/common/Utils/UMAnalytics4.1.1",
@@ -1833,6 +1848,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.feichang.Hospitalize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

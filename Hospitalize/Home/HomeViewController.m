@@ -25,6 +25,7 @@
 #import "DoctorViewController.h"
 #import "ClinicCardListViewController.h"
 
+
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
     UIView *titleView;    //导航栏背景view
     NSMutableArray * actDoArray;    //  直播信息数组

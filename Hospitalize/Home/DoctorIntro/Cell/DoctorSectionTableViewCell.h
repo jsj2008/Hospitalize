@@ -1,5 +1,5 @@
 //
-//  DoctorIntroTableViewCell.h
+//  DoctorSectionTableViewCell.h
 //  Hospitalize
 //
 //  Created by 周鑫 on 2017/4/19.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DoctorIntroTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIButton *openButton;
+@interface DoctorSectionTableViewCell : UITableViewCell
 
 @end

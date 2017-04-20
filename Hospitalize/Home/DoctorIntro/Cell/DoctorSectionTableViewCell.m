@@ -1,14 +1,14 @@
 //
-//  DoctorFunctionTableViewCell.m
+//  DoctorSectionTableViewCell.m
 //  Hospitalize
 //
 //  Created by 周鑫 on 2017/4/19.
 //  Copyright © 2017年 feichang. All rights reserved.
 //
 
-#import "DoctorFunctionTableViewCell.h"
+#import "DoctorSectionTableViewCell.h"
 
-@implementation DoctorFunctionTableViewCell
+@implementation DoctorSectionTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

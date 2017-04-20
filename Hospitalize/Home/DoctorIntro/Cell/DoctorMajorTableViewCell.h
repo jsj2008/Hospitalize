@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DoctorMajorTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *openButton;
 
 @end
