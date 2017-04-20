@@ -69,6 +69,7 @@
         cell.rightImageView.hidden = NO;
         cell.rightContent.hidden = NO;
         cell.contentTextField.hidden = YES;
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     } else if (indexPath.row == 5){
         cell.titleName.text = @"过敏史";
     } else if (indexPath.row == 6){

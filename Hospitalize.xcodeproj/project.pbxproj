@@ -71,6 +71,7 @@
 		89076F491EA86B8900E86173 /* CardCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F481EA86B8900E86173 /* CardCollectionViewFlowLayout.m */; };
 		89076F4C1EA8896800E86173 /* HealthRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F4B1EA8896800E86173 /* HealthRecordsViewController.m */; };
 		89076F4F1EA899ED00E86173 /* HealthRecordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F4E1EA899ED00E86173 /* HealthRecordsTableViewCell.m */; };
+		89076F541EA8A28B00E86173 /* PersonInformationReviseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F531EA8A28B00E86173 /* PersonInformationReviseViewController.m */; };
 		891580631EA59F540090F3E6 /* InspectionReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580621EA59F540090F3E6 /* InspectionReportViewController.m */; };
 		891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580661EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m */; };
 		8915806A1EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580691EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m */; };
@@ -318,6 +319,8 @@
 		89076F4B1EA8896800E86173 /* HealthRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordsViewController.m; sourceTree = "<group>"; };
 		89076F4D1EA899ED00E86173 /* HealthRecordsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordsTableViewCell.h; sourceTree = "<group>"; };
 		89076F4E1EA899ED00E86173 /* HealthRecordsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordsTableViewCell.m; sourceTree = "<group>"; };
+		89076F521EA8A28B00E86173 /* PersonInformationReviseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationReviseViewController.h; sourceTree = "<group>"; };
+		89076F531EA8A28B00E86173 /* PersonInformationReviseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationReviseViewController.m; sourceTree = "<group>"; };
 		891580611EA59F540090F3E6 /* InspectionReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportViewController.h; sourceTree = "<group>"; };
 		891580621EA59F540090F3E6 /* InspectionReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionReportViewController.m; sourceTree = "<group>"; };
 		891580651EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportInformationTableViewCell.h; sourceTree = "<group>"; };
@@ -596,6 +599,7 @@
 		890700FA1EA702A80062BBC2 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				89076F501EA8A25400E86173 /* Person */,
 				89B0B9381EA764C3006E9230 /* ClinicCard */,
 				890701081EA703030062BBC2 /* Personal.storyboard */,
 				8907010A1EA7030A0062BBC2 /* Personal.xcassets */,
@@ -724,6 +728,23 @@
 				890701551EA730EA0062BBC2 /* VisitsTitleView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		89076F501EA8A25400E86173 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				89076F511EA8A25400E86173 /* Cell */,
+				89076F521EA8A28B00E86173 /* PersonInformationReviseViewController.h */,
+				89076F531EA8A28B00E86173 /* PersonInformationReviseViewController.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		89076F511EA8A25400E86173 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		891580641EA5A8E40090F3E6 /* Cell */ = {
@@ -1627,6 +1648,7 @@
 				8915806D1EA5A9890090F3E6 /* InspectionReportPersonTableViewCell.m in Sources */,
 				E9554CA51E9CB3BC0080C02D /* ViewController.m in Sources */,
 				E9648CF91E9F290B00943168 /* ScreenCollectionReusableView.m in Sources */,
+				89076F541EA8A28B00E86173 /* PersonInformationReviseViewController.m in Sources */,
 				E9648CF71E9F290B00943168 /* OrderScreenView.m in Sources */,
 				E9C581251E9DF1B4005BBC08 /* UIView+CornerBorder.m in Sources */,
 				890701831EA75C520062BBC2 /* PersonalTableViewCell.m in Sources */,
