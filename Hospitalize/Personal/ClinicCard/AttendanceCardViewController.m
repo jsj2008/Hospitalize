@@ -7,9 +7,11 @@
 //
 
 #import "AttendanceCardViewController.h"
+#import "FCAlertAction.h"
 
 @interface AttendanceCardViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *backgroundBigView;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleName;
 @property (weak, nonatomic) IBOutlet UILabel *attendanceCard;
@@ -33,17 +35,43 @@
     self.navigationItem.title = @"就诊卡";
     self.view.backgroundColor = COLOR4B89DC;
     
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.backgroundBigView.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerTopLeft cornerRadii:CGSizeMake(10, 10)];
+    // 初始化一个CAShapeLayer
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.backgroundBigView.bounds;
+    // 将曲线路径设置为layer的路径
+    maskLayer.path = path.CGPath;
+    // 设置控件的mask为CAShapeLayer
+    self.backgroundBigView.layer.mask = maskLayer;
+    
     NSString *text = [NSString stringWithFormat:@"韩梅梅在杭州市第一人民医院的实体卡"];
-    NSDictionary *attribs = @{NSForegroundColorAttributeName:self.titleName.textColor,NSFontAttributeName:self.titleName.font};
-    NSMutableAttributedString *attributedText =
-    [[NSMutableAttributedString alloc] initWithString:text
-                                           attributes:attribs];
-    UIColor *aColor = COLOR4B89DC;
-    NSRange redTextRange =[text rangeOfString:[NSString stringWithFormat:@"韩梅梅" ]];
-    [attributedText setAttributes:@{NSForegroundColorAttributeName:aColor,NSFontAttributeName:[UIFont systemFontOfSize:16]} range:redTextRange];
-    self.titleName.attributedText = attributedText;
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    [str setAttributes:@{NSForegroundColorAttributeName:COLOR4B89DC,NSFontAttributeName:[UIFont systemFontOfSize:16]} range:[text rangeOfString:[NSString stringWithFormat:@"韩梅梅"]]];
+    [str setAttributes:@{NSForegroundColorAttributeName:COLOR4B89DC,NSFontAttributeName:[UIFont systemFontOfSize:16]} range:[text rangeOfString:[NSString stringWithFormat:@"杭州市第一人民医院"]]];
+    self.titleName.attributedText = str;
     
-    
+    self.setMainCardSwitch.on = self.isMainCard;
+    [self.setMainCardSwitch addTarget:self action:@selector(setMainCardAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.deleteButton addTarget:self action:@selector(deleteAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)setMainCardAction:(id)sender{
+    if (self.isMainCard) {
+        self.isMainCard = NO;
+    } else {
+        self.isMainCard = YES;
+    }
+    self.setMainCardSwitch.on = self.isMainCard;
+}
+
+-(void)deleteAction:(id)sender{
+    NSArray *array = @[@"移除"];
+    [FCAlertAction showActionSheetWithTitle:nil message:@"移除此卡会移除您的就诊记录"  cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitle:array chooseBlock:^(NSInteger buttonIdx) {
+        if (buttonIdx > 0) {
+            NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"%@",array[buttonIdx - 1]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

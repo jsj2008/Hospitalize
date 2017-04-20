@@ -62,6 +62,15 @@
 		890701801EA75C450062BBC2 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8907017F1EA75C450062BBC2 /* MessageTableViewCell.m */; };
 		890701831EA75C520062BBC2 /* PersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701821EA75C520062BBC2 /* PersonalTableViewCell.m */; };
 		890701861EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890701851EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m */; };
+		89076F341EA852B700E86173 /* PersonInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F331EA852B700E86173 /* PersonInformationViewController.m */; };
+		89076F3A1EA8540F00E86173 /* PersonInformationTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F391EA8540F00E86173 /* PersonInformationTextTableViewCell.m */; };
+		89076F3D1EA8552100E86173 /* PersonInformationButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F3C1EA8552100E86173 /* PersonInformationButtonTableViewCell.m */; };
+		89076F401EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F3F1EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m */; };
+		89076F431EA8637500E86173 /* PersonInformationCardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F421EA8637500E86173 /* PersonInformationCardListTableViewCell.m */; };
+		89076F461EA863D200E86173 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F451EA863D200E86173 /* CardCollectionViewCell.m */; };
+		89076F491EA86B8900E86173 /* CardCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F481EA86B8900E86173 /* CardCollectionViewFlowLayout.m */; };
+		89076F4C1EA8896800E86173 /* HealthRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F4B1EA8896800E86173 /* HealthRecordsViewController.m */; };
+		89076F4F1EA899ED00E86173 /* HealthRecordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89076F4E1EA899ED00E86173 /* HealthRecordsTableViewCell.m */; };
 		891580631EA59F540090F3E6 /* InspectionReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580621EA59F540090F3E6 /* InspectionReportViewController.m */; };
 		891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580661EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m */; };
 		8915806A1EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891580691EA5A94F0090F3E6 /* InspectionReportProjectTableViewCell.m */; };
@@ -291,6 +300,24 @@
 		890701821EA75C520062BBC2 /* PersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewCell.m; sourceTree = "<group>"; };
 		890701841EA75C5F0062BBC2 /* SeeDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeDoctorTableViewCell.h; sourceTree = "<group>"; };
 		890701851EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeDoctorTableViewCell.m; sourceTree = "<group>"; };
+		89076F321EA852B700E86173 /* PersonInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationViewController.h; sourceTree = "<group>"; };
+		89076F331EA852B700E86173 /* PersonInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationViewController.m; sourceTree = "<group>"; };
+		89076F381EA8540F00E86173 /* PersonInformationTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationTextTableViewCell.h; sourceTree = "<group>"; };
+		89076F391EA8540F00E86173 /* PersonInformationTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationTextTableViewCell.m; sourceTree = "<group>"; };
+		89076F3B1EA8552100E86173 /* PersonInformationButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationButtonTableViewCell.h; sourceTree = "<group>"; };
+		89076F3C1EA8552100E86173 /* PersonInformationButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationButtonTableViewCell.m; sourceTree = "<group>"; };
+		89076F3E1EA85BD900E86173 /* PersonInformationNotCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationNotCardTableViewCell.h; sourceTree = "<group>"; };
+		89076F3F1EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationNotCardTableViewCell.m; sourceTree = "<group>"; };
+		89076F411EA8637500E86173 /* PersonInformationCardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationCardListTableViewCell.h; sourceTree = "<group>"; };
+		89076F421EA8637500E86173 /* PersonInformationCardListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationCardListTableViewCell.m; sourceTree = "<group>"; };
+		89076F441EA863D200E86173 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
+		89076F451EA863D200E86173 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
+		89076F471EA86B8900E86173 /* CardCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		89076F481EA86B8900E86173 /* CardCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		89076F4A1EA8896800E86173 /* HealthRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordsViewController.h; sourceTree = "<group>"; };
+		89076F4B1EA8896800E86173 /* HealthRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordsViewController.m; sourceTree = "<group>"; };
+		89076F4D1EA899ED00E86173 /* HealthRecordsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordsTableViewCell.h; sourceTree = "<group>"; };
+		89076F4E1EA899ED00E86173 /* HealthRecordsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordsTableViewCell.m; sourceTree = "<group>"; };
 		891580611EA59F540090F3E6 /* InspectionReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportViewController.h; sourceTree = "<group>"; };
 		891580621EA59F540090F3E6 /* InspectionReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionReportViewController.m; sourceTree = "<group>"; };
 		891580651EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionReportInformationTableViewCell.h; sourceTree = "<group>"; };
@@ -810,6 +837,10 @@
 				E966B5AF1EA8500D000775DC /* ClinicAddViewController.m */,
 				89B0B9401EA76AF4006E9230 /* AttendanceCardViewController.h */,
 				89B0B9411EA76AF4006E9230 /* AttendanceCardViewController.m */,
+				89076F321EA852B700E86173 /* PersonInformationViewController.h */,
+				89076F331EA852B700E86173 /* PersonInformationViewController.m */,
+				89076F4A1EA8896800E86173 /* HealthRecordsViewController.h */,
+				89076F4B1EA8896800E86173 /* HealthRecordsViewController.m */,
 			);
 			path = ClinicCard;
 			sourceTree = "<group>";
@@ -819,6 +850,20 @@
 			children = (
 				89B0B93D1EA764FD006E9230 /* ClinicCardListTableViewCell.h */,
 				89B0B93E1EA764FD006E9230 /* ClinicCardListTableViewCell.m */,
+				89076F381EA8540F00E86173 /* PersonInformationTextTableViewCell.h */,
+				89076F391EA8540F00E86173 /* PersonInformationTextTableViewCell.m */,
+				89076F3B1EA8552100E86173 /* PersonInformationButtonTableViewCell.h */,
+				89076F3C1EA8552100E86173 /* PersonInformationButtonTableViewCell.m */,
+				89076F3E1EA85BD900E86173 /* PersonInformationNotCardTableViewCell.h */,
+				89076F3F1EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m */,
+				89076F411EA8637500E86173 /* PersonInformationCardListTableViewCell.h */,
+				89076F421EA8637500E86173 /* PersonInformationCardListTableViewCell.m */,
+				89076F441EA863D200E86173 /* CardCollectionViewCell.h */,
+				89076F451EA863D200E86173 /* CardCollectionViewCell.m */,
+				89076F471EA86B8900E86173 /* CardCollectionViewFlowLayout.h */,
+				89076F481EA86B8900E86173 /* CardCollectionViewFlowLayout.m */,
+				89076F4D1EA899ED00E86173 /* HealthRecordsTableViewCell.h */,
+				89076F4E1EA899ED00E86173 /* HealthRecordsTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1506,12 +1551,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89076F491EA86B8900E86173 /* CardCollectionViewFlowLayout.m in Sources */,
 				890701611EA730EA0062BBC2 /* PinyinHelper.m in Sources */,
 				E97D73621EA1F85100540DF7 /* RegularUtil.m in Sources */,
 				E97D737D1EA220F400540DF7 /* PayfaildViewController.m in Sources */,
 				891580701EA5AE280090F3E6 /* ReportListTableViewCell.m in Sources */,
 				890701651EA730EA0062BBC2 /* DepartmentsViewController.m in Sources */,
 				E9648D241E9F83EE00943168 /* OrderViewController.m in Sources */,
+				89076F3A1EA8540F00E86173 /* PersonInformationTextTableViewCell.m in Sources */,
+				89076F341EA852B700E86173 /* PersonInformationViewController.m in Sources */,
 				E9648D201E9F70F700943168 /* FCAlertAction.m in Sources */,
 				89EEC2D21E9F281B00678995 /* NSString+hash.m in Sources */,
 				890700F71EA6F3110062BBC2 /* MedicalRecordsDrugTableViewCell.m in Sources */,
@@ -1536,6 +1584,7 @@
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
+				89076F401EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9A487E21EA612C900C2EBBF /* CasesListViewController.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
@@ -1546,6 +1595,7 @@
 				E976F2811EA767F2005CFE7F /* DoctorStarTableViewCell.m in Sources */,
 				891580841EA5DBEC0090F3E6 /* HospitalNoticeTimeTableViewCell.m in Sources */,
 				8907015D1EA730EA0062BBC2 /* HanyuPinyinOutputFormat.m in Sources */,
+				89076F461EA863D200E86173 /* CardCollectionViewCell.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				E97D73821EA2213100540DF7 /* PayViewController.m in Sources */,
 				890700F11EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m in Sources */,
@@ -1587,11 +1637,13 @@
 				8907015A1EA730EA0062BBC2 /* CityListViewController.m in Sources */,
 				E97D738B1EA231FE00540DF7 /* OrderCostLsitHeaderView.m in Sources */,
 				8907017A1EA758E30062BBC2 /* PatientsEvaluationViewController.m in Sources */,
+				89076F4C1EA8896800E86173 /* HealthRecordsViewController.m in Sources */,
 				E9A487EF1EA6355800C2EBBF /* CasesListRecipeTableViewCell.m in Sources */,
 				89B0B9421EA76AF4006E9230 /* AttendanceCardViewController.m in Sources */,
 				E9648CF61E9F290B00943168 /* OrderScreenSelectData.m in Sources */,
 				891581451EA637E80090F3E6 /* MedicalRecordsPersonTableViewCell.m in Sources */,
 				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
+				89076F4F1EA899ED00E86173 /* HealthRecordsTableViewCell.m in Sources */,
 				E9A487E61EA6349600C2EBBF /* CasesListCardTableViewCell.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
 				891581421EA6350C0090F3E6 /* ElectronicMedicalRecordsViewController.m in Sources */,
@@ -1622,6 +1674,7 @@
 				89EEC2D01E9F281B00678995 /* KNJudgementTool.m in Sources */,
 				890701171EA707C10062BBC2 /* HospitalViewController.m in Sources */,
 				89EEC2D11E9F281B00678995 /* NSData+KNCache.m in Sources */,
+				89076F3D1EA8552100E86173 /* PersonInformationButtonTableViewCell.m in Sources */,
 				8907016D1EA730EA0062BBC2 /* VisitsStopScheduleView.m in Sources */,
 				890701571EA730EA0062BBC2 /* CityButton.m in Sources */,
 				E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */,
@@ -1634,6 +1687,7 @@
 				890701561EA730EA0062BBC2 /* ButtonGroupView.m in Sources */,
 				8907017D1EA758EE0062BBC2 /* StarTableViewCell.m in Sources */,
 				890701631EA730EA0062BBC2 /* ZYPinYinSearch.m in Sources */,
+				89076F431EA8637500E86173 /* PersonInformationCardListTableViewCell.m in Sources */,
 				E9648CFA1E9F290B00943168 /* ScreenCollectionViewCell.m in Sources */,
 				8915812A1EA5E5830090F3E6 /* ReportCategoryTableViewCell.m in Sources */,
 				89EEC2CF1E9F281B00678995 /* KNCollectionViewTextView.m in Sources */,
