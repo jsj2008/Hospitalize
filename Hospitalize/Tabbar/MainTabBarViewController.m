@@ -44,7 +44,7 @@
     [self setChildVC:messageVC title:@"消息" image:@"xiaoxi" selectedImage:@"xiaoxia"];
     
     CasesViewController *casesVC = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesViewController"];
-    [self setChildVC:casesVC title:@"病例" image:@"bingli" selectedImage:@"binglia"];
+    [self setChildVC:casesVC title:@"病例" image:@"bingliTab" selectedImage:@"bingliTaba"];
     
     PersonalViewController *personalVC = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonalViewController"];
     [self setChildVC:personalVC title:@"个人" image:@"geren" selectedImage:@"gerena"];
