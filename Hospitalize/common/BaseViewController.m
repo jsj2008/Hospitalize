@@ -12,6 +12,7 @@
 #import "SeeDoctorViewController.h"
 #import "MessageViewController.h"
 #import "PersonalViewController.h"
+#import "ClinicCardListViewController.h"
 
 
 @interface BaseViewController ()
@@ -27,6 +28,21 @@
     } else {
         self.tabBarController.tabBar.hidden = YES;
     }
+    
+    if ([self isKindOfClass:[ClinicCardListViewController class]]) {
+        //    导航栏背景设置
+        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[[UIColor whiteColor] colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
+        self.navigationController.navigationBar.translucent = YES;
+        [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:COLOR333333,NSForegroundColorAttributeName,nil]];
+        self.navigationController.navigationBar.tintColor = COLOR333333;
+    } else {
+        self.navigationController.navigationBar.barTintColor = [FCCommonUtil colorWithHexString:@"4b89dc"];
+        [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+        self.navigationController.navigationBar.alpha = 1;
+        self.navigationController.navigationBar.translucent = NO;
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.shadowImage = [UIImage new];
+    }
 }
 
 
@@ -34,15 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = NO;
-
-
     
-    self.navigationController.navigationBar.barTintColor = [FCCommonUtil colorWithHexString:@"4b89dc"];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
-    self.navigationController.navigationBar.alpha = 1;
-    self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-
 }
 
 - (void)didReceiveMemoryWarning {
