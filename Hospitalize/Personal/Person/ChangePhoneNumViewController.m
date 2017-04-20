@@ -9,14 +9,61 @@
 #import "ChangePhoneNumViewController.h"
 
 @interface ChangePhoneNumViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;//提示信息
+@property (weak, nonatomic) IBOutlet UIButton *resendButton;//重新发送按钮
+@property (weak, nonatomic) IBOutlet UITextField *insetTetxField;//输入框
+
 
 @end
 
-@implementation ChangePhoneNumViewController
+@implementation ChangePhoneNumViewController{
+    NSTimer *_timer;
+    int _secondCount;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _secondCount = 60;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self countTimeAction];
+}
+-(void)countTimeAction{
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                              target:self
+                                            selector:@selector(timerCount)
+                                            userInfo:nil
+                                             repeats:YES];
+    
+}
+
+-(void)timerCount{
+    _secondCount --;
+    NSString *str = [NSString stringWithFormat:@"重新发送(%d)",(int)_secondCount];
+    [self.resendButton setTitle:str forState:UIControlStateSelected];
+    if (_secondCount ==0) {
+        [_timer invalidate];
+        self.resendButton.selected = NO;
+        self.resendButton.userInteractionEnabled = YES;
+        self.resendButton.tintColor = COLOR4B89DC;
+        [self.resendButton setTitle:@"重新发送" forState:UIControlStateNormal];
+        [self.resendButton setTitle:@"重新发送(60)" forState:UIControlStateSelected];
+    }
+}
+
+- (IBAction)bindAction:(id)sender {
+    UIButton *button = sender;
+    if (self.resendButton.selected) {
+        return;
+    }else{
+        _secondCount = 60;
+        [self countTimeAction];
+        //do
+    }
+    
+    button.selected = !button.selected;
 }
 
 - (void)didReceiveMemoryWarning {

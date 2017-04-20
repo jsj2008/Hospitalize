@@ -1634,6 +1634,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bindAction:" destination="9In-OH-uJ8" eventType="touchUpInside" id="6Ia-bZ-YZz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1648,6 +1651,11 @@
                             <constraint firstAttribute="trailing" secondItem="iXa-eW-3C5" secondAttribute="trailing" id="vl3-aW-IdB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="insetTetxField" destination="fcv-Vo-DNm" id="Njg-9W-2F2"/>
+                        <outlet property="messageLabel" destination="RPu-9X-pcZ" id="ClB-7h-Y5q"/>
+                        <outlet property="resendButton" destination="Ck3-6d-A8E" id="PUP-PY-wsm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MO9-mj-sVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
