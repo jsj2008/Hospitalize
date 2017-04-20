@@ -17,14 +17,9 @@
 #import "CityListViewController.h"
 #import "HospitalViewController.h"
 
-#import "LoginViewController.h"
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
-#import "PatientsEvaluationViewController.h"
-
-#import "DoctorViewController.h"
-#import "PersonInformationViewController.h"
-#import "PersonInformationReviseViewController.h"
+#import "PersonalCollectViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
@@ -183,8 +178,7 @@
 }
 //二维码扫描事件
 -(void)scanButtonAction:(id)sender{
-    PersonInformationReviseViewController *personInformationRevise = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonInformationReviseViewController"];
-    [self.navigationController pushViewController:personInformationRevise animated:YES];
+    
 }
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {
@@ -194,20 +188,17 @@
 }
 //在线咨询事件
 - (void)onlineConsultingAction:(id)sender {
-    DoctorViewController *doctor = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DoctorViewController"];
-    [self.navigationController pushViewController:doctor animated:YES];
+    
     
 }
 //互联网诊室事件
 - (void)internetOfficeAction:(id)sender {
-    PatientsEvaluationViewController *patientsEvaluation = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"PatientsEvaluationViewController"];
-    [self.navigationController pushViewController:patientsEvaluation animated:YES];
+    
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
-    LoginViewController *login = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"LoginViewController"];
-    [self.navigationController pushViewController:login animated:YES];
-   
+    PersonalCollectViewController *collection = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"PersonalCollectViewController"];
+    [self.navigationController pushViewController:collection animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

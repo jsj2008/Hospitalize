@@ -12,10 +12,10 @@
 #import "DateLogic.h"
 #import "DoctorTimePointCell.h"
 #import "OrderMessageViewController.h"
+#import "DoctorViewController.h"
 
 
 @interface DoctorTimePointViewController ()<UITableViewDelegate, UITableViewDataSource, FCCalenderDelegate>{
-    
     FCCalender *_calendar;
     
 }
@@ -94,7 +94,8 @@
 }
 
 -(void)goNextPersonAction:(id)sender{
-    
+    DoctorViewController *doctor = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DoctorViewController"];
+    [self.navigationController pushViewController:doctor animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

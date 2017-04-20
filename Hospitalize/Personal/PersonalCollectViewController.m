@@ -10,6 +10,8 @@
 #import "UIView+Extension.h"
 #import "CollectionDoctorTableViewCell.h"
 #import "CollectionHospitalTableViewCell.h"
+#import "HospitalViewController.h"
+#import "DoctorViewController.h"
 
 
 @interface PersonalCollectViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -27,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"我的收藏";
     self.collectionHospitalButton.selected = YES;
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
@@ -56,6 +60,18 @@
         return hospitalCell;
     }
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (_isInDoctorPage) {
+        DoctorViewController *doctor = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"DoctorViewController"];
+        [self.navigationController pushViewController:doctor animated:YES];
+    } else {
+        HospitalViewController *hospitalViewController = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalViewController"];
+        hospitalViewController.titleName = @"浙江省医院";
+        [self.navigationController pushViewController:hospitalViewController animated:YES];
+    }
+}
+
 // 自定义左滑显示编辑按钮.IOS8以上
 -(NSArray<UITableViewRowAction*>*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewRowAction *rowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
