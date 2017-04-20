@@ -22,6 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.title = @"修改密码";
+    
     self.currentPassword.secureTextEntry = YES;
     self.password.secureTextEntry = YES;
     self.confirmPassword.secureTextEntry = YES;
