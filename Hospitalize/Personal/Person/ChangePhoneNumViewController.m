@@ -25,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _secondCount = 60;
+    self.resendButton.selected = YES;
+    self.resendButton.userInteractionEnabled = NO;
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -52,8 +54,8 @@
         [self.resendButton setTitle:@"重新发送(60)" forState:UIControlStateSelected];
     }
 }
-
-- (IBAction)bindAction:(id)sender {
+//重新发送
+- (IBAction)resetAction:(id)sender {
     UIButton *button = sender;
     if (self.resendButton.selected) {
         return;
@@ -64,6 +66,10 @@
     }
     
     button.selected = !button.selected;
+}
+//绑定
+- (IBAction)bindAction:(id)sender {
+   
 }
 
 - (void)didReceiveMemoryWarning {

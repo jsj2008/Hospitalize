@@ -1605,6 +1605,9 @@
                                         <state key="selected">
                                             <color key="titleColor" red="0.58039215690000001" green="0.60392156860000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetAction:" destination="9In-OH-uJ8" eventType="touchUpInside" id="70u-QP-f9y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
