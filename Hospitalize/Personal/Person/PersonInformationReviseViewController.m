@@ -8,6 +8,9 @@
 
 #import "PersonInformationReviseViewController.h"
 #import "HealthRecordsTableViewCell.h"
+#import "ModifyNicknameViewController.h"
+#import "ChangePasswordViewController.h"
+#import "FCAlertAction.h"
 
 @interface PersonInformationReviseViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -72,6 +75,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    if (indexPath.row == 0) {
+        NSArray *array = @[@"拍照",@"从手机相册选择"];
+        [FCAlertAction showActionSheetWithTitle:nil message:nil  cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitle:array chooseBlock:^(NSInteger buttonIdx) {
+            if (buttonIdx > 0) {
+                NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"%@",array[buttonIdx - 1]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+            }
+        }];
+    } else if (indexPath.row == 1){
+        ModifyNicknameViewController *modifyNickname = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ModifyNicknameViewController"];
+        [self.navigationController pushViewController:modifyNickname animated:YES];
+    } else if (indexPath.row == 2){
+        
+    } else if (indexPath.row == 3){
+        ChangePasswordViewController *changePassword = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ChangePasswordViewController"];
+        [self.navigationController pushViewController:changePassword animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

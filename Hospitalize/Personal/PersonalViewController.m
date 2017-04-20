@@ -7,6 +7,8 @@
 //
 
 #import "PersonalViewController.h"
+#import "ReservationListViewController.h"
+#import "SetViewController.h"
 
 @interface PersonalViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentHeightConstraint;
@@ -37,6 +39,8 @@
 }
 //我的预约
 - (IBAction)orderAction:(id)sender {
+    ReservationListViewController *reservationList = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ReservationListViewController"];
+    [self.navigationController pushViewController:reservationList animated:YES];
 }
 //我的咨询
 - (IBAction)zixunAction:(id)sender {
@@ -49,6 +53,8 @@
 }
 //设置
 - (IBAction)settingAction:(id)sender {
+    SetViewController *setViewController = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"SetViewController"];
+    [self.navigationController pushViewController:setViewController animated:YES];
 }
 //联系客服
 - (IBAction)kefuAction:(id)sender {
