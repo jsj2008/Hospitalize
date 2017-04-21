@@ -104,6 +104,8 @@
 		895FB1061EA8B1E90007BF87 /* OpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FB1051EA8B1E90007BF87 /* OpinionViewController.m */; };
 		895FB1091EA8BC8A0007BF87 /* ModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FB1081EA8BC8A0007BF87 /* ModifyNicknameViewController.m */; };
 		895FB10C1EA8C0610007BF87 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FB10B1EA8C0610007BF87 /* ChangePasswordViewController.m */; };
+		895FB10F1EA8CB310007BF87 /* ReleaseNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FB10E1EA8CB310007BF87 /* ReleaseNotesViewController.m */; };
+		895FB1121EA8CD800007BF87 /* ChangeNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FB1111EA8CD800007BF87 /* ChangeNumberViewController.m */; };
 		89B0B93C1EA764E0006E9230 /* ClinicCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B93B1EA764E0006E9230 /* ClinicCardListViewController.m */; };
 		89B0B93F1EA764FD006E9230 /* ClinicCardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B93E1EA764FD006E9230 /* ClinicCardListTableViewCell.m */; };
 		89B0B9421EA76AF4006E9230 /* AttendanceCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0B9411EA76AF4006E9230 /* AttendanceCardViewController.m */; };
@@ -116,6 +118,8 @@
 		89EEC2D31E9F281B00678995 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2CC1E9F281B00678995 /* UIView+Extension.m */; };
 		89EEC2D61E9F2A8000678995 /* HomeBannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2D51E9F2A8000678995 /* HomeBannerTableViewCell.m */; };
 		89EEC2D91E9F39B600678995 /* HomeHospitalizeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EEC2D81E9F39B600678995 /* HomeHospitalizeTableViewCell.m */; };
+		89F8A4111EA9D99F00C7B381 /* MyHospitalRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F8A4101EA9D99F00C7B381 /* MyHospitalRecordsViewController.m */; };
+		89F8A4141EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F8A4131EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.m */; };
 		89FAF91D1E9DC0AB002DE124 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF91C1E9DC0AB002DE124 /* Home.storyboard */; };
 		89FAF9201E9DC120002DE124 /* ViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */; };
 		89FAF9221E9DC247002DE124 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FAF9211E9DC247002DE124 /* Home.xcassets */; };
@@ -379,7 +383,7 @@
 		893315581EA1F6D5003C4F54 /* FCStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCStarView.h; sourceTree = "<group>"; };
 		893315591EA1F6D5003C4F54 /* FCStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCStarView.m; sourceTree = "<group>"; };
 		8933155E1EA20DBE003C4F54 /* UILogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILogic.h; sourceTree = "<group>"; };
-		8933155F1EA20DBE003C4F54 /* UILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILogic.m; sourceTree = "<group>"; };
+		8933155F1EA20DBE003C4F54 /* UILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UILogic.m; path = common/UILogic.m; sourceTree = "<group>"; };
 		893315661EA238E7003C4F54 /* ReportListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportListViewController.h; sourceTree = "<group>"; };
 		893315671EA238E7003C4F54 /* ReportListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportListViewController.m; sourceTree = "<group>"; };
 		895FB0F81EA8ADCD0007BF87 /* ReservationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationListViewController.h; sourceTree = "<group>"; };
@@ -396,6 +400,10 @@
 		895FB1081EA8BC8A0007BF87 /* ModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyNicknameViewController.m; sourceTree = "<group>"; };
 		895FB10A1EA8C0610007BF87 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		895FB10B1EA8C0610007BF87 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		895FB10D1EA8CB310007BF87 /* ReleaseNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseNotesViewController.h; sourceTree = "<group>"; };
+		895FB10E1EA8CB310007BF87 /* ReleaseNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseNotesViewController.m; sourceTree = "<group>"; };
+		895FB1101EA8CD800007BF87 /* ChangeNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNumberViewController.h; sourceTree = "<group>"; };
+		895FB1111EA8CD800007BF87 /* ChangeNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNumberViewController.m; sourceTree = "<group>"; };
 		89B0B93A1EA764E0006E9230 /* ClinicCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicCardListViewController.h; sourceTree = "<group>"; };
 		89B0B93B1EA764E0006E9230 /* ClinicCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicCardListViewController.m; sourceTree = "<group>"; };
 		89B0B93D1EA764FD006E9230 /* ClinicCardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicCardListTableViewCell.h; sourceTree = "<group>"; };
@@ -422,6 +430,10 @@
 		89EEC2D81E9F39B600678995 /* HomeHospitalizeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHospitalizeTableViewCell.m; sourceTree = "<group>"; };
 		89EEC2E11E9F411C00678995 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		89EEC2E21E9F411C00678995 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		89F8A40F1EA9D99F00C7B381 /* MyHospitalRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHospitalRecordsViewController.h; sourceTree = "<group>"; };
+		89F8A4101EA9D99F00C7B381 /* MyHospitalRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHospitalRecordsViewController.m; sourceTree = "<group>"; };
+		89F8A4121EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHospitalRecordsTableViewCell.h; sourceTree = "<group>"; };
+		89F8A4131EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHospitalRecordsTableViewCell.m; sourceTree = "<group>"; };
 		89FAF91C1E9DC0AB002DE124 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		89FAF91E1E9DC120002DE124 /* ViewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerUtil.h; sourceTree = "<group>"; };
 		89FAF91F1E9DC120002DE124 /* ViewControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerUtil.m; sourceTree = "<group>"; };
@@ -793,12 +805,16 @@
 				895FB1051EA8B1E90007BF87 /* OpinionViewController.m */,
 				895FB1011EA8B1DE0007BF87 /* AboutViewController.h */,
 				895FB1021EA8B1DE0007BF87 /* AboutViewController.m */,
+				895FB10D1EA8CB310007BF87 /* ReleaseNotesViewController.h */,
+				895FB10E1EA8CB310007BF87 /* ReleaseNotesViewController.m */,
 				895FB1071EA8BC8A0007BF87 /* ModifyNicknameViewController.h */,
 				895FB1081EA8BC8A0007BF87 /* ModifyNicknameViewController.m */,
 				895FB10A1EA8C0610007BF87 /* ChangePasswordViewController.h */,
 				895FB10B1EA8C0610007BF87 /* ChangePasswordViewController.m */,
 				E966B5C01EA8C56C000775DC /* ChangePhoneNumViewController.h */,
 				E966B5C11EA8C56C000775DC /* ChangePhoneNumViewController.m */,
+				895FB1101EA8CD800007BF87 /* ChangeNumberViewController.h */,
+				895FB1111EA8CD800007BF87 /* ChangeNumberViewController.m */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -881,6 +897,7 @@
 		893315471EA1E4FB003C4F54 /* HospitalInformation */ = {
 			isa = PBXGroup;
 			children = (
+				89F8A40D1EA9D6C800C7B381 /* LiveHospital */,
 				891580741EA5DBEC0090F3E6 /* Hospital */,
 				893315651EA238C8003C4F54 /* Report */,
 				893315481EA1E514003C4F54 /* Hospital.storyboard */,
@@ -996,6 +1013,25 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
+		89F8A40D1EA9D6C800C7B381 /* LiveHospital */ = {
+			isa = PBXGroup;
+			children = (
+				89F8A40E1EA9D6C800C7B381 /* Cell */,
+				89F8A40F1EA9D99F00C7B381 /* MyHospitalRecordsViewController.h */,
+				89F8A4101EA9D99F00C7B381 /* MyHospitalRecordsViewController.m */,
+			);
+			path = LiveHospital;
+			sourceTree = "<group>";
+		};
+		89F8A40E1EA9D6C800C7B381 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89F8A4121EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.h */,
+				89F8A4131EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		89FAF9181E9DC07F002DE124 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1090,6 +1126,7 @@
 				890700F81EA702A80062BBC2 /* Message */,
 				890700FA1EA702A80062BBC2 /* Personal */,
 				890700FC1EA702A80062BBC2 /* SeeDoctor */,
+				8933155F1EA20DBE003C4F54 /* UILogic.m */,
 				8915812B1EA608C50090F3E6 /* Cases */,
 				893315471EA1E4FB003C4F54 /* HospitalInformation */,
 				89FAF9181E9DC07F002DE124 /* Home */,
@@ -1266,7 +1303,6 @@
 				E97D73601EA1F85100540DF7 /* RegularUtil.h */,
 				E97D73611EA1F85100540DF7 /* RegularUtil.m */,
 				8933155E1EA20DBE003C4F54 /* UILogic.h */,
-				8933155F1EA20DBE003C4F54 /* UILogic.m */,
 				89FAF9301E9DD5A5002DE124 /* pinyin.c */,
 				89FAF9311E9DD5A5002DE124 /* pinyin.h */,
 				E97D73631EA1FA7100540DF7 /* AlertLabel */,
@@ -1673,10 +1709,12 @@
 				8907011E1EA70BD30062BBC2 /* HospitalHeadCollectionReusableView.m in Sources */,
 				891580671EA5A91C0090F3E6 /* InspectionReportInformationTableViewCell.m in Sources */,
 				E9D10FC81EA75658000307AF /* DoctorMajorTableViewCell.m in Sources */,
+				895FB10F1EA8CB310007BF87 /* ReleaseNotesViewController.m in Sources */,
 				89FAFA461E9E1E13002DE124 /* DateLogic.m in Sources */,
 				89076F401EA85BD900E86173 /* PersonInformationNotCardTableViewCell.m in Sources */,
 				E9CD59711E9CBE8100B1DCAB /* UIActionSheet+NMAlertAction.m in Sources */,
 				E9A487E21EA612C900C2EBBF /* CasesListViewController.m in Sources */,
+				89F8A4111EA9D99F00C7B381 /* MyHospitalRecordsViewController.m in Sources */,
 				E9554CE21E9CB4C60080C02D /* MainTabBarViewController.m in Sources */,
 				890700F41EA6F2F70062BBC2 /* MedicalRecordsContentTableViewCell.m in Sources */,
 				8907015E1EA730EA0062BBC2 /* NSString+PinYin4Cocoa.m in Sources */,
@@ -1715,6 +1753,7 @@
 				E97D73851EA22C6B00540DF7 /* OrderCostListViewController.m in Sources */,
 				8915813F1EA62C8F0090F3E6 /* CostTableViewCell.m in Sources */,
 				E99143E41EA0DB8200765903 /* ChangePwdViewController.m in Sources */,
+				89F8A4141EA9D9B600C7B381 /* MyHospitalRecordsTableViewCell.m in Sources */,
 				891580631EA59F540090F3E6 /* InspectionReportViewController.m in Sources */,
 				89EEC2D31E9F281B00678995 /* UIView+Extension.m in Sources */,
 				E966B5B31EA8A8F5000775DC /* PersonalMemberViewController.m in Sources */,
@@ -1782,6 +1821,7 @@
 				890592041EA0E212002F161F /* RegisterWithPasswordViewController.m in Sources */,
 				E9554C9F1E9CB3BC0080C02D /* main.m in Sources */,
 				8907011B1EA70BB10062BBC2 /* HospitalFootCollectionReusableView.m in Sources */,
+				895FB1121EA8CD800007BF87 /* ChangeNumberViewController.m in Sources */,
 				E966B5C21EA8C56C000775DC /* ChangePhoneNumViewController.m in Sources */,
 				890701561EA730EA0062BBC2 /* ButtonGroupView.m in Sources */,
 				8907017D1EA758EE0062BBC2 /* StarTableViewCell.m in Sources */,

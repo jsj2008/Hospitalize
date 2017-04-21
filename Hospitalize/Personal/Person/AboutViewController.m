@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "ReleaseNotesViewController.h"
 
 @interface AboutViewController ()
 
@@ -26,6 +27,8 @@
 
 //打开版本说明
 - (IBAction)openReleaseNotesAction:(id)sender {
+    ReleaseNotesViewController *releaseNotes = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ReleaseNotesViewController"];
+    [self.navigationController pushViewController:releaseNotes animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

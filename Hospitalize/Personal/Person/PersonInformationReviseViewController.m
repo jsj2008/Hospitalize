@@ -10,7 +10,7 @@
 #import "HealthRecordsTableViewCell.h"
 #import "ModifyNicknameViewController.h"
 #import "ChangePasswordViewController.h"
-#import "ChangePhoneNumViewController.h"
+#import "ChangeNumberViewController.h"
 #import "FCAlertAction.h"
 
 @interface PersonInformationReviseViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -88,8 +88,8 @@
         ModifyNicknameViewController *modifyNickname = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ModifyNicknameViewController"];
         [self.navigationController pushViewController:modifyNickname animated:YES];
     } else if (indexPath.row == 2){
-        ChangePhoneNumViewController *changePhoneNum = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ChangePhoneNumViewController"];
-        [self.navigationController pushViewController:changePhoneNum animated:YES];
+        ChangeNumberViewController *changeNumber = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ChangeNumberViewController"];
+        [self.navigationController pushViewController:changeNumber animated:YES];
     } else if (indexPath.row == 3){
         ChangePasswordViewController *changePassword = [ViewControllerUtil getViewControllerFromPersonalStoryboardWithIdentifier:@"ChangePasswordViewController"];
         [self.navigationController pushViewController:changePassword animated:YES];

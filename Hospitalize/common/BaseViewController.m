@@ -36,7 +36,7 @@
         [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:COLOR333333,NSForegroundColorAttributeName,nil]];
         self.navigationController.navigationBar.tintColor = COLOR333333;
     } else {
-        self.navigationController.navigationBar.barTintColor = [FCCommonUtil colorWithHexString:@"4b89dc"];
+        self.navigationController.navigationBar.barTintColor = COLOR4B89DC;
         [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
         self.navigationController.navigationBar.alpha = 1;
         self.navigationController.navigationBar.translucent = NO;

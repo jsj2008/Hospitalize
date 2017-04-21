@@ -8,6 +8,7 @@
 
 #import "ReservationListViewController.h"
 #import "ReservationListTableViewCell.h"
+#import "CasesListViewController.h"
 
 @interface ReservationListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -46,7 +47,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
+    [self.navigationController pushViewController:list animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
