@@ -769,6 +769,114 @@
             </objects>
             <point key="canvasLocation" x="1408.8" y="902.69865067466276"/>
         </scene>
+        <!--预交金额-->
+        <scene sceneID="Taa-oT-aOd">
+            <objects>
+                <viewController id="lk6-3C-12N" userLabel="预交金额" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVv-Ci-La2"/>
+                        <viewControllerLayoutGuide type="bottom" id="jdz-ur-IbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="phF-P9-d2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucs-hy-6Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071" y="835"/>
+        </scene>
+        <!--明细-->
+        <scene sceneID="wfY-kB-ZzY">
+            <objects>
+                <viewController id="YRe-aA-9hx" userLabel="明细" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rfz-ho-rc9"/>
+                        <viewControllerLayoutGuide type="bottom" id="dY9-iP-ThC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l3Z-gc-vSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v90-oP-tdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2083" y="1489"/>
+        </scene>
+        <!--每日明细-->
+        <scene sceneID="GRJ-hv-pgN">
+            <objects>
+                <viewController id="yLS-AR-uDt" userLabel="每日明细" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A2M-Kf-L8V"/>
+                        <viewControllerLayoutGuide type="bottom" id="OX8-7e-IDb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gcj-yi-ZNn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pcg-v0-HKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1454" y="1501"/>
+        </scene>
+        <!--预交金额-->
+        <scene sceneID="O7l-sW-oSZ">
+            <objects>
+                <viewController id="6Vl-jN-sbb" userLabel="预交金额" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c6Q-6P-XVM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mah-xh-1gb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WS4-ZE-lxT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kvp-KC-iBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1413" y="832"/>
+        </scene>
+        <!--住院费-->
+        <scene sceneID="yUw-xZ-sr1">
+            <objects>
+                <viewController id="bDs-g8-8vv" userLabel="住院费" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUi-nC-Jxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJG-Rb-31a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngt-WH-EEy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IH8-da-v1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="834"/>
+        </scene>
+        <!--我的住院记录-->
+        <scene sceneID="rSi-5d-rVo">
+            <objects>
+                <viewController id="bNE-XI-0fr" userLabel="我的住院记录" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8K-UR-7hQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="E18-g0-5va"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5G3-Dg-73z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqx-Lw-gFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="830"/>
+        </scene>
         <!--我的报告单-->
         <scene sceneID="hzg-I5-YDA">
             <objects>
@@ -1027,7 +1135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySw-e0-8jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="902.69865067466276"/>
+            <point key="canvasLocation" x="735" y="820"/>
         </scene>
         <!--评价-->
         <scene sceneID="xMZ-0x-Faf">
