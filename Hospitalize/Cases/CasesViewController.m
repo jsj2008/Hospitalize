@@ -9,7 +9,6 @@
 #import "CasesViewController.h"
 #import "CasesListViewController.h"
 #import "CasesListTableViewCell.h"
-#import "CasesListViewController.h"
 
 @interface CasesViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -52,7 +51,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CasesListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CasesListTableViewCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+    
     cell.contentBigView.layer.shadowColor=[UIColor blackColor].CGColor;
     cell.contentBigView.layer.shadowOffset=CGSizeMake(0, 0);
     cell.contentBigView.layer.shadowOpacity=0.15;
@@ -72,14 +71,10 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     CasesListViewController *list = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
     [self.navigationController pushViewController:list animated:YES];
-    
-}
-- (IBAction)buttonAction:(id)sender {
-    CasesListViewController *lsit = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"CasesListViewController"];
-    [self.navigationController pushViewController:lsit animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

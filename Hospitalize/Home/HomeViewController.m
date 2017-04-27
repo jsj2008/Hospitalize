@@ -20,6 +20,7 @@
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
 #import "PersonalCollectViewController.h"
+#import "MyHospitalRecordsViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
@@ -193,7 +194,8 @@
 }
 //互联网诊室事件
 - (void)internetOfficeAction:(id)sender {
-    
+    MyHospitalRecordsViewController *myHospitalRecords = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"MyHospitalRecordsViewController"];
+    [self.navigationController pushViewController:myHospitalRecords animated:YES];
 }
 //我的收藏事件
 - (void)myCollectionAction:(id)sender {
