@@ -1,12 +1,26 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - FMDB/standard (2.6.2)
   - IQKeyboardManager (3.3.7)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
 
 DEPENDENCIES:
+  - FMDB
+  - FMDB/SQLCipher
   - IQKeyboardManager (~> 3.3.7)
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
 
-PODFILE CHECKSUM: 59c07dee9cb940612b375c3a8a4e4735c74d754a
+PODFILE CHECKSUM: 7f3dc5299d057946d3fb18cf6fc775ead7313984
 
 COCOAPODS: 1.1.1

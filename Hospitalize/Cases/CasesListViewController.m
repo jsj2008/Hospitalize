@@ -13,12 +13,14 @@
 #import "CasesListRecipeTableViewCell.h"
 #import "CasesListReportTableViewCell.h"
 #import "BackNumberInstructionsViewController.h"
+#import "FCAlertAction.h"
 
 
 #import "InspectionReportViewController.h"
 
 @interface CasesListViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+
 
 @end
 
@@ -43,7 +45,7 @@
             return 248;
             break;
         case 1://挂号
-            return 219;
+            return 279;
             break;
         case 2://检查报告section
             return 40;
@@ -70,6 +72,7 @@
         return cardCell;
     }else if (indexPath.row ==1){//挂号
         CasesListOrderTableViewCell *orderCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListOrderTableViewCell"];
+        [orderCell.checkinButton addTarget:self action:@selector(checkInAction:) forControlEvents:UIControlEventTouchUpInside];
         return orderCell;
     }else if (indexPath.row ==2){//检查报告section
         CasesListSectionTableViewCell *sectionCell = [tableView dequeueReusableCellWithIdentifier:@"CasesListSectionTableViewCell"];
@@ -95,22 +98,32 @@
 
     
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([tableView isKindOfClass:[_typeTableView class]]) {
        
     }
 }
 //跳转到InspectionReport页面
--(void)pushInspectionReportView{
+- (void)pushInspectionReportView{
     InspectionReportViewController *ins = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"InspectionReportViewController"];
     [self.navigationController pushViewController:ins animated:YES];
 
 }
 //右上角说明按钮
--(void)illusAction{
+- (void)illusAction{
     BackNumberInstructionsViewController *backNumberInstructions = [ViewControllerUtil getViewControllerFromCasesStoryboardWithIdentifier:@"BackNumberInstructionsViewController"];
     [self.navigationController pushViewController:backNumberInstructions animated:YES];
     
+}
+//签到
+- (void)checkInAction:(id)sender {
+    [FCAlertAction showAlertWithTitle:nil msg:@"为了避免过号，请确定您已经到达医院，点击候诊签到您将进入候诊排队队列" buttonsStatement:@[@"取消",@"确定"] chooseBlock:^(NSInteger buttonIdx) {
+        if (buttonIdx ==1) {
+            //确定
+            UIButton *button = sender;
+            button.selected = !button.selected;
+        }
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
