@@ -100,6 +100,7 @@
 		891BC90B1EC06E0F00A6C3B4 /* BindingHospitalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BC9061EC06E0F00A6C3B4 /* BindingHospitalViewController.m */; };
 		891BC90C1EC06E0F00A6C3B4 /* HospitalCostListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BC9081EC06E0F00A6C3B4 /* HospitalCostListViewController.m */; };
 		891BC90D1EC06E0F00A6C3B4 /* HospitalCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BC90A1EC06E0F00A6C3B4 /* HospitalCostViewController.m */; };
+		891BC9111EC078F000A6C3B4 /* PersonApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BC9101EC078F000A6C3B4 /* PersonApi.m */; };
 		893315491EA1E514003C4F54 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893315481EA1E514003C4F54 /* Hospital.storyboard */; };
 		8933155A1EA1F6D5003C4F54 /* FCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893315591EA1F6D5003C4F54 /* FCStarView.m */; };
 		893315601EA20DBE003C4F54 /* UILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933155F1EA20DBE003C4F54 /* UILogic.m */; };
@@ -413,6 +414,8 @@
 		891BC9081EC06E0F00A6C3B4 /* HospitalCostListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalCostListViewController.m; sourceTree = "<group>"; };
 		891BC9091EC06E0F00A6C3B4 /* HospitalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalCostViewController.h; sourceTree = "<group>"; };
 		891BC90A1EC06E0F00A6C3B4 /* HospitalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalCostViewController.m; sourceTree = "<group>"; };
+		891BC90F1EC078F000A6C3B4 /* PersonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonApi.h; sourceTree = "<group>"; };
+		891BC9101EC078F000A6C3B4 /* PersonApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonApi.m; sourceTree = "<group>"; };
 		893315481EA1E514003C4F54 /* Hospital.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
 		893315581EA1F6D5003C4F54 /* FCStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCStarView.h; sourceTree = "<group>"; };
 		893315591EA1F6D5003C4F54 /* FCStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCStarView.m; sourceTree = "<group>"; };
@@ -955,6 +958,15 @@
 			path = Cases;
 			sourceTree = "<group>";
 		};
+		891BC90E1EC078CD00A6C3B4 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				891BC90F1EC078F000A6C3B4 /* PersonApi.h */,
+				891BC9101EC078F000A6C3B4 /* PersonApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		893315471EA1E4FB003C4F54 /* HospitalInformation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1220,6 +1232,7 @@
 		E9554C9C1E9CB3BC0080C02D /* Hospitalize */ = {
 			isa = PBXGroup;
 			children = (
+				891BC90E1EC078CD00A6C3B4 /* Api */,
 				890700F81EA702A80062BBC2 /* Message */,
 				890700FA1EA702A80062BBC2 /* Personal */,
 				890700FC1EA702A80062BBC2 /* SeeDoctor */,
@@ -1931,6 +1944,7 @@
 				8907016D1EA730EA0062BBC2 /* VisitsStopScheduleView.m in Sources */,
 				890701571EA730EA0062BBC2 /* CityButton.m in Sources */,
 				E976F2781EA75DF1005CFE7F /* DoctorFucTableViewCell.m in Sources */,
+				891BC9111EC078F000A6C3B4 /* PersonApi.m in Sources */,
 				E9FC93CF1EA6F65900BBC07E /* CasesListReportTableViewCell.m in Sources */,
 				E97D73881EA22CAF00540DF7 /* OrderCostListTableViewCell.m in Sources */,
 				890701861EA75C5F0062BBC2 /* SeeDoctorTableViewCell.m in Sources */,
