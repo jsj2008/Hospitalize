@@ -7,6 +7,8 @@ target 'Hospitalize' do
 
   # Pods for Hospitalize
   pod 'IQKeyboardManager', '~> 3.3.7'  #兼容IOS7
+  pod 'FMDB'
+  pod 'FMDB/SQLCipher'    # FMDB with SQLCipher
   
   target 'HospitalizeTests' do
     inherit! :search_paths

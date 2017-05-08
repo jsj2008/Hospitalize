@@ -7,6 +7,8 @@
 //
 
 #import "SeeDoctorViewController.h"
+#import "HospitalPrepayMoneyViewController.h"
+
 
 @interface SeeDoctorViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)action:(id)sender {
+    HospitalPrepayMoneyViewController *prepay = [ViewControllerUtil getViewControllerFromHospitalStoryboardWithIdentifier:@"HospitalPrepayMoneyViewController"];
+    [self.navigationController pushViewController:prepay animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

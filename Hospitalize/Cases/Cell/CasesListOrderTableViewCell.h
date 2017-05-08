@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;//就诊位置
 
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;//病情主述
+@property (weak, nonatomic) IBOutlet UIButton *checkinButton;
 
 @end

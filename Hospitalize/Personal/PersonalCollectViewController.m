@@ -34,6 +34,7 @@
     self.collectionHospitalButton.selected = YES;
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
+    self.mainTableView.tableFooterView = [UIView new];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
