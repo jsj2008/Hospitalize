@@ -10,4 +10,19 @@
 
 @interface MyHospitalRecordsTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titlename;
+@property (weak, nonatomic) IBOutlet UIImageView *keshiImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *timeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *department;
+@property (weak, nonatomic) IBOutlet UILabel *departmentNumber;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UILabel *price;
+
+
+
+
+
+
+
+
 @end
