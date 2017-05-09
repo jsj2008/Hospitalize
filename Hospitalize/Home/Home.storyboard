@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -106,7 +106,7 @@
                                                     <rect key="frame" x="99" y="10" width="88.5" height="107"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_btn_onlineConsulting" translatesAutoresizingMaskIntoConstraints="NO" id="vuA-vH-frC">
-                                                            <rect key="frame" x="23.5" y="19" width="41" height="40"/>
+                                                            <rect key="frame" x="24" y="19" width="40" height="40"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在线咨询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-ZH-8Aj">
                                                             <rect key="frame" x="14.5" y="68" width="58" height="17"/>
@@ -134,7 +134,7 @@
                                                     <rect key="frame" x="197.5" y="10" width="89" height="107"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_btn_internetOffice" translatesAutoresizingMaskIntoConstraints="NO" id="8Mk-TO-hXe">
-                                                            <rect key="frame" x="23.5" y="19" width="41" height="40"/>
+                                                            <rect key="frame" x="24" y="19" width="40" height="40"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="互联网诊室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-qy-viP">
                                                             <rect key="frame" x="8.5" y="68" width="72" height="17"/>
@@ -609,6 +609,7 @@
                         <outlet property="notResultsView" destination="5Nx-6K-nsY" id="IVD-lS-N6D"/>
                         <outlet property="searchButton" destination="oPw-l5-Jk0" id="Scu-kB-r9L"/>
                         <outlet property="searchTextField" destination="zRY-WW-wxG" id="3ec-Q9-e9S"/>
+                        <outlet property="titleView" destination="Vnd-jg-PPi" id="GBL-DS-7uU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqW-G5-XmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2894,10 +2895,10 @@
         <image name="doctor_image" width="38" height="38"/>
         <image name="doctor_read" width="38" height="38"/>
         <image name="doctor_video" width="38" height="38"/>
-        <image name="home_btn_internetOffice" width="41" height="40"/>
+        <image name="home_btn_internetOffice" width="40" height="40"/>
         <image name="home_btn_makeAnAppointment" width="40" height="40"/>
         <image name="home_btn_myCollection" width="40" height="40"/>
-        <image name="home_btn_onlineConsulting" width="41" height="40"/>
+        <image name="home_btn_onlineConsulting" width="40" height="40"/>
         <image name="home_icon_star_quanhuangxing" width="11" height="11"/>
         <image name="home_img_notResults" width="150" height="150"/>
         <image name="home_itme_back" width="20" height="20"/>

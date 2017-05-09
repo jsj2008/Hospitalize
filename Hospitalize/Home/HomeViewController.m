@@ -16,6 +16,8 @@
 #import "SearchViewController.h"
 #import "CityListViewController.h"
 #import "HospitalViewController.h"
+#import "HospitalApi.h"
+#import "FCAlertLabel.h"
 
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
@@ -36,6 +38,7 @@
 @property (strong, nonatomic) KNBannerView *bannerView;
 @property (strong, nonatomic) NXCustomLeftBarButtonItem *leftBarButtonItem;
 @property (strong, nonatomic) UIButton *rightButtonItem;
+@property (strong, nonatomic) NSMutableArray *bannerArray;//baner数组
 
 @end
 
@@ -49,6 +52,8 @@
     
     titleView.backgroundColor = [UIColor whiteColor] ;
     self.navigationController.navigationBar.translucent = YES;
+    
+    [self callGetBannersApiWithCityCode:@"杭州"];
 }
 
 
@@ -58,6 +63,24 @@
     [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
     //导航栏下面黑线
     self.navigationController.navigationBar.shadowImage = nil;
+}
+
+
+#pragma mark - Api
+/**
+ 调用获取购物车内商品列表的Api接口
+ */
+-(void)callGetBannersApiWithCityCode:(NSString *)cityCode{
+//        [NMProgressViewController progressViewWithBody:NMlocalized(@"加载中，请稍后...") type:NMProgressViewTypeDefault show:YES];
+    [[HospitalApi sharedInstance] GetBannersReqWithCityCode:cityCode resultBlock:^(id result) {
+//        [NMProgressViewController dismissCurrentViewController];
+        NMTFGetMtBannersResp *getMtBannersResp = result;
+        self.bannerArray = [getMtBannersResp.banners mutableCopy];
+        [self.mainTableView reloadData];
+    } error:^(NSError *error) {
+//        [NMProgressViewController dismissCurrentViewController];
+        [[FCAlertLabel sharedAlertLabel]showAlertLabelWithAlertString:error.domain];
+    }];
 }
 
 
@@ -205,7 +228,14 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return KmainScreenHeight * 175 / 667;
+        if ([self.bannerArray count] > 0) {
+            return KmainScreenHeight * 175 / 667;
+        }
+        self.navigationController.navigationBar.hidden=NO;
+        titleViewAlpha = 1;
+        titleView.backgroundColor = [UIColor whiteColor];
+        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:1]] forBarMetrics:UIBarMetricsDefault];
+        return 64;
     } else if (indexPath.row == 1){
         return 128;
     }
@@ -222,9 +252,8 @@
     if (indexPath.row == 0) {
         HomeBannerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeBannerTableViewCell" forIndexPath:indexPath];
         if ([[cell.bannerView subviews] count] == 0) {
-            NSArray *imgArr = @[@"banner copy"];
             // 设置 网络 轮播图
-            KNBannerView *bannerView = [KNBannerView bannerViewWithLocationImagesArr:[imgArr mutableCopy] frame:CGRectMake(0, 0, KmainScreenWidth, KmainScreenHeight * 175 / 667)];
+            KNBannerView *bannerView = [KNBannerView bannerViewWithLocationImagesArr:[self.bannerArray mutableCopy] frame:CGRectMake(0, 0, KmainScreenWidth, KmainScreenHeight * 175 / 667)];
             bannerView.delegate = self;
             [cell.bannerView addSubview: bannerView];
         }
@@ -255,17 +284,20 @@
 #pragma mark - ScrollViewDelegate
 //根据滚动位置 重置导航栏 透明度
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat offsetY = scrollView.contentOffset.y;
-    if (offsetY >= 0) {
-        self.navigationController.navigationBar.hidden=NO;
-        CGFloat alpha = MIN(1, (offsetY)/99);
-        titleViewAlpha = alpha;
-        titleView.backgroundColor = [UIColor whiteColor];
-        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
-    } else {
-        [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[[UIColor clearColor] colorWithAlphaComponent:0]] forBarMetrics:UIBarMetricsDefault];
-        self.navigationController.navigationBar.hidden=YES;
+    if ([self.bannerArray count] > 0) {
+        CGFloat offsetY = scrollView.contentOffset.y;
+        if (offsetY >= 0) {
+            self.navigationController.navigationBar.hidden=NO;
+            CGFloat alpha = MIN(1, (offsetY)/99);
+            titleViewAlpha = alpha;
+            titleView.backgroundColor = [UIColor whiteColor];
+            [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[COLOR4B89DC colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
+        } else {
+            [self.navigationController.navigationBar setBackgroundImage:[FCCommonUtil createImageWithColor:[[UIColor clearColor] colorWithAlphaComponent:0]] forBarMetrics:UIBarMetricsDefault];
+            self.navigationController.navigationBar.hidden=YES;
+        }
     }
+    
 }
 
 

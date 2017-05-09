@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <NioxCore/NioxCore.h>
+
+
 
 typedef void(^ResultBlock)(id result);
 typedef void(^ErrorBlock)(NSError *error);

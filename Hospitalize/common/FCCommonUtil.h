@@ -51,4 +51,14 @@
                      image5:(UIImageView *)imageView5
                      number:(CGFloat)number;
 
+
+/**
+ * 按比例缩放图片,size 是你要把图显示到 多大区域。
+ *
+ * @param sourceImage 源图片对象
+ * @param size        目标图片大小
+ * @return 目标图片对象
+ */
++ (UIImage *) imageCompressForSize:(UIImage *)sourceImage targetSize:(CGSize)size;
+
 @end

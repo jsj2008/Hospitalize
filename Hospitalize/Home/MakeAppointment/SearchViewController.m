@@ -13,6 +13,7 @@
 #import "SearchEmptyHistoryTableViewCell.h"
 
 @interface SearchViewController ()<UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIView *titleView;
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
@@ -32,7 +33,7 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.alpha = 0;
     [self.searchTextField becomeFirstResponder];
-    
+    self.titleView.backgroundColor = COLOR4B89DC;
     // 取得保存的搜索历史记录
     [self savedSearchHistoryArray];
 }

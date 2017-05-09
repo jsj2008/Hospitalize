@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainTabBarViewController.h"
 #import <IQKeyboardManager.h>
+#import <NioxCore/NioxCore.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [NMEmartClientManager sharedClient].host = @"116.62.226.83";
+    [NMEmartClientManager sharedClient].port = 17938;
+    
+    [NMEmartClientManager sharedClient].appVersion = @"1.0";
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[MainTabBarViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];

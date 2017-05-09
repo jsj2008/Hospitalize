@@ -22,4 +22,27 @@
 
 
 
+
+/**
+ 根据城市获取医院列表请求信息
+
+ @param cityCode 城市code
+ @param resultBlock 回调
+ @param errorBlock 回调
+ */
+-(void)GetBannersReqWithCityCode:(NSString *)cityCode resultBlock:(ResultBlock)resultBlock error:(ErrorBlock)errorBlock{
+    NMTFGetMtBannersReq *request = [[NMTFGetMtBannersReq alloc] initWithHeader:[NMEmartClientManager getHeader:YES]];
+    [[NMEmartClientManager sharedClient] addToQuene:request selName:@"getBanners:" success:^(id content) {
+        if (resultBlock) {
+            resultBlock(content);
+        }
+    } failure:^(NSError *error) {
+        if (errorBlock) {
+            errorBlock(error);
+        }
+    }];
+}
+
+
+
 @end

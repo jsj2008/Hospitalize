@@ -9,7 +9,13 @@ target 'Hospitalize' do
   pod 'IQKeyboardManager', '~> 3.3.7'  #兼容IOS7
   pod 'FMDB'
   pod 'FMDB/SQLCipher'    # FMDB with SQLCipher
-  
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'MBProgressHUD'
+  pod 'Masonry'
+  pod 'UMengAnalytics-NO-IDFA'
+
+
   target 'HospitalizeTests' do
     inherit! :search_paths
     # Pods for testing

@@ -21,4 +21,31 @@
 }
 
 
+
+
+
+
+/**
+ 获取我的地址列表
+ 
+ @param page        page
+ @param isDefault   默认地址(1:只默认地址 0:全部(DEF))
+ @param resultBlock 回调
+ @param errorBlock  回调
+ */
+-(void)getMtShipAddsReqWith:(NMTFPage *)page isDefault:(int32_t)isDefault resultBlock:(ResultBlock)resultBlock error:(ErrorBlock)errorBlock{
+    NMTFGetMtShipAddsReq *request  =[[NMTFGetMtShipAddsReq alloc]initWithHeader:[NMEmartClientManager getHeader:YES] page:page isDefault:isDefault];
+    [[NMEmartClientManager sharedClient]addToQuene:request selName:@"getMtShipAdds:" success:^(id content) {
+        if (resultBlock) {
+            resultBlock(content);
+        }
+    } failure:^(NSError *error) {
+        if (errorBlock) {
+            errorBlock(error);
+        }
+    }];
+}
+
+
+
 @end

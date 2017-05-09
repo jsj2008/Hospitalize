@@ -18,6 +18,10 @@
 		890592061EA0E723002F161F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890592051EA0E723002F161F /* Login.storyboard */; };
 		8905E47E1EC15B170033C234 /* HospitalApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E47D1EC15B170033C234 /* HospitalApi.m */; };
 		8905E4811EC15B490033C234 /* CaseReportApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E4801EC15B490033C234 /* CaseReportApi.m */; };
+		8905E48C1EC167510033C234 /* NMProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E4841EC167510033C234 /* NMProgressCircleView.m */; };
+		8905E48D1EC167510033C234 /* NMProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E4861EC167510033C234 /* NMProgressViewController.m */; };
+		8905E48E1EC167510033C234 /* NMRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E4891EC167510033C234 /* NMRefreshGifHeader.m */; };
+		8905E48F1EC167510033C234 /* NMRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E48B1EC167510033C234 /* NMRefreshNormalHeader.m */; };
 		890700F11EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890700F01EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m */; };
 		890700F41EA6F2F70062BBC2 /* MedicalRecordsContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890700F31EA6F2F70062BBC2 /* MedicalRecordsContentTableViewCell.m */; };
 		890700F71EA6F3110062BBC2 /* MedicalRecordsDrugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890700F61EA6F3110062BBC2 /* MedicalRecordsDrugTableViewCell.m */; };
@@ -261,6 +265,14 @@
 		8905E47D1EC15B170033C234 /* HospitalApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalApi.m; sourceTree = "<group>"; };
 		8905E47F1EC15B490033C234 /* CaseReportApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseReportApi.h; sourceTree = "<group>"; };
 		8905E4801EC15B490033C234 /* CaseReportApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseReportApi.m; sourceTree = "<group>"; };
+		8905E4831EC167510033C234 /* NMProgressCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMProgressCircleView.h; sourceTree = "<group>"; };
+		8905E4841EC167510033C234 /* NMProgressCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMProgressCircleView.m; sourceTree = "<group>"; };
+		8905E4851EC167510033C234 /* NMProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMProgressViewController.h; sourceTree = "<group>"; };
+		8905E4861EC167510033C234 /* NMProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMProgressViewController.m; sourceTree = "<group>"; };
+		8905E4881EC167510033C234 /* NMRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRefreshGifHeader.h; sourceTree = "<group>"; };
+		8905E4891EC167510033C234 /* NMRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRefreshGifHeader.m; sourceTree = "<group>"; };
+		8905E48A1EC167510033C234 /* NMRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRefreshNormalHeader.h; sourceTree = "<group>"; };
+		8905E48B1EC167510033C234 /* NMRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRefreshNormalHeader.m; sourceTree = "<group>"; };
 		890700EF1EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalRecordsReportTableViewCell.h; sourceTree = "<group>"; };
 		890700F01EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalRecordsReportTableViewCell.m; sourceTree = "<group>"; };
 		890700F21EA6F2F70062BBC2 /* MedicalRecordsContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalRecordsContentTableViewCell.h; sourceTree = "<group>"; };
@@ -692,6 +704,28 @@
 				10D590092A99A8741C4CF57C /* Pods-HospitalizeUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8905E4821EC167510033C234 /* NMProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				8905E4831EC167510033C234 /* NMProgressCircleView.h */,
+				8905E4841EC167510033C234 /* NMProgressCircleView.m */,
+				8905E4851EC167510033C234 /* NMProgressViewController.h */,
+				8905E4861EC167510033C234 /* NMProgressViewController.m */,
+			);
+			path = NMProgressView;
+			sourceTree = "<group>";
+		};
+		8905E4871EC167510033C234 /* NMRefreshGifHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8905E4881EC167510033C234 /* NMRefreshGifHeader.h */,
+				8905E4891EC167510033C234 /* NMRefreshGifHeader.m */,
+				8905E48A1EC167510033C234 /* NMRefreshNormalHeader.h */,
+				8905E48B1EC167510033C234 /* NMRefreshNormalHeader.m */,
+			);
+			path = NMRefreshGifHeader;
 			sourceTree = "<group>";
 		};
 		890700F81EA702A80062BBC2 /* Message */ = {
@@ -1438,6 +1472,8 @@
 		E9CD59681E9CBE7700B1DCAB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8905E4821EC167510033C234 /* NMProgressView */,
+				8905E4871EC167510033C234 /* NMRefreshGifHeader */,
 				E99143D61EA06D5B00765903 /* MPLocationManager */,
 				E9CD59691E9CBE8100B1DCAB /* FCAlertAction */,
 			);
@@ -1849,12 +1885,14 @@
 				890701591EA730EA0062BBC2 /* CityItem.m in Sources */,
 				8905E4811EC15B490033C234 /* CaseReportApi.m in Sources */,
 				895FB1091EA8BC8A0007BF87 /* ModifyNicknameViewController.m in Sources */,
+				8905E48F1EC167510033C234 /* NMRefreshNormalHeader.m in Sources */,
 				E976F2811EA767F2005CFE7F /* DoctorStarTableViewCell.m in Sources */,
 				891580841EA5DBEC0090F3E6 /* HospitalNoticeTimeTableViewCell.m in Sources */,
 				895FB0FD1EA8AE080007BF87 /* ReservationListTableViewCell.m in Sources */,
 				8907015D1EA730EA0062BBC2 /* HanyuPinyinOutputFormat.m in Sources */,
 				89076F461EA863D200E86173 /* CardCollectionViewCell.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
+				8905E48D1EC167510033C234 /* NMProgressViewController.m in Sources */,
 				E97D73821EA2213100540DF7 /* PayViewController.m in Sources */,
 				890700F11EA6F2DA0062BBC2 /* MedicalRecordsReportTableViewCell.m in Sources */,
 				890701691EA730EA0062BBC2 /* SearchViewController.m in Sources */,
@@ -1913,6 +1951,7 @@
 				E9648CF61E9F290B00943168 /* OrderScreenSelectData.m in Sources */,
 				891581451EA637E80090F3E6 /* MedicalRecordsPersonTableViewCell.m in Sources */,
 				890591FB1EA0C49C002F161F /* SearchEmptyHistoryTableViewCell.m in Sources */,
+				8905E48C1EC167510033C234 /* NMProgressCircleView.m in Sources */,
 				89076F4F1EA899ED00E86173 /* HealthRecordsTableViewCell.m in Sources */,
 				E9A487E61EA6349600C2EBBF /* CasesListCardTableViewCell.m in Sources */,
 				E9554CA21E9CB3BC0080C02D /* AppDelegate.m in Sources */,
@@ -1921,6 +1960,7 @@
 				89FAF9251E9DC271002DE124 /* BaseViewController.m in Sources */,
 				891581321EA609050090F3E6 /* CasesViewController.m in Sources */,
 				891BC9041EC06E0100A6C3B4 /* HospitalCostTableViewCell.m in Sources */,
+				8905E48E1EC167510033C234 /* NMRefreshGifHeader.m in Sources */,
 				89EEC2D61E9F2A8000678995 /* HomeBannerTableViewCell.m in Sources */,
 				E9B76CE91EA9EF7200A208B8 /* SummryHeadTableViewCell.m in Sources */,
 				E99EA9381EADB15A0050D25D /* NXInpatientFeeListViewController.m in Sources */,
