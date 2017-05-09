@@ -767,7 +767,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iqw-6U-Yyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="795"/>
+            <point key="canvasLocation" x="1375" y="832"/>
+        </scene>
+        <!--输入您的住院号-->
+        <scene sceneID="Wxr-Gb-I1W">
+            <objects>
+                <viewController storyboardIdentifier="BindingHospitalViewController" id="N64-3l-UK1" userLabel="输入您的住院号" customClass="BindingHospitalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sg4-93-oLb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7k9-w8-TWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j2S-Jp-Gdq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请绑定韩梅梅在浙江省肿瘤医院的住院号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJN-NV-bqz">
+                                <rect key="frame" x="15" y="37" width="345" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-2t-Phd">
+                                <rect key="frame" x="0.0" y="71" width="375" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的住院号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qeo-xB-gc2">
+                                        <rect key="frame" x="15" y="0.0" width="345" height="50"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qeo-xB-gc2" firstAttribute="top" secondItem="adQ-2t-Phd" secondAttribute="top" id="Irl-f2-BVZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lr9-HY-htE"/>
+                                    <constraint firstItem="qeo-xB-gc2" firstAttribute="leading" secondItem="adQ-2t-Phd" secondAttribute="leading" constant="15" id="Yd9-wM-ihA"/>
+                                    <constraint firstAttribute="trailing" secondItem="qeo-xB-gc2" secondAttribute="trailing" constant="15" id="bLc-vU-z6w"/>
+                                    <constraint firstAttribute="bottom" secondItem="qeo-xB-gc2" secondAttribute="bottom" id="bd8-TM-18p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGq-aj-Mdm">
+                                <rect key="frame" x="26" y="151" width="323" height="38"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.47058823529999999" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="X4R-IT-PEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="绑定">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bindingHospitalAction:" destination="N64-3l-UK1" eventType="touchUpInside" id="mr3-6T-LUT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="adQ-2t-Phd" secondAttribute="trailing" id="5CF-HS-OA6"/>
+                            <constraint firstItem="adQ-2t-Phd" firstAttribute="leading" secondItem="j2S-Jp-Gdq" secondAttribute="leading" id="cE4-df-GGz"/>
+                            <constraint firstItem="XGq-aj-Mdm" firstAttribute="leading" secondItem="j2S-Jp-Gdq" secondAttribute="leading" constant="26" id="fPV-gM-97z"/>
+                            <constraint firstAttribute="trailing" secondItem="sJN-NV-bqz" secondAttribute="trailing" constant="15" id="fsE-4G-7OP"/>
+                            <constraint firstItem="XGq-aj-Mdm" firstAttribute="top" secondItem="adQ-2t-Phd" secondAttribute="bottom" constant="30" id="gcs-Tb-bAx"/>
+                            <constraint firstItem="sJN-NV-bqz" firstAttribute="leading" secondItem="j2S-Jp-Gdq" secondAttribute="leading" constant="15" id="hgE-dR-blg"/>
+                            <constraint firstItem="sJN-NV-bqz" firstAttribute="top" secondItem="sg4-93-oLb" secondAttribute="bottom" constant="17" id="o8A-sy-ga6"/>
+                            <constraint firstAttribute="trailing" secondItem="XGq-aj-Mdm" secondAttribute="trailing" constant="26" id="rj3-qw-Pbp"/>
+                            <constraint firstItem="adQ-2t-Phd" firstAttribute="top" secondItem="sJN-NV-bqz" secondAttribute="bottom" constant="17" id="rns-Jy-jrE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="information" destination="sJN-NV-bqz" id="5DA-dy-FSK"/>
+                        <outlet property="numberTextField" destination="qeo-xB-gc2" id="toL-EM-uxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Blc-i1-CFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="845"/>
         </scene>
         <!--预交金额-->
         <scene sceneID="Taa-oT-aOd">

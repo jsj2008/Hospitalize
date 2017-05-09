@@ -22,6 +22,8 @@
 #import "PersonalCollectViewController.h"
 #import "MyHospitalRecordsViewController.h"
 
+#import "LoginViewController.h"
+
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, KNBannerViewDelegate, UITextFieldDelegate,CityListViewDelegate>{
     UIView *titleView;    //导航栏背景view
@@ -59,7 +61,12 @@
     //导航栏下面黑线
     self.navigationController.navigationBar.shadowImage = nil;
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    LoginViewController *login = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"LoginViewController"];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:login];
+    [self presentViewController:navi animated:YES completion:nil];
+}
 
 #pragma mark - Refresh
 - (void)initData {
