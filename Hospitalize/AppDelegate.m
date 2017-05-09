@@ -11,6 +11,8 @@
 #import <IQKeyboardManager.h>
 #import <NioxCore/NioxCore.h>
 
+#import <NioxCore/NioxCore.h>
+
 @interface AppDelegate ()
 
 @end
@@ -32,6 +34,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self.window makeKeyAndVisible];
+    
+    
+    ///*** 设置网络配置  by duanxiaochen
+    [NetworkConfigure shareConfigure].networkTFHostname = @"116.62.226.83";
+    [NetworkConfigure shareConfigure].networkTFCommonport = 17938;
+    [NetworkConfigure shareConfigure].networkTFSSLport = 17937;
+    [NetworkConfigure shareConfigure].networkNioxAppVersion = @"1.0.0";
     
     [self configureBoardManager];
 

@@ -10,6 +10,7 @@
 #import "ViewControllerUtil.h"
 #import "FCMacros.h"
 #import "FCCommonUtil.h"
+#import "FCAlertLabel.h"//提示框
 
 @interface BaseViewController : UIViewController
 

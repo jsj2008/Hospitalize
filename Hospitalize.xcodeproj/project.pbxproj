@@ -201,6 +201,8 @@
 		E99EA9381EADB15A0050D25D /* NXInpatientFeeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EA9371EADB15A0050D25D /* NXInpatientFeeListViewController.m */; };
 		E99EA93C1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99EA93A1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.m */; };
 		E99EA93D1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99EA93B1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.xib */; };
+		E9A3CF071EC16A2F006097CA /* CurrentUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CF041EC16A2F006097CA /* CurrentUser.m */; };
+		E9A3CF081EC16A2F006097CA /* NXLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CF061EC16A2F006097CA /* NXLoginManager.m */; };
 		E9A487DC1EA5B0D800C2EBBF /* OrderCostListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */; };
 		E9A487E21EA612C900C2EBBF /* CasesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487E11EA612C900C2EBBF /* CasesListViewController.m */; };
 		E9A487E61EA6349600C2EBBF /* CasesListCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A487E51EA6349600C2EBBF /* CasesListCardTableViewCell.m */; };
@@ -615,6 +617,10 @@
 		E99EA9391EADB60E0050D25D /* InpatientFeeInHospitalSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InpatientFeeInHospitalSectionView.h; sourceTree = "<group>"; };
 		E99EA93A1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InpatientFeeInHospitalSectionView.m; sourceTree = "<group>"; };
 		E99EA93B1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InpatientFeeInHospitalSectionView.xib; sourceTree = "<group>"; };
+		E9A3CF031EC16A2F006097CA /* CurrentUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUser.h; sourceTree = "<group>"; };
+		E9A3CF041EC16A2F006097CA /* CurrentUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUser.m; sourceTree = "<group>"; };
+		E9A3CF051EC16A2F006097CA /* NXLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLoginManager.h; sourceTree = "<group>"; };
+		E9A3CF061EC16A2F006097CA /* NXLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLoginManager.m; sourceTree = "<group>"; };
 		E9A487DA1EA5B0D800C2EBBF /* OrderCostListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCostListModel.h; sourceTree = "<group>"; };
 		E9A487DB1EA5B0D800C2EBBF /* OrderCostListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCostListModel.m; sourceTree = "<group>"; };
 		E9A487E01EA612C900C2EBBF /* CasesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasesListViewController.h; sourceTree = "<group>"; };
@@ -1150,6 +1156,12 @@
 				E99EA92E1EADAFD50050D25D /* HospitalLiveInViewController.m */,
 				E99EA9361EADB15A0050D25D /* NXInpatientFeeListViewController.h */,
 				E99EA9371EADB15A0050D25D /* NXInpatientFeeListViewController.m */,
+				89F8A4151EA9EEA000C7B381 /* BindingHospitalViewController.h */,
+				89F8A4161EA9EEA000C7B381 /* BindingHospitalViewController.m */,
+				89F8A4181EA9F19400C7B381 /* HospitalCostListViewController.h */,
+				89F8A4191EA9F19400C7B381 /* HospitalCostListViewController.m */,
+				891E29291EAD9452009871C1 /* HospitalCostViewController.h */,
+				891E292A1EAD9452009871C1 /* HospitalCostViewController.m */,
 			);
 			path = LiveHospital;
 			sourceTree = "<group>";
@@ -1180,6 +1192,14 @@
 				E99EA9391EADB60E0050D25D /* InpatientFeeInHospitalSectionView.h */,
 				E99EA93A1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.m */,
 				E99EA93B1EADB60E0050D25D /* InpatientFeeInHospitalSectionView.xib */,
+				89F8A41B1EA9F1E900C7B381 /* HospitalCostListTableViewCell.h */,
+				89F8A41C1EA9F1E900C7B381 /* HospitalCostListTableViewCell.m */,
+				891E292C1EADA284009871C1 /* HospitalCostTableViewCell.h */,
+				891E292D1EADA284009871C1 /* HospitalCostTableViewCell.m */,
+				89F323811EAF237D009D5365 /* CostHeaderTableViewCell.h */,
+				89F323821EAF237D009D5365 /* CostHeaderTableViewCell.m */,
+				89F323841EAF2B51009D5365 /* HospitalCostSumTableViewCell.h */,
+				89F323851EAF2B51009D5365 /* HospitalCostSumTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1402,6 +1422,10 @@
 				890592001EA0D46C002F161F /* RegisterViewController.m */,
 				890592021EA0E212002F161F /* RegisterWithPasswordViewController.h */,
 				890592031EA0E212002F161F /* RegisterWithPasswordViewController.m */,
+				E9A3CF031EC16A2F006097CA /* CurrentUser.h */,
+				E9A3CF041EC16A2F006097CA /* CurrentUser.m */,
+				E9A3CF051EC16A2F006097CA /* NXLoginManager.h */,
+				E9A3CF061EC16A2F006097CA /* NXLoginManager.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1890,6 +1914,7 @@
 				891580841EA5DBEC0090F3E6 /* HospitalNoticeTimeTableViewCell.m in Sources */,
 				895FB0FD1EA8AE080007BF87 /* ReservationListTableViewCell.m in Sources */,
 				8907015D1EA730EA0062BBC2 /* HanyuPinyinOutputFormat.m in Sources */,
+				E9A3CF071EC16A2F006097CA /* CurrentUser.m in Sources */,
 				89076F461EA863D200E86173 /* CardCollectionViewCell.m in Sources */,
 				E9CD59721E9CBE8100B1DCAB /* UIAlertView+NMAlertAction.m in Sources */,
 				8905E48D1EC167510033C234 /* NMProgressViewController.m in Sources */,
@@ -1962,6 +1987,7 @@
 				891BC9041EC06E0100A6C3B4 /* HospitalCostTableViewCell.m in Sources */,
 				8905E48E1EC167510033C234 /* NMRefreshGifHeader.m in Sources */,
 				89EEC2D61E9F2A8000678995 /* HomeBannerTableViewCell.m in Sources */,
+				E9A3CF081EC16A2F006097CA /* NXLoginManager.m in Sources */,
 				E9B76CE91EA9EF7200A208B8 /* SummryHeadTableViewCell.m in Sources */,
 				E99EA9381EADB15A0050D25D /* NXInpatientFeeListViewController.m in Sources */,
 				890701071EA702FA0062BBC2 /* PersonalViewController.m in Sources */,

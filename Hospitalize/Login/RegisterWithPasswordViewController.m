@@ -7,6 +7,8 @@
 //
 
 #import "RegisterWithPasswordViewController.h"
+#import <NioxCore/NioxCore.h>
+#import "NXLoginManager.h"
 
 @interface RegisterWithPasswordViewController (){
     NSTimer *_timer;//倒计时计时器
@@ -79,12 +81,45 @@
         [self countTime];
         //do
     }
-    
     button.selected = !button.selected;
     
 }
+- (IBAction)registeAction:(id)sender {
+    
+    
+}
 
+- (void)registAPI{
+    WS(self)
+    [AMAUserCenterAPI signUp:[NXLogin sharedNXLogin].phoneNo pwd:self.passwordTextField.text authCode:self.verificationCodeTextField.text name:self.nameTextField.text papersNo:self.idNumberTextField.text papersTypeId:1 success:^(NXTFSignUpResp *model) {
+        SS(self)
+        AMMGesUserInfo * gesUserInfo    = [[AMMGesUserInfo alloc] init];
+        if(model.genderIsSet) {
+            gesUserInfo.gender  = model.gender.intValue;
+        } else {
+            gesUserInfo.gender  = -1;
+        }
+        gesUserInfo.userId              = model.userId;
+        gesUserInfo.patientId           = model.patientId;
+        gesUserInfo.phoneNo             = model.phoneNo;
+        gesUserInfo.token               = model.token;
+        gesUserInfo.signingKey          = model.signingKey;
+        gesUserInfo.password            = @"";
+        gesUserInfo.gespassword         = @"";
+        gesUserInfo.gesopened           = @"0";
+        gesUserInfo.gestrackopened      = @"1";
+        gesUserInfo.currentUser         = @"1";
+        
+        [[NXLoginManager sharedNXLoginManager] doLogin:gesUserInfo];
+        [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_CloseLoginViewController object:self];
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+    } failure:^(NSError *error) {
+        [[FCAlertLabel sharedAlertLabel] showAlertLabelWithAlertString:error.domain];
+    }];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
