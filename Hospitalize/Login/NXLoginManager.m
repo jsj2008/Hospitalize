@@ -7,10 +7,8 @@
 //
 
 #import "NXLoginManager.h"
-#import "NXLogin.h"
-#import "JPUSHService.h"
-#import "NXLoginClient.h"
 #import "CurrentUser.h"
+#import "FCMacros.h"
 
 static NXLoginManager *sharedNXLoginManager = nil;
 
@@ -65,9 +63,7 @@ static NXLoginManager *sharedNXLoginManager = nil;
 
 
 - (void) doLogin:(AMMGesUserInfo *)inputModel {
-    @weakify(self);
     [NXLogin doLogin:inputModel success:^(AMMGesUserInfo *model) {
-        @strongify(self);
         if(model == nil) {
             [[CurrentUser sharedUser] reset];
             return ;
@@ -95,27 +91,17 @@ static NXLoginManager *sharedNXLoginManager = nil;
         [NMLogin sharedLogin].gender = model.gender;
         
         [AMDBHelper replaceUserInfo:model];
-        
-        NSString *phoneMd5Str = [model.phoneNo md5HexDigest];
-        [JPUSHService setTags:nil alias:phoneMd5Str callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:self];
-        
+    
         [AMAUserCenterAPI registerImWithSuccess:^(NXTFRegisterImResp *imAccountResp) {
             
             [CurrentUser sharedUser].tImid = imAccountResp.tImId;
             [CurrentUser sharedUser].tImToken = imAccountResp.tImToken;
-            
-            [self loginQCloud:YES];
-            
         } failure:^(NSError *error) {
             
         }];
         
-
     } failure:^{
-        @strongify(self);
         [[CurrentUser sharedUser] reset];
-
-        [JPUSHService setTags:nil alias:@"" callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:self];
     }];
 }
 
@@ -139,67 +125,16 @@ static NXLoginManager *sharedNXLoginManager = nil;
     [NMLogin sharedLogin].name = @"";
     
     [NXLogin doLogout:^(AMMGesUserInfo *model) {
-        [[NXLoginClient shareClient] QIMlogout];
+//        [[NXLoginClient shareClient] QIMlogout];
         
     }];
-    [JPUSHService setTags:nil alias:@"" callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:self];
+
     
     if(notify) {
-        
         NSDictionary *dic =  [NSDictionary dictionaryWithObject:@"needBack" forKey:@"forceShow"];
         [[NSNotificationCenter defaultCenter]postNotificationName:LOGIN_ShowLoginViewController object:self userInfo:dic];
     }
 
-}
-
-#pragma mark - 腾讯云登陆
-
-/**
- *  腾讯云关联账号登陆
- *
- *  @param checkTwice 设置为YES时，登陆失败时会尝试二次连接
- */
-- (void)loginQCloud:(BOOL)checkTwice
-{
-    @weakify(self);
-    [[NXLoginClient shareClient] login:[CurrentUser sharedUser].tImid
-                               userSig:[CurrentUser sharedUser].tImToken
-                               success:^{
-                                   [self setTIMNickName];
-                                   [[NSNotificationCenter defaultCenter] postNotificationName:NXTENCENT_LOGIN object:@"Success"];
-                               } failure:^(int code, NSString *err) {
-                                   [[NSNotificationCenter defaultCenter] postNotificationName:NXTENCENT_LOGIN object:@"Fail"];
-                                   @strongify(self);
-                                   if (checkTwice) {
-                                       [self loginQCloud:NO];
-                                   }
-                               }];
-}
-// 同步腾讯昵称
-- (void)setTIMNickName{
-    // 判断我得昵称是否存在
-    [[TIMFriendshipManager sharedInstance]GetSelfProfile:^(TIMUserProfile *profile) {
-        if (profile.nickname.length > 0 && profile.nickname.length < 10) {
-            // 正常的昵称
-        }else{
-            // 获取用户名
-            NSString *randomNickName;
-            if ([CurrentUser sharedUser].name.length > 0 && [CurrentUser sharedUser].name.length < 10) {
-                randomNickName = [CurrentUser sharedUser].name;
-            }else{
-                // 非法昵称需要重新随机赋值
-                NSString *randomName = [NSString stringWithFormat:@"%@%d",@"ChangeNickNameRandom",arc4random()%167];
-                randomNickName = NSLocalizedString(randomName, @"");
-            }
-            // 大象服务器更新成功，调用腾讯接口修改昵称
-            [[TIMFriendshipManager sharedInstance]SetNickname:randomNickName succ:^{
-                // 腾讯成功
-            } fail:^(int code, NSString *msg) {
-                // 腾讯失败
-            }];
-        }
-    } fail:^(int code, NSString *msg) {
-    }];
 }
 
 

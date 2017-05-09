@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <NioxCore/NioxCore.h>
 
 @interface NXLoginManager : NSObject
 
