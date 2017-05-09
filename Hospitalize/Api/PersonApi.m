@@ -10,4 +10,15 @@
 
 @implementation PersonApi
 
+
++ (PersonApi *) sharedInstance {
+    static dispatch_once_t onceToken;
+    static PersonApi *_instance;
+    dispatch_once(&onceToken, ^{
+        _instance = [[PersonApi alloc] init];
+    });
+    return _instance;
+}
+
+
 @end

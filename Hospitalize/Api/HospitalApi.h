@@ -1,8 +1,8 @@
 //
-//  PersonApi.h
+//  HospitalApi.h
 //  Hospitalize
 //
-//  Created by 宋明月 on 2017/5/8.
+//  Created by 宋明月 on 2017/5/9.
 //  Copyright © 2017年 feichang. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 typedef void(^ResultBlock)(id result);
 typedef void(^ErrorBlock)(NSError *error);
 
-@interface PersonApi : NSObject
+@interface HospitalApi : NSObject
 
-+ (PersonApi *) sharedInstance;
++ (HospitalApi *) sharedInstance;
 
 @end
