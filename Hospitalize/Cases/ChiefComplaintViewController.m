@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/26.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  主诉
 
 #import "ChiefComplaintViewController.h"
 
@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"反馈";
+    self.navigationItem.title = @"主诉";
     self.content.delegate = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(submitAction:)];
 }

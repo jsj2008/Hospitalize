@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/19.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  我的就诊卡
 
 #import "ClinicCardListViewController.h"
 #import "ClinicCardListTableViewCell.h"

@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/12.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  科室列表
 
 #import "DepartmentsListViewController.h"
 #import "DepartmentsViewController.h"

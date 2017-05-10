@@ -4,7 +4,7 @@
 //
 //  Created by 周鑫 on 2017/4/20.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  添加就诊卡
 
 #import "ClinicAddViewController.h"
 #import "FCAlertAction.h"

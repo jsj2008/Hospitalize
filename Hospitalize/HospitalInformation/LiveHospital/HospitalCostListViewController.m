@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/21.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  明细列表
 
 #import "HospitalCostListViewController.h"
 #import "HospitalCostListTableViewCell.h"

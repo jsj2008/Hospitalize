@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/19.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  就诊卡详情
 
 #import "AttendanceCardViewController.h"
 #import "FCAlertAction.h"

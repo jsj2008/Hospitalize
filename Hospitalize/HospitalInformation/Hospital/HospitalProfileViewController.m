@@ -4,7 +4,7 @@
 //
 //  Created by 周鑫 on 2017/4/15.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  医院简介
 
 #import "HospitalProfileViewController.h"
 #import "DoctorCollectionViewCell.h"

@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/18.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  病例总费用
 
 #import "CostViewController.h"
 #import "CostTableViewCell.h"

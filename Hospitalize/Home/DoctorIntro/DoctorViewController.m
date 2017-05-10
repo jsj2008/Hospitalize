@@ -4,7 +4,7 @@
 //
 //  Created by 周鑫 on 2017/4/19.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  医生详情
 
 #import "DoctorViewController.h"
 #import "DoctorHeadTableViewCell.h"

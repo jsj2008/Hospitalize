@@ -4,7 +4,7 @@
 //
 //  Created by 宋明月 on 2017/4/19.
 //  Copyright © 2017年 feichang. All rights reserved.
-//
+//  医院详情
 
 #import "HospitalViewController.h"
 #import "HospitalFootCollectionReusableView.h"
