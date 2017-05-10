@@ -17,6 +17,7 @@
 
 @interface BaseViewController ()
 
+
 @end
 
 @implementation BaseViewController
@@ -48,10 +49,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

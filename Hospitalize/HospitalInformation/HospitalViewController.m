@@ -11,6 +11,8 @@
 #import "HospitalCollectionViewCell.h"
 #import "HospitalHeadCollectionReusableView.h"
 #import "HospitalEvaluateViewController.h"
+#import "NMProgressViewController.h"
+#import <NioxCore/NioxCore.h>
 
 #import "ReportListViewController.h"
 #import "DepartmentsListViewController.h"
@@ -38,6 +40,8 @@
     self.mainCollectionView.delegate = self;
     self.mainCollectionView.dataSource = self;
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

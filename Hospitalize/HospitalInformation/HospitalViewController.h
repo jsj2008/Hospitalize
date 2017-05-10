@@ -11,4 +11,7 @@
 @interface HospitalViewController : BaseViewController
 
 @property(nonatomic, copy)NSString *titleName;
+@property(nonatomic,assign)int32_t hospId; //医院编码	
+
+
 @end

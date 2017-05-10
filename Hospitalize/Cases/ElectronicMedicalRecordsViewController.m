@@ -13,6 +13,7 @@
 #import "MedicalRecordsDrugTableViewCell.h"
 #import "CostViewController.h"
 #import "InspectionReportViewController.h"
+#import <NioxCore/NioxCore.h>
 
 @interface ElectronicMedicalRecordsViewController ()<UITableViewDelegate, UITableViewDataSource>{
     BOOL isOPenState;//内容打开状态
@@ -39,6 +40,9 @@
     
     
 }
+
+
+
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {

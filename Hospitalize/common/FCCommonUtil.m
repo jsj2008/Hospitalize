@@ -12,6 +12,16 @@
 
 
 /**
+ 得到请求header
+ 
+ @return ReqHeader
+ */
++(NMTFReqHeader *)getHeader{
+    NMTFReqHeader *header = [NMEmartClientManager getHeader:YES];
+    return header;
+}
+
+/**
  *  转换16进制颜色值为UIColor对象。
  *
  *  @param color 6进制颜色值

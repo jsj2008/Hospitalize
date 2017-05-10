@@ -10,4 +10,6 @@
 
 @interface HospitalNoticeViewController : BaseViewController
 
+@property (nonatomic ,assign) int32_t hospitalId;
+
 @end

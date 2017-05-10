@@ -24,6 +24,9 @@
 
 // 搜索历史
 @property (strong, nonatomic)NSMutableArray *searchHistoryArray;
+// 医院数组
+@property (strong, nonatomic)NSMutableArray *hospArray;
+
 
 @end
 
@@ -62,6 +65,7 @@
     [self.backButton addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
     [self.searchButton addTarget:self action:@selector(searchAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
     [self setExtraCellLineHidden:self.mainTableView];
@@ -73,6 +77,7 @@
     self.historyTableView.dataSource = self;
     [self setExtraCellLineHidden:self.historyTableView];
 }
+
 
 -(void)goBack:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
@@ -88,7 +93,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == self.mainTableView) {
-        return 10;
+        return [self.hospArray count];
     } else {
         if ([self.searchHistoryArray count] > 0) {
             return [self.searchHistoryArray count] + 1;

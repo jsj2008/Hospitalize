@@ -10,4 +10,7 @@
 
 @interface HealthRecordsViewController : BaseViewController
 
+
+@property(nonatomic, assign)ino64_t patientId; //患者ID
+
 @end

@@ -16,8 +16,9 @@
 #import "SearchViewController.h"
 #import "CityListViewController.h"
 #import "HospitalViewController.h"
-#import "HospitalApi.h"
 #import "FCAlertLabel.h"
+#import "NMProgressViewController.h"
+#import <NioxCore/NioxCore.h>
 
 #import "NXCustomLeftBarButtonItem.h"
 #import "UILogic.h"
@@ -32,7 +33,7 @@
     NSMutableArray * actDoArray;    //  直播信息数组
     NSString * selectCityName;      //选择的城市名字
     CGFloat titleViewAlpha;     // 导航栏背景的alpha
-
+    
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
@@ -41,6 +42,7 @@
 @property (strong, nonatomic) NXCustomLeftBarButtonItem *leftBarButtonItem;
 @property (strong, nonatomic) UIButton *rightButtonItem;
 @property (strong, nonatomic) NSMutableArray *bannerArray;//baner数组
+@property (strong, nonatomic) NSMutableArray *hospsArray;//医院数组
 
 @end
 
@@ -55,7 +57,6 @@
     titleView.backgroundColor = [UIColor whiteColor] ;
     self.navigationController.navigationBar.translucent = YES;
     
-    [self callGetBannersApiWithCityCode:@"杭州"];
 }
 
 
@@ -68,28 +69,10 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    LoginViewController *login = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"LoginViewController"];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:login];
-    [self presentViewController:navi animated:YES completion:nil];
+//    LoginViewController *login = [ViewControllerUtil getViewControllerFromLoginStoryboardWithIdentifier:@"LoginViewController"];
+//    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:login];
+//    [self presentViewController:navi animated:YES completion:nil];
 }
-
-#pragma mark - Api
-/**
- 调用获取购物车内商品列表的Api接口
- */
--(void)callGetBannersApiWithCityCode:(NSString *)cityCode{
-//        [NMProgressViewController progressViewWithBody:NMlocalized(@"加载中，请稍后...") type:NMProgressViewTypeDefault show:YES];
-    [[HospitalApi sharedInstance] GetBannersReqWithCityCode:cityCode resultBlock:^(id result) {
-//        [NMProgressViewController dismissCurrentViewController];
-        NMTFGetMtBannersResp *getMtBannersResp = result;
-        self.bannerArray = [getMtBannersResp.banners mutableCopy];
-        [self.mainTableView reloadData];
-    } error:^(NSError *error) {
-//        [NMProgressViewController dismissCurrentViewController];
-        [[FCAlertLabel sharedAlertLabel]showAlertLabelWithAlertString:error.domain];
-    }];
-}
-
 
 #pragma mark - Refresh
 - (void)initData {
@@ -214,7 +197,7 @@
 //预约挂号事件
 - (void)makeAnAppointmentAction:(id)sender {
     OrderViewController *order = [ViewControllerUtil getViewControllerFromHomeStoryboardWithIdentifier:@"OrderViewController"];
-
+    
     [self.navigationController pushViewController:order animated:YES];
 }
 //在线咨询事件
@@ -251,7 +234,7 @@
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 18;
+    return [self.hospsArray count] + 2;
 }
 
 
@@ -259,8 +242,13 @@
     if (indexPath.row == 0) {
         HomeBannerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeBannerTableViewCell" forIndexPath:indexPath];
         if ([[cell.bannerView subviews] count] == 0) {
+            NSMutableArray *imageArray = [NSMutableArray array];
+            for (NMTFBannersDto * bannerDto in self.bannerArray) {
+                [imageArray addObject:bannerDto.imgUrl];
+            }
+
             // 设置 网络 轮播图
-            KNBannerView *bannerView = [KNBannerView bannerViewWithLocationImagesArr:[self.bannerArray mutableCopy] frame:CGRectMake(0, 0, KmainScreenWidth, KmainScreenHeight * 175 / 667)];
+            KNBannerView *bannerView = [KNBannerView bannerViewWithLocationImagesArr:imageArray frame:CGRectMake(0, 0, KmainScreenWidth, KmainScreenHeight * 175 / 667)];
             bannerView.delegate = self;
             [cell.bannerView addSubview: bannerView];
         }
@@ -274,6 +262,7 @@
         return cell;
     } else {
         HomeHospitalizeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeHospitalizeTableViewCell" forIndexPath:indexPath];
+        
         return cell;
     }
     return nil;
@@ -319,6 +308,10 @@
  banner点击事件
  */
 - (void)bannerView:(KNBannerView *)bannerView collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSInteger)index{
+    
+    NMTFBannersDto *bannerDto = [self.bannerArray objectAtIndex:index];
+    NSLog(@"%@", bannerDto);
+    
     
 }
 

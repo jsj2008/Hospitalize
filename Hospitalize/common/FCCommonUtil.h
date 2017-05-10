@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <NioxCore/NioxCore.h>
 
 @interface FCCommonUtil : NSObject
+
+/**
+ 得到请求header
+ 
+ @return ReqHeader
+ */
++(NMTFReqHeader *)getHeader;
 
 /**
  *  转换16进制颜色值为UIColor对象。

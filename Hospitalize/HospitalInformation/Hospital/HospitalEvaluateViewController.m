@@ -8,6 +8,8 @@
 
 #import "HospitalEvaluateViewController.h"
 #import "FCStarView.h"
+#import "NMProgressViewController.h"
+#import "FCAlertLabel.h"
 
 @interface HospitalEvaluateViewController ()
 
@@ -34,8 +36,23 @@
 
 #pragma mark Action
 - (void)rightBarButtonAction:(id)sender {
-    
-    
+    [self callAddEvaluateAPI];
+}
+
+#pragma mark - API
+- (void)callAddEvaluateAPI
+{
+    [NMProgressViewController progressViewWithBody:NSLocalizedString(@"LoadingPleaseWait", @"") type:1 hidesAfter:0 show:YES];
+    WS(self)
+    [AMADoctorAPI addEvaluate:2 bizId:self.hospId patientName:nil docId:-1 docName:nil disease:nil message:nil attitude:0 effect:0 hospSrv:self.starView.currentValue*2 waiting:0 consult:0 success:^(NXTFAddEvaluateResp *msgDto) {
+        SS(self);
+        [NMProgressViewController dismissCurrentViewController];
+        [[FCAlertLabel sharedAlertLabel] showAlertLabelWithAlertString:@"评价成功"];
+        [self.navigationController popViewControllerAnimated:YES];
+    } failure:^(NSError *error) {
+        [NMProgressViewController dismissCurrentViewController];
+        [[FCAlertLabel sharedAlertLabel] showAlertLabelWithAlertString:error.domain];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,6 +11,8 @@
 #import "DetpartMentsListTableViewCell.h"
 #import "ChineseStringUtil.h"
 #import "BATableViewIndex.h"
+#import "NMProgressViewController.h"
+#import <NioxCore/NioxCore.h>
 
 
 @interface DepartmentsListViewController ()<UITableViewDelegate, UITableViewDataSource,BATableViewIndexDelegate>
@@ -31,19 +33,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title =@"科室列表";
-    
+//    [self GetDeptsReq];
     
     NSArray *array1 = @[@"爱",@"天",@"四",@"年",@"茜",@"科",@"成",@"和",@"啊",@"歌",@"s",@"四四",@"的",@"假",@"后",@"孩",@"茜 佛",@"假过",@"交",@"出",@"宝",@"佛",@"个",@"安抚",@"官方",@"嗷嗷",@"呵呵",@"是 v"];
-    NSMutableArray * array = [array1 mutableCopy];
-    NSMutableArray *mainArray = [array mutableCopy];
-    
-    self.mergeSortArray = [NSMutableArray array];
-    self.indexArray = [NSMutableArray array];
+    [self changeArray:array1];
     
 
-    self.indexArray = [ChineseStringUtil IndexArray:array];
-    self.mergeSortArray = [ChineseStringUtil LetterSortArray:array MainArray:mainArray];
-    
     self.mainTableView.sectionHeaderHeight = 25;
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
@@ -57,6 +52,18 @@
     [self.view addSubview:self.tableViewIndex];
     
 }
+
+
+-(void)changeArray:(NSMutableArray *)array{
+    NSMutableArray *mutablearray = [array mutableCopy];
+    NSMutableArray *mainArray = [mutablearray mutableCopy];
+    self.mergeSortArray = [NSMutableArray array];
+    self.indexArray = [NSMutableArray array];
+    self.indexArray = [ChineseStringUtil IndexArray:mutablearray];
+    self.mergeSortArray = [ChineseStringUtil LetterSortArray:mutablearray MainArray:mainArray];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,7 @@
 //
 
 #import "OpinionViewController.h"
+#import <NioxCore/NioxCore.h>
 
 @interface OpinionViewController ()<UITextViewDelegate>
 
@@ -38,9 +39,12 @@
     return YES;
 }
 
+
+
+
 //提交事件
 - (IBAction)submitAction:(id)sender {
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

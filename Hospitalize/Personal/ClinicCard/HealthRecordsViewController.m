@@ -25,11 +25,16 @@
     self.navigationItem.title = @"健康档案";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(saveHealthInformationAction:)];
     
+    
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
     [self setExtraCellLineHidden:self.mainTableView];
     
 }
+
+
+
+
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 1) {
